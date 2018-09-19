@@ -1,7 +1,16 @@
+* {
+    font-family: 'Oxygen', sans-serif;
+
+}
 h1 {
-color: blueviolet
+    color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2{
 color: dodgerblue
+}
+
+nav {
+    position: fixed;
 }
