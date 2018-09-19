@@ -1,0 +1,41 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 595.28 549.11">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #333;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #a9acb5;
+      }
+
+      .cls-6 {
+        fill: #949496;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" x="70.77" y="49.6" width="453.74" height="448.15"/>
+    </clipPath>
+  </defs>
+  <title>svg</title>
+  <g class="cls-2">
+    <path class="cls-3" d="M524.51,273.67c0,123.75-101.58,224.08-226.87,224.08S70.77,397.42,70.77,273.67,172.35,49.59,297.64,49.59,524.51,149.92,524.51,273.67"/>
+  </g>
+  <path id="path1_fill" data-name="path1 fill" class="cls-4" d="M253,408.47a44.65,44.65,0,0,0,44.64-44.64V319.19H253a44.64,44.64,0,1,0,0,89.28Z"/>
+  <path id="path2_fill" data-name="path2 fill" class="cls-5" d="M208.36,274.55A44.65,44.65,0,0,1,253,229.91h44.64v89.28H253A44.64,44.64,0,0,1,208.36,274.55Z"/>
+  <path id="path2_fill-2" data-name="path2 fill" class="cls-6" d="M208.36,185.28A44.64,44.64,0,0,1,253,140.64h44.64v89.27H253A44.64,44.64,0,0,1,208.36,185.28Z"/>
+  <path id="path3_fill" data-name="path3 fill" class="cls-5" d="M297.64,140.64h44.64a44.64,44.64,0,1,1,0,89.27H297.64Z"/>
+  <path id="path4_fill" data-name="path4 fill" class="cls-4" d="M386.92,274.55a44.64,44.64,0,1,1-44.64-44.64A44.64,44.64,0,0,1,386.92,274.55Z"/>
+</svg>
