@@ -42,7 +42,7 @@ nav {
     background-color: blueviolet;
 } */
 
-/******** 1. HOMEPAGE ********/
+/******** HOMEPAGE ********/
 /* Homepage elements contained in flexbox */
 .home {
     display: flex;
@@ -72,7 +72,7 @@ nav {
     padding: 1em;
 }
 
-/******** 2. ABOUT ME ********/
+/******** ABOUT ME ********/
 /* Creates a grid for the About Me section*/
 .about-me {
     max-height: 100vh;
@@ -133,7 +133,7 @@ nav {
     color: white;
 }
 
-/******** 3. SKILLS ********/
+/******** SKILLS ********/
 /* Creates a grid for the Skills section */
 .skills {
     height: 100vh;
@@ -208,7 +208,7 @@ nav {
     background: black;
 }
 
-/******** 4. FOLIO ********/
+/******** FOLIO ********/
 /* Creates a grid for the Folio section */
 .folio {
     height: 100vh;
@@ -310,7 +310,7 @@ nav {
     height: 90%;
 }
 
-/******** 5. CONTACT ********/
+/******** CONTACT ********/
 /* Creates a grid for the Folio section */
 .contact {
     height: 100vh;
@@ -320,31 +320,19 @@ nav {
 }
 
 .contact h1 {
-    font-size: 7em;
-    grid-column: 1 / 4;
+    font-size: 2em;
+    grid-column: 1 / 5;
     grid-row: 3 / 4;
 }
-
-/* .contact-background {
-    grid-column: 1 / 9;
-    grid-row: 8 / 15;
-    background-color: black;
-} */
 
 .contact-form {
     grid-column: 2 / 6;
     grid-row: 4 / 7;
-    font-size: 2em;
+    /* font-size: em; */
 }
 
 .contact-chinese-name{
     grid-column: 6 / 9;
     grid-row: 1 / 15;
-    height: 200%;
-    width: 200%;
-}
-
-.footer {
-    grid-column: 2 / 6;
-    grid-row: 10 / 13;
+    max-height: 50%;
 }
