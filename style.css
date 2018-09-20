@@ -6,10 +6,10 @@
 }
 
 /* Add Media Query for Desktop */
-@media only screen and (min-width: 480px) {
+/* @media only screen and (min-width: 480px) { */
 
 /* Removes the indentation from unordered lists */
-ul{
+ul {
     padding: 0; 
 }
 
@@ -33,20 +33,21 @@ nav {
 
 /* Defines space between navigation links */
 .navigation-links li {
-    padding: 0 2em 0 2em;
-    background-color: aquamarine
+    padding: 0 1em 0 1em;
+    /* background-color: aquamarine; */
+    font-size: 0.7em;
 }
 
-.navigation-links li:nth-child(even) {
+/* .navigation-links li:nth-child(even) {
     background-color: blueviolet;
-}
+} */
 
 /******** 1. HOMEPAGE ********/
 /* Homepage elements contained in flexbox */
 .home {
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: dodgerblue;
     justify-content: center;
     min-height: 100vh;
 }
@@ -56,6 +57,8 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 40vw;
+    align-self: center;
 }
 
 /* Aligns the arrow vector to the botton centre of the homepage */
@@ -72,60 +75,61 @@ nav {
 /******** 2. ABOUT ME ********/
 /* Creates a grid for the About Me section*/
 .about-me {
-    height: 100vh;
+    max-height: 100vh;
     display: grid;
-    grid-template-columns: 0.2fr 0.3fr 0.3fr 0.2fr;
-    grid-template-rows: repeat(8, 1fr);
-    background-color: black
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: black;
+    overflow: hidden;
+
 }
 
 /* Placement of '< about me >' headline */
 .about-me-headline {
     grid-row: 1 / 3;
-    grid-column: 3 / 5;
-    font-size: 7em;
+    grid-column: 6 / 11;
+    font-size: 2em;
     color: white;
-    background-color: violet;
 }
 
 /* Placement of 'Hello.' subheadline */
 .about-me-subhead {
-    grid-row: 4 / 5;
+    grid-row: 6 / 7;
     grid-column: 2 / 3;
-    font-size: 3em;
+    font-size: 1em;
     color: white;
 }
 
-/* Pleacement of body copy 1 */
+/* Placement of body copy 1 */
 .about-me-body {
-    grid-column: 2 / 4;
-    grid-row: 5 / 6;
-    font-size: 2em;
+    grid-column: 2 / 8;
+    grid-row: 7 / 9;
+    font-size: 14px;
     color: white;
 }
 
-/* Placement of body copy 2 */
+/* Placement of body copy 2
 .about-me-body-2{
     grid-column: 2 / 4;
     grid-row: 6 / 8;
-    font-size: 2em;
+    font-size: 16px;
     color: white;
-}
+} */
 
 /* Placement of 'def initialize' decorative background text */
 .about-me-background-init {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    font-size: 3em;
+    grid-column: 2 / 5;
+    grid-row: 3 / 5;
+    font-size: 1em;
     font-family: 'Roboto', sans-serif;
     color: white;
 }
 
 /* Placement of '/' decorative background text */
 .about-me-background-symbol {
-    grid-column: 4 / 5;
-    grid-row: 7 / 8;
-    font-size: 15em;
+    grid-column: 9 / 11;
+    grid-row: 10 / 12;
+    font-size: 6em;
     color: white;
 }
 
@@ -141,37 +145,36 @@ nav {
 /* Placement of '{ :skills } headline' */
 .skills-headline {
     grid-column: 1 / 7;
-    grid-row: 4 / 5;
-    font-size: 7em;
-    background-color: cyan;
+    grid-row: 2 / 5;
+    font-size: 2em;
 }
 
 /* Styling for ':front_end, :back_end, :other' subheadlines */
 .skills h2 {
-    font-size: 3em;
+    font-size: 1em;
 }
 
 /* Syling for body/list copy */
 .skills li {
-    font-size: 2em;
+    font-size: 14px;
 }
 
 /* Placement of ':front_end' body copy */
 .skills-frontend {
     grid-column: 3 / 5;
-    grid-row: 7 / 17;
+    grid-row: 5 / 16;
 }
 
 /* Placement of ':back_end' body copy */
 .skills-backend {
-    grid-column: 4 / 6;
-    grid-row: 12 / 17;
+    grid-column: 3 / 5;
+    grid-row: 11 / 16;
 }
 
 /* Placement of ':back_end' body copy */
 .skills-other {
-    grid-column: 7 / 9;
-    grid-row: 10 / 17;
+    grid-column: 6 / 9;
+    grid-row: 10 / 16;
 }
 
 /* Placement of decorative background rectangles */
@@ -182,8 +185,8 @@ nav {
 }
 
 .skills-rectangle-middle-left {
-    grid-column: 3 / 6;
-    grid-row: 6 / 7;
+    grid-column: 2 / 5;
+    grid-row: 4 / 5;
     background: black;
 }
 
@@ -193,9 +196,9 @@ nav {
     background: black;
 }
 
-.skills-rectangle-middle-right {
+.skills-rectangle-middle-center {
     grid-column: 5 / 6 ;
-    grid-row: 9 / 12 ;
+    grid-row: 6 / 9 ;
     background: black;
 }
 
@@ -206,91 +209,142 @@ nav {
 }
 
 /******** 4. FOLIO ********/
+/* Creates a grid for the Folio section */
 .folio {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(14, 1fr);
+    background: black;
 }
 
+/* Placement of '{ :skills }' headline */
 .folio h1 {
-    font-size: 7em;
+    font-size: 2em;
     grid-column: 4 / 7;
-    grid-row: 6 / 8;
+    grid-row: 5 / 8;
+    color: white;
 }
 
+/* Placement of 'Terminal Application: myMDb' subheadline */
 .folio h2 {
     grid-column: 2 / 5;
-    grid-row: 9 / 13;
-    font-size: 3em;
+    grid-row: 8 / 13;
+    font-size: 1em;
+    color: white;
 }
 
+/* Placement of folio section body */
 .folio-body {
     grid-column: 2 / 6;
-    grid-row: 10 / 13;
-    font-size: 2em;
+    grid-row: 9 / 13;
+    /* font-size: 2em; */
+    color: white;
 }
 
+/* Placement of 'NAN' background decorative type */
 .folio-background-text {
-    grid-column: 5 / 7;
-    grid-row: 1 / 2;
-    font-size: 15em;
-    color: black;
+    grid-column: 6 / 7;
+    grid-row: 1 / 3;
+    font-size: 1em;
+    color: white;
 }
 
+/* Placement and fill for first horizontal line/rectangle */
 .folio-first-line {
     grid-column: 2 / 7;
     grid-row: 3 / 4;
 }
 
 .first-line-fill {
-    background-color: black;
+    background-color: white;
     width: 100%;
     height: 5%;
 }
 
+/* Placement and fill for second horizontal line/rectangle */
 .folio-second-line {
     grid-column: 1 / 6;
     grid-row: 4 / 5;
 }
 
 .second-line-fill {
-    background-color: black;
+    background-color: white;
     width: 100%;
     height: 30%;
 }
 
+/* Placement and fill for third horizontal line/rectangle */
 .folio-third-line {
     grid-column: 1 / 3;
     grid-row: 5 / 6;
 }
 
 .third-line-fill {
-    background-color: black;
+    background-color: white;
     width: 100%;
     height: 70%;
 }
 
+/* Placement and fill for fourth horizontal line/rectangle */
 .folio-fourth-line {
     grid-column: 2 / 7;
-    grid-row: 8 / 9;
+    grid-row: 7 / 8;
 }
 
 .fourth-line-fill {
-    background-color: black;
+    background-color: white;
     width: 100%;
     height: 70%;
 }
 
+/* Placement and fill for fifth horizontal line/rectangle */
 .folio-fifth-line {
     grid-column: 1 / 7;
     grid-row: 13 / 14;
 }
 
 .fifth-line-fill {
-    background-color: black;
+    background-color: white;
     width: 100%;
     height: 90%;
 }
 
+/******** 5. CONTACT ********/
+/* Creates a grid for the Folio section */
+.contact {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+}
 
+.contact h1 {
+    font-size: 7em;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+
+/* .contact-background {
+    grid-column: 1 / 9;
+    grid-row: 8 / 15;
+    background-color: black;
+} */
+
+.contact-form {
+    grid-column: 2 / 6;
+    grid-row: 4 / 7;
+    font-size: 2em;
+}
+
+.contact-chinese-name{
+    grid-column: 6 / 9;
+    grid-row: 1 / 15;
+    height: 200%;
+    width: 200%;
+}
+
+.footer {
+    grid-column: 2 / 6;
+    grid-row: 10 / 13;
+}

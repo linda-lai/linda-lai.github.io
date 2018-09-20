@@ -1,0 +1,51 @@
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation links float as menu bar as a flexbox */
+.navigation-links {
+    position: fixed;
+    display: flex;
+}
+
+/* Defines space between navigation links */
+.navigation-links li {
+    padding: 0 2em 0 2em;
+    background-color: aquamarine
+}
+
+.navigation-links li:nth-child(even) {
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Aligns the logo vector to the centre of the homepage */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Aligns the arrow vector to the botton centre of the homepage */
+.arrow-graphic {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Adds padding to the 'CALCULATE' button/link */
+.homepage-button {
+    padding: 1em;
+}
