@@ -138,9 +138,8 @@
 <!--******** CONTACT ********/ -->
     <section class="contact" id="contact">
         <h1>@ contact</h1>
-        <div class="contact-background"></div>
         
-        <div class="contact-form">
+        <!-- <div class="contact-form">
             <form name="contact" method="POST" netlify>
                 <p>
                     <label>first_name <input type="text" name="firstname" /></label>
@@ -159,16 +158,29 @@
                     <button type="submit">Send</button>
                 </p>
                 </form>
-            </div>
+            </div> -->
      
-        <!-- <div class="contact-form">
+        <div class="contact-form">
             <form name="contact-form" method="POST" action="https://formspree.io/lindalai.615@gmail.com">
 
-                <input name="email" placeholder="Your email" type="email">
-                <textarea name="message" placeholder="Your message"></textarea>
+                <label for="contact-form-first-name">first_name
+                    <input name="first-name" type="text">
+                </label>
+
+                <label for="contact-form-last-name">last_name
+                    <input name="last-name" type="text">
+                </label>
+
+                <label for="contact-form-email">email 
+                    <input name="email" type="email">
+                </label>
+
+                <label for="contact-form-message">
+                    <textarea name="message"></textarea>
+                </label>
                 <button type="submit">Send</button>
             </form>
-        </div> -->
+        </div>
 
         <div class="contact-chinese-name">
                 <img src="/assets/svg/page_vectors/chinese-name.svg" alt="Square logo for Linda Lai">

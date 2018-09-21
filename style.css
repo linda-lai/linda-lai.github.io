@@ -341,15 +341,15 @@ nav {
 
 
 /* Defines the footer icons and links */
-.footer {
+/* .footer {
     grid-column: 2 / 8;
     grid-row: 14 / 15;
-}
+} */
 
 /* Message label and field display as block instead of inline */
-#message-field {
+/* #message-field {
     display: block;
-}
+} */
 
 
 
