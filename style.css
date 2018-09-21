@@ -25,6 +25,10 @@ nav {
     justify-content: center;
 }
 
+footer {
+    justify-content: center;
+}
+
 /* Navigation links float menu bar as a flexbox */
 .navigation-links {
     position: fixed;
@@ -124,6 +128,63 @@ nav {
     font-family: 'Roboto', sans-serif;
     color: white;
 }
+
+/* Defines behaviours and formatting for blinking cursor */
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: white;
+    }
+  }
 
 /* Placement of '/' decorative background text */
 .about-me-background-symbol {
@@ -334,43 +395,17 @@ nav {
 }
 
 /* Placement of Chinese name background vector */
-.contact-chinese-name{
+.contact-chinese-name {
     grid-column: 6 / 9;
     grid-row: 1 / 15;
-    max-height: 50%;
-
-
-/* Defines the footer icons and links */
-footer {
-    grid-column: 3 / 8;
-    grid-row: 14 / 15;
-}
-
-
-/* Contact form label and field display as block instead of inline */
-#contact-form-first-name {
-    display: block;
-}
-
-#contact-form-last-name {
-    display: block;
-}
-
-#contact-form-email {
-    display: block;
-}
-
-#contact-form-message {
-    display: block;
 }
 
 /* Media Query to set for mobile-first */
 @media(min-width: 400px) {
-    .contact-chinese-name{
+    .contact-chinese-name {
         /* display: none; */
-        grid-column: ;
+        /* grid-column: ;
         grid-row: ;
-    .footer: ;
     }
 }
 
@@ -378,18 +413,17 @@ footer {
 @media(max-width: 600px) {
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
 
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {...}
-
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {...}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
  
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {...}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
  
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {...}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
  
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {...} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...} 
