@@ -25,7 +25,7 @@ nav {
     justify-content: center;
 }
 
-/* Navigation links float as menu bar as a flexbox */
+/* Navigation links float menu bar as a flexbox */
 .navigation-links {
     position: fixed;
     display: flex;
@@ -38,6 +38,7 @@ nav {
     font-size: 0.7em;
 }
 
+/* Changes the background colour of navigation links */
 /* .navigation-links li:nth-child(even) {
     background-color: blueviolet;
 } */
@@ -81,7 +82,6 @@ nav {
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
     background-color: black;
     overflow: hidden;
-
 }
 
 /* Placement of '< about me >' headline */
@@ -319,20 +319,66 @@ nav {
     grid-template-rows: repeat(14, 1fr);
 }
 
+/* Placement of '@contact' headline */
 .contact h1 {
     font-size: 2em;
     grid-column: 1 / 5;
     grid-row: 3 / 4;
 }
 
+/* Placement of the Netlify contact form */
 .contact-form {
     grid-column: 2 / 6;
     grid-row: 4 / 7;
     /* font-size: em; */
 }
 
+/* Placement of Chinese name background vector */
 .contact-chinese-name{
     grid-column: 6 / 9;
     grid-row: 1 / 15;
     max-height: 50%;
+
+
+/* Defines the footer icons and links */
+.footer {
+    grid-column: 2 / 8;
+    grid-row: 14 / 15;
 }
+
+/* Message label and field display as block instead of inline */
+#message-field {
+    display: block;
+}
+
+
+
+/* Media Query to set for mobile-first */
+@media(min-width: 400px) {
+    .contact-chinese-name{
+        /* display: none; */
+        grid-column: ;
+        grid-row: ;
+    .footer: ;
+    }
+}
+
+/* Media Query to set for desktop-first */
+@media(max-width: 600px) {
+}
+
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {...}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {...}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {...}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {...}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {...} 
