@@ -328,9 +328,9 @@ nav {
 
 /* Placement of the Netlify contact form */
 .contact-form {
-    grid-column: 2 / 6;
-    grid-row: 4 / 7;
-    /* font-size: em; */
+    grid-column: 2 / 5;
+    grid-row: 4 / 10;
+    font-size: 1em;
 }
 
 /* Placement of Chinese name background vector */
@@ -341,17 +341,28 @@ nav {
 
 
 /* Defines the footer icons and links */
-/* .footer {
-    grid-column: 2 / 8;
+footer {
+    grid-column: 3 / 8;
     grid-row: 14 / 15;
-} */
+}
 
-/* Message label and field display as block instead of inline */
-/* #message-field {
+
+/* Contact form label and field display as block instead of inline */
+#contact-form-first-name {
     display: block;
-} */
+}
 
+#contact-form-last-name {
+    display: block;
+}
 
+#contact-form-email {
+    display: block;
+}
+
+#contact-form-message {
+    display: block;
+}
 
 /* Media Query to set for mobile-first */
 @media(min-width: 400px) {
