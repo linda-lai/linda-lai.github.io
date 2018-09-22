@@ -83,18 +83,25 @@ nav {
     text-align: center;
 }
 
+.logo-container img {
+    padding-bottom: 50px;
+    background: rebeccapurple;
+}
+
 /* Aligns the arrow vector to the botton centre of the homepage */
 .arrow-graphic {
     display: flex;
-    justify-content: flex-end;
+    justify-self: center;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    align-self: center;
 }
 
 /* Adds padding to the 'CALCULATE' button/link */
 .homepage-button {
     padding: 1em;
+    background: aquamarine;
 }
-
-
 
 /******** ABOUT ME ********/
 /* Creates a grid for the About Me section*/
