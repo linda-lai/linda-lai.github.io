@@ -437,6 +437,11 @@ nav {
     grid-row: 1 / 15;
 }
 
+footer {
+    grid-column: 2 / 8;
+    grid-row: 13 / 14;
+}
+
 /* Media Query to set for mobile-first */
 @media(min-width: 320px) {
     /* .contact-chinese-name {
@@ -467,11 +472,3 @@ nav {
  
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...} 
-
-footer {
-    display: flex;
-}
-
-.linkedin {
-    
-}
