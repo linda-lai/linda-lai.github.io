@@ -7,7 +7,7 @@
 }
 
 /* Add Media Query for Desktop */
-/* @media only screen and (min-width: 480px) { */
+/* @media only screen and (min-width: 480px) */
 
 /* Removes the indentation from unordered lists */
 ul {
@@ -23,10 +23,6 @@ h1 {
 /* Creates a flexbox for navigation, content is centre-justified */
 nav {
     display: flex;
-    justify-content: center;
-}
-
-footer {
     justify-content: center;
 }
 
@@ -50,32 +46,41 @@ footer {
 /* Defines space between navigation links */
 .navigation-links li {
     padding: 0 1em 0 1em;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     font-size: 0.7em;
 }
 
 /* Changes the background colour of navigation links */
-/* .navigation-links li:nth-child(even) {
+.navigation-links li:nth-child(even) {
     background-color: blueviolet;
-} */
+}
+
 
 /******** HOMEPAGE ********/
-/* Homepage elements contained in flexbox */
 .home {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: dodgerblue;
+}
+
+/* ALTERNATE: Homepage elements contained in flexbox */
+/* .home {
     display: flex;
     flex-direction: column;
     background-color: dodgerblue;
     justify-content: center;
     min-height: 100vh;
-}
+} */
 
 /* Aligns the logo vector to the centre of the homepage */
 .logo-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
     width: 40vw;
     align-self: center;
+    text-align: center;
 }
 
 /* Aligns the arrow vector to the botton centre of the homepage */
@@ -89,12 +94,13 @@ footer {
     padding: 1em;
 }
 
+
+
 /******** ABOUT ME ********/
 /* Creates a grid for the About Me section*/
 .about-me {
     max-height: 100vh;
     display: grid;
-    grid-area: about;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
     background-color: black;
@@ -293,14 +299,14 @@ footer {
 
 }
 
-.folio {
+/* .folio {
     transform: rotate(-30deg);
 }
 
 .rotate-container{
     background: black;
     overflow: hidden;
-}
+} */
 
 /* Placement of '{ :skills }' headline */
 .folio h1 {
@@ -454,3 +460,11 @@ footer {
  
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...} 
+
+footer {
+    display: flex;
+}
+
+.linkedin {
+    
+}
