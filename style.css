@@ -3,6 +3,7 @@
 * {
     font-family: 'Oxygen', sans-serif;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 /* Add Media Query for Desktop */
@@ -28,6 +29,17 @@ nav {
 footer {
     justify-content: center;
 }
+
+/* .container {
+    display: grid;
+    grid-template-areas:
+    "menu"
+    "home"
+    "about"
+    "skills"
+    "folio"
+    "contact"
+} */
 
 /* Navigation links float menu bar as a flexbox */
 .navigation-links {
@@ -82,6 +94,7 @@ footer {
 .about-me {
     max-height: 100vh;
     display: grid;
+    grid-area: about;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
     background-color: black;
@@ -277,6 +290,16 @@ footer {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(14, 1fr);
     background: black;
+
+}
+
+.folio {
+    transform: rotate(-30deg);
+}
+
+.rotate-container{
+    background: black;
+    overflow: hidden;
 }
 
 /* Placement of '{ :skills }' headline */
@@ -378,6 +401,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(14, 1fr);
+    /* overflow: hidden; */
 }
 
 /* Placement of '@contact' headline */
@@ -401,11 +425,14 @@ footer {
 }
 
 /* Media Query to set for mobile-first */
-@media(min-width: 400px) {
-    .contact-chinese-name {
+@media(min-width: 320px) {
+    /* .contact-chinese-name {
         /* display: none; */
         /* grid-column: ;
         grid-row: ;
+    } */
+    p {
+        font-size: 12px;
     }
 }
 
