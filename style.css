@@ -19,23 +19,25 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
-/********** NAVIGATION **********/
-/* Creates a flexbox for navigation, content is centre-justified */
-nav {
-    display: flex;
-    justify-content: center;
-}
-
-/* .container {
+/********* SITE WRAPPER *********/
+.site-wrapper {
     display: grid;
-    grid-template-areas:
-    "menu"
+    grid-template-areas: 
+    /* "navigation" */
     "home"
-    "about"
+    "about-me"
     "skills"
     "folio"
     "contact"
-} */
+}
+
+/********** NAVIGATION **********/
+/* Creates a flexbox for navigation, content is centre-justified */
+nav {
+    /* grid-area: navigation; */
+    display: flex;
+    justify-content: center;
+}
 
 /* Navigation links float menu bar as a flexbox */
 .navigation-links {
@@ -58,6 +60,7 @@ nav {
 
 /******** HOMEPAGE ********/
 .home {
+    grid-area: home;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -106,6 +109,7 @@ nav {
 /******** ABOUT ME ********/
 /* Creates a grid for the About Me section*/
 .about-me {
+    grid-area: about-me;
     max-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
@@ -223,6 +227,7 @@ nav {
 /******** SKILLS ********/
 /* Creates a grid for the Skills section */
 .skills {
+    grid-area: skills;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -298,6 +303,7 @@ nav {
 /******** FOLIO ********/
 /* Creates a grid for the Folio section */
 .folio {
+    grid-area: folio;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -410,6 +416,7 @@ nav {
 /******** CONTACT ********/
 /* Creates a grid for the Folio section */
 .contact {
+    grid-area: contact;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
