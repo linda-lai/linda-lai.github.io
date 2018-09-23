@@ -6,13 +6,26 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    --background: rgba(0, 214, 170, .85);
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* *, *::before, *::after {
+    box-sizing: border-box;
+} */
+
 /* Add Media Query for Desktop */
 /* @media only screen and (min-width: 480px) */
 
 /* Removes the indentation from unordered lists */
-ul {
+/* ul {
     padding: 0; 
-}
+} */
 
 /* Syling for page section headlines */
 h1 {
@@ -23,7 +36,7 @@ h1 {
 .site-wrapper {
     display: grid;
     grid-template-areas: 
-    /* "navigation" */
+    "navigation"
     "home"
     "about-me"
     "skills"
@@ -31,50 +44,142 @@ h1 {
     "contact";
 }
 
-/********** NAVIGATION **********/
-/* Creates a flexbox for navigation, content is centre-justified */
+::-webkit-scrollbar {
+    /* width: 0px;  remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+ }
+
+/********** NAVIGATION: NEW **********/
+header {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Hides the checkbox  */
+.nav-toggle {
+    display: none;
+}
+
+/* Sets the burger menu to act as checkbox */
+.nav-toggle-label {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Defines the lines for the burger menu */
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+  
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+
 nav {
-    /* grid-area: navigation; */
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    display: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+/* Formats navigation text/links */
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  
+/* Styling text links */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    /* opacity: 0;
+    transition: opacity 150ms ease-in-out; */
+  }
+
+nav a:hover{
+      color: #000;
+  }
+  
+.nav-toggle:checked ~ nav {
+    display: block;      
+}
+
+/********** NAVIGATION: BACKUP **********/
+/* Creates a flexbox for navigation, content is centre-justified */
+/* nav {
+    grid-area: navigation;
     display: flex;
     justify-content: center;
-}
+} */
 
 /* Navigation links float menu bar as a flexbox */
-.navigation-links {
+/* .navigation-links {
     position: fixed;
     display: flex;
-}
+} */
 
 /* Defines space between navigation links */
-.navigation-links li {
+/* .navigation-links li {
     padding: 0 1em 0 1em;
     background-color: aquamarine;
     font-size: 0.7em;
-}
+} */
 
 /* Changes the background colour of navigation links */
-.navigation-links li:nth-child(even) {
+/* .navigation-links li:nth-child(even) {
     background-color: blueviolet;
-}
+} */
 
 /******** HOMEPAGE ********/
 .home {
     grid-area: home;
     height: 100vh;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     background-color: dodgerblue;
 }
-
-/* ALTERNATE: Homepage elements contained in flexbox */
-/* .home {
-    display: flex;
-    flex-direction: column;
-    background-color: dodgerblue;
-    justify-content: center;
-    min-height: 100vh;
-} */
 
 /* Aligns the logo vector to the centre of the homepage */
 .logo-container {
@@ -469,22 +574,22 @@ footer {
         font-size: 12px;
     }
 }
-
-/* Media Query to set for desktop-first */
+/* 
+Media Query to set for desktop-first
 @media(max-width: 600px) {
-}
+} */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+/* @media only screen and (max-width: 600px) {...} */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+/* @media only screen and (min-width: 600px) {...} */
  
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+/* @media only screen and (min-width: 768px) {...} */
  
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+/* @media only screen and (min-width: 992px) {...} */
  
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...} 
+/* @media only screen and (min-width: 1200px) {...}  */
