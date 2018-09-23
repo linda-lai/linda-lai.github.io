@@ -1,15 +1,20 @@
 /********* GENERAL PAGE STYLING *********/
-    /* Styling applied to all page elements */
+/* Styling applied to all page elements */
 * {
     font-family: 'Oxygen', sans-serif;
     list-style: none;
     scroll-behavior: smooth;
 }
 
+/* Custom variable for navigation bar styling */
 :root {
-    --background: rgba(0, 214, 170, .85);
-  }
-
+    --primary-nav-bg: rgba(30, 28, 28);
+    --primary-black-bg: #121111;
+    /* backgroud: var(--primary-black-bg)*/
+    --primary-white-bg: #FBFBFB;
+    --primary-highlight: #FFD700;
+}
+  
 body {
     padding: 0;
     margin: 0;
@@ -19,17 +24,18 @@ body {
     box-sizing: border-box;
 } */
 
-/* Add Media Query for Desktop */
-/* @media only screen and (min-width: 480px) */
-
-/* Removes the indentation from unordered lists */
-/* ul {
-    padding: 0; 
-} */
-
 /* Syling for page section headlines */
 h1 {
     font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-style: bold;
+}
+
+.logo-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-style: bold;
+    color: white; 
 }
 
 /********* SITE WRAPPER *********/
@@ -41,23 +47,25 @@ h1 {
     "about-me"
     "skills"
     "folio"
-    "contact";
+    "contact"
 }
 
+/* Removes scrollbar from view */
 ::-webkit-scrollbar {
-    /* width: 0px;  remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+    width: 0px;
+    /* background: transparent; */
  }
 
 /********** NAVIGATION: NEW **********/
 header {
-    background: var(--background);
+    background: var(--primary-nav-bg);
     text-align: center;
     position: fixed;
     z-index: 999;
     width: 100%;
     margin: 0;
     padding: 0;
+    /* box-shadow: 0 1px 8px; */
   }
 
 /* Hides the checkbox  */
@@ -82,7 +90,7 @@ header {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: white;
+  background: var(--primary-white-bg);
   height: 2px;
   width: 2em;
   border-radius: 2px;
@@ -109,7 +117,7 @@ nav {
     text-align: left;
     top: 100%;
     left: 0;
-    background: var(--background);
+    background: var(--primary-nav-bg);
     width: 100%;
     /* display: none; */
     transform: scale(1, 0);
@@ -142,7 +150,7 @@ nav a {
   }
 
 nav a:hover{
-      color: #000;
+      color: var(--primary-highlight);
   }
   
 .nav-toggle:checked ~ nav {
@@ -154,32 +162,6 @@ nav a:hover{
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-/********** NAVIGATION: BACKUP **********/
-/* Creates a flexbox for navigation, content is centre-justified */
-/* nav {
-    grid-area: navigation;
-    display: flex;
-    justify-content: center;
-} */
-
-/* Navigation links float menu bar as a flexbox */
-/* .navigation-links {
-    position: fixed;
-    display: flex;
-} */
-
-/* Defines space between navigation links */
-/* .navigation-links li {
-    padding: 0 1em 0 1em;
-    background-color: aquamarine;
-    font-size: 0.7em;
-} */
-
-/* Changes the background colour of navigation links */
-/* .navigation-links li:nth-child(even) {
-    background-color: blueviolet;
-} */
-
 /******** HOMEPAGE ********/
 .home {
     grid-area: home;
@@ -187,22 +169,26 @@ nav a:hover{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    background-color: dodgerblue;
+    grid-template-rows: repeat(5, 1fr);
+    /* background-color: dodgerblue; */
 }
 
 /* Aligns the logo vector to the centre of the homepage */
 .logo-container {
     grid-column: 2 / 3;
-    grid-row: 2 / 4;
+    grid-row: 3 / 5;
     width: 40vw;
+    max-width: 350px;
+    justify-self: center;
     align-self: center;
     text-align: center;
 }
 
 .logo-container img {
+    width: 40vw;
+    max-width: 350px;
     padding-bottom: 50px;
-    background: rebeccapurple;
+    /* background: rebeccapurple; */
 }
 
 /* Aligns the arrow vector to the botton centre of the homepage */
@@ -215,10 +201,10 @@ nav a:hover{
 }
 
 /* Adds padding to the 'CALCULATE' button/link */
-.homepage-button {
+/* .homepage-button {
     padding: 1em;
     background: aquamarine;
-}
+} */
 
 /******** ABOUT ME ********/
 /* Creates a grid for the About Me section*/
@@ -228,21 +214,21 @@ nav a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: black;
+    background: var(--primary-black-bg);
     overflow: hidden;
 }
 
 /* Placement of '< about me >' headline */
 .about-me-headline {
-    grid-row: 1 / 3;
+    grid-row: 5 / 7;
     grid-column: 6 / 11;
-    font-size: 2em;
+    /* font-size: 2em; */
     color: white;
 }
 
 /* Placement of 'Hello.' subheadline */
 .about-me-subhead {
-    grid-row: 6 / 7;
+    grid-row: 8 / 9;
     grid-column: 2 / 3;
     font-size: 1em;
     color: white;
@@ -251,7 +237,7 @@ nav a:hover{
 /* Placement of body copy 1 */
 .about-me-body {
     grid-column: 2 / 8;
-    grid-row: 7 / 9;
+    grid-row: 9 / 12;
     font-size: 14px;
     color: white;
 }
@@ -267,7 +253,7 @@ nav a:hover{
 /* Placement of 'def initialize' decorative background text */
 .about-me-background-init {
     grid-column: 2 / 5;
-    grid-row: 3 / 5;
+    grid-row: 6 / 7;
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -350,9 +336,10 @@ nav a:hover{
 
 /* Placement of '{ :skills } headline' */
 .skills-headline {
-    grid-column: 1 / 7;
-    grid-row: 2 / 5;
-    font-size: 2em;
+    grid-column: 1 / 3;
+    grid-row: 5 / 11;
+    font-size: 3em;
+    writing-mode: vertical-rl;
 }
 
 /* Styling for ':front_end, :back_end, :other' subheadlines */
@@ -392,8 +379,8 @@ nav a:hover{
 
 .skills-rectangle-middle-left {
     grid-column: 2 / 5;
-    grid-row: 4 / 5;
-    background: black;
+    grid-row: 3 / 4;
+    background: blue;
 }
 
 .skills-rectangle-bottom-right {
@@ -403,9 +390,14 @@ nav a:hover{
 }
 
 .skills-rectangle-middle-center {
-    grid-column: 5 / 6 ;
+    grid-column: 6 / 7 ;
     grid-row: 6 / 9 ;
-    background: black;
+    background: red;
+    transition: 500ms;
+}
+.skills-rectangle-middle-center:hover {
+    background: #FFE65E;
+    transition: 320ms;
 }
 
 .skills-rectangle-top-right {
@@ -415,13 +407,14 @@ nav a:hover{
 }
 
 /******** FOLIO ********/
-/* Creates a grid for the Folio section */
+/* Creates a container for page rotation */
 .folio-container {
     grid-area: folio;
     overflow: hidden;
     background: black;
 }
 
+/* Creates a grid for the Folio section */
 .folio {
     height: 100vh;
     display: grid;
@@ -431,18 +424,9 @@ nav a:hover{
     transform: rotate(-30deg);
 }
 
-/* .folio {
-    transform: rotate(-30deg);
-}
-
-.rotate-container{
-    background: black;
-    overflow: hidden;
-} */
-
 /* Placement of '{ :skills }' headline */
 .folio h1 {
-    font-size: 2em;
+    /* font-size: 2em; */
     grid-column: 4 / 7;
     grid-row: 5 / 8;
     color: white;
@@ -515,7 +499,7 @@ nav a:hover{
 }
 
 .fourth-line-fill {
-    background-color: coral;
+    background-color: white;
     width: 100%;
     height: 70%;
 }
@@ -540,17 +524,17 @@ nav a:hover{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(14, 1fr);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 /* Placement of '@contact' headline */
 .contact h1 {
-    font-size: 2em;
+    /* font-size: 2em; */
     grid-column: 1 / 5;
     grid-row: 3 / 4;
 }
 
-/* Placement of the Netlify contact form */
+/* Placement of the Formspree contact form */
 .contact-form {
     grid-column: 2 / 5;
     grid-row: 4 / 10;
@@ -564,8 +548,11 @@ nav a:hover{
 }
 
 footer {
+    /* grid-area: footer; */
     grid-column: 2 / 8;
     grid-row: 13 / 14;
+    /* display: flex;
+    justify-content: center; */
 }
 
 /* Media Query to set for mobile-first */
@@ -579,6 +566,9 @@ footer {
         font-size: 12px;
     }
 }
+
+/* Add Media Query for Desktop */
+/* @media only screen and (min-width: 480px) */
 
 @media only screen and (max-width: 600px) {
     .folio {
