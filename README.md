@@ -83,7 +83,8 @@ Working with multiple layers of nested grids on a single page, setting out the g
 
 ![figma-grid](assets/img/figma-grid.png)
 
-The trickiest part proved to be alignment and overflow acting in unexpected and puzzling ways. This was particularly challenging when trying to ensure the shapes, headlines and type didn't overlap whilst behaving responsively.
+### Challenges
+The trickiest part proved to be alignment and overflow acting in unexpected and puzzling ways. This was particularly challenging when trying to ensure that shapes, headlines and type didn't overlap whilst behaving responsively.
 
 Once the main layout and alignment were established, the longest part mainly involved finding and adapting a responsive navigation menu bar and bringing together in finishing touches, minor animations, transitions and hover elements cohesively, ready for deployment.
 
@@ -91,6 +92,14 @@ Once the main layout and alignment were established, the longest part mainly inv
 Throughout the design and coding process I used Trello to track project deliverables, jot down ideas for enhancements or future design and breakdown tasks. This allowed to me plan and continually consider what needed to be done to ensure that an MVP could be delivered at the least before branching out further into non-essential features.
 
 ![trello-planning](assets/img/trello-planning.png)
+
+### Further Enhancements
+As it stands currently, I was able to achieve the overall layout and design I had set out to create, bar some minor alterations. In future iterations, I would like to enhance the functionality and features on the front further and further refactor the backend code to make it more readable and modular.
+
+In future iterations, I would like to:
+* Introduce a horizontal slider for the projects preview in the Folio section.
+* Correct alignments and overflow settings for CSS grid elements in page sections.
+* Add minor transisitons, animations and hover elements to provide a more seamless user experience and additional pops of colour.
 
 ## Short Answer
 ### Describe key events in the development of the internet from the 1980s to today (max. 150 words)
@@ -102,12 +111,5 @@ Fundamental aspects of how the Internet functions are based on making it as usab
 ### Reflect on one aspect of the development of internet technologies and how it has contributed to the world today (max. 150 words)
 It is difficult to overstate the impact the internet and technology has had on the world today: how we live, how we work  and how we are connected. As an aspiring full-stack developer, now be able to look under the hood and get stuck in the code through this project and other projects has inspired a whole new appreciation for the interplay of front-end and back-end design, going back to the basics. Particularly with using HTML and CSS grid for the project, I'm now better able to spot and understand similar website design features and web design trends, and to use inspect tools to learn why websites look good, why they look really bad, or why they look really similar. Having always had a strong interest in design, this project enabled me to further develop my design vocabulary and references, which I hope to further develop in my portfolio website or other personal projects.
 
-### Resources
-* All files linked by the README.md file must be included in a folder named docs.
-* All resources included in this folder must be in either png, jpeg, pdf, or markdown format
-
-### Source Code
-* Source code for your entire website.
-
-### Presentation
-* Slide Deck for Presentation in PDF format.
+## Conclusion
+Despite the difficulty presented by using CSS grid, I was able to achieve the overall design and functionality of the finished MVP I wanted.
