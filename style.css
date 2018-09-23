@@ -103,7 +103,7 @@ header {
     top: 7px;
 }
 
-
+/* Determines the placement, colour and behaviour of the navigation bar */
 nav {
     position: absolute;
     text-align: left;
@@ -111,9 +111,13 @@ nav {
     left: 0;
     background: var(--background);
     width: 100%;
-    display: none;
+    /* display: none; */
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
 }
 
+/* Formats the unordered list  */
 nav ul {
     margin: 0;
     padding: 0;
@@ -123,7 +127,7 @@ nav ul {
 /* Formats navigation text/links */
 nav li {
     margin-bottom: 1em;
-    margin-left: 1em;
+    margin-left: 1em;   
   }
   
 /* Styling text links */
@@ -132,8 +136,9 @@ nav a {
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
-    /* opacity: 0;
-    transition: opacity 150ms ease-in-out; */
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+    font-family: 'Roboto', sans-serif;
   }
 
 nav a:hover{
@@ -141,7 +146,12 @@ nav a:hover{
   }
   
 .nav-toggle:checked ~ nav {
-    display: block;      
+    transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
 }
 
 /********** NAVIGATION: BACKUP **********/
@@ -421,11 +431,6 @@ nav a:hover{
     transform: rotate(-30deg);
 }
 
-@media only screen and (max-width: 600px) {
-    .folio {
-        transform: rotate(0deg);
-    }
-}
 /* .folio {
     transform: rotate(-30deg);
 }
@@ -574,6 +579,67 @@ footer {
         font-size: 12px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .folio {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: none;
+    }
+  
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    .logo {
+        grid-column: 2 / 3;
+    }
+      
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+      
+    nav ul {
+        display: flex;
+    }
+      
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+      
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+      
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        top: -.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+        transform: scale(1,1);
+    }
+}
+
 /* 
 Media Query to set for desktop-first
 @media(max-width: 600px) {
