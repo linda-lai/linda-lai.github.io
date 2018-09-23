@@ -8,10 +8,10 @@ Designed and developed by Linda Lai in HTML & CSS.
 
 
 ## Description
-This portfolio was designed, coded and deployed over the course of a week, and is the first iteration of my personal website, as an aspiring full-stack developer currently undertaking a coding bootcamp. In its current iteration, the website is stable, responsive and nicely designed with some minor animations, with further enhancements and optimisations planned for future iterations.
+This portfolio was designed, coded and deployed over the course of a week, and is the first iteration of my personal website as an aspiring full-stack developer currently undertaking a coding bootcamp. In its current iteration, the website is stable, responsive and nicely designed with some minor animations, with further enhancements and optimisations planned for future iterations.
 
 ### Purpose
-Tasked with designing and developing a personal portfolio website in pure HTML and CSS over the course of a week, https://ladnil.github.io/ was born. As an aspiring full-stack developer, understanding my preferences and influences from a design and development perspective is essential not only towards developing my own personal brand but also articulating that to any potential clients or employers through my projects and digital channels. As such, this portfolio website showcases and summarises my approach to development and design: the simple and basics done right.
+Tasked with designing and developing a personal portfolio website in pure HTML and CSS over the course of a week, https://ladnil.github.io/ was born. As a aspiring full-stack developer, understanding my preferences and influences from a design and development perspective is essential not only towards developing my own personal brand but also articulating that to any potential clients or employers through my projects and digital channels. As such, this portfolio website showcases and summarises my approach to development and design: the simple and basics done right.
 
 ### Functionality
 I designed my portfolio to be as responsive and accessible as possible while learning the ropes of CSS as a beginner. Being extremely design-driven, I wanted this to be reflected in the end product and to challenge myself, but also to plan and execute a design I could realistically achieve in the timeframe.
@@ -44,7 +44,7 @@ The skills section of my portfolio website highlights my front-end and back-end 
 
 ## Design Process & Documentation
 #### Brainstorming
-As a first-time designer and developer, the process for developing a portfolio myself was an extremely challenging yet enjoyable creative and technical challenge. Moreover, it also provided the perfect excuse to really devle into my design influences and see patterns and divergences in the kind of visuals and colours I'm drawn to. This led to creating no less than three separate Pinterest boards with at least 100+ images each, grouped larging around themes of 'mono_mod_typo', 'pop_colour_surreal' and 'neon_street_dystopia' which really helped to identify colours, patterns and styles that consistently appeared. Following a content-first approach, I envisioned a design which would particularly suit typographic and vector-heavy content, rather than relying an photographic assets.
+As a first-time designer and developer, the process for developing a portfolio myself was an extremely challenging yet enjoyable creative and technical challenge. Moreover, it also provided the perfect excuse to really devle into my design influences and see patterns and divergences in the kind of visuals and colours I'm drawn to. This led to creating no less than three separate Pinterest boards with at least 100+ images each, grouped larging around themes of 'mono_mod_typo', 'pop_colour_surreal' and 'neon_street_dystopia' which helped to identify colours, patterns and styles that consistently appeared. Following a content-first approach, I envisioned a design which would particularly suit typographic and vector-heavy content, rather than relying an photographic assets.
 
 ![pinterest-mono_mod](assets/img/pinterest_moodboard-mono_mod.png)
 ![pinterest-pop_color](assets/img/pinterest_moodboard-pop_color.png)
@@ -77,9 +77,9 @@ Working with high contrast colours and large type, a definite consideration and 
 
 ## Design Planning
 ### Project Plan and Timeline
-The scope for the portfolio website was just over a week. Planning and time management inevitably did pay off as I was able to satisfiably and successfully achieve my overall design, and the overall design and wireframing process took around two and a half days. From there, finalising the content and copy to lay the main foundation for the design and laying out the HTML structure to begin playing around with element.
+The scope for the portfolio website was just over a week. Planning and time management inevitably did pay off as I was able to satisfiably and successfully achieve my overall design, and the design and wireframing process took around two and a half days. From there, finalising the content and copy to lay the main foundation for the design and laying out the HTML structure to begin playing around with elements proved to be the biggest planning challenge and task before commencing coding.
 
-Working with multiple layers of nested grids on a single page, setting out the grid for each section proved to be the most important, finicky and planned stage of the coding process. As my design relied heavily on CSS grid, I planned my columns, rows and fractions in Figma meticulously using the rule and grid layout function, adjusting and playing around as I went along in Firefox's Inspect Element. Following this approach allowed me to break down pages and tasks systematically and overall time was managed effectively and efficiently.
+Once the HTML elements had been set, Working with multiple layers of nested CSS grids on a single page, and setting out the grid for each section proved to be the most important, finicky and planned stage of the coding process. As my design relied heavily on CSS grid, I planned my columns, rows and fractions in Figma meticulously using the rule and grid layout function, adjusting and playing around as I went along in Firefox's Inspect Element. Following this approach allowed me to break down pages and tasks systematically and overall time was managed effectively and efficiently.
 
 ![figma-grid](assets/img/figma-grid.png)
 
@@ -94,7 +94,7 @@ Throughout the design and coding process I used Trello to track project delivera
 ![trello-planning](assets/img/trello-planning.png)
 
 ### Further Enhancements
-As it stands currently, I was able to achieve the overall layout and design I had set out to create, bar some minor alterations. In future iterations, I would like to enhance the functionality and features on the front further and further refactor the backend code to make it more readable and modular.
+As it stands currently, I was able to achieve the overall layout and design I had set out to create, bar some minor alterations. In future iterations, I would like to enhance the functionality and features on the front further and refactor the backend code to make it more readable and modular.
 
 In future iterations, I would like to:
 * Introduce a horizontal slider for the projects preview in the Folio section.
