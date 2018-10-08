@@ -1,6 +1,8 @@
 # Coding Portfolio - Linda Lai
 Designed and developed by Linda Lai in HTML & CSS.
 
+Linda was here.
+
 ## Portfolio Links
 * URL: https://linda-lai.github.io/
 * GitHub: https://github.com/linda-lai/linda-lai.github.io
