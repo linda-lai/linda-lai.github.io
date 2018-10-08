@@ -2,16 +2,16 @@
 Designed and developed by Linda Lai in HTML & CSS.
 
 ## Portfolio Links
-* URL: https://ladnil.github.io/
-* GitHub: https://github.com/ladnil/ladnil.github.io
+* URL: https://linda-lai.github.io/
+* GitHub: https://github.com/linda-lai/linda-lai.github.io
 * Figma: https://www.figma.com/file/WYyBs8vJ01FDA6ublEDyBPbO/Portfolio?node-id=0%3A1
 
 
 ## Description
-This portfolio was designed, coded and deployed over the course of a week, and is the first iteration of my personal website as an aspiring full-stack developer currently undertaking a coding bootcamp. In its current iteration, the website is stable, responsive and nicely designed with some minor animations, with further enhancements and optimisations planned for future iterations.
+This portfolio was designed, coded and deployed over the course of a week, and is the first iteration of my personal website as an aspiring full-stack developer currently undertaking a coding bootcamp. Currently the website is stable, responsive and nicely designed with some minor animations, with further enhancements and optimisations planned for future iterations.
 
 ### Purpose
-Tasked with designing and developing a personal portfolio website in pure HTML and CSS over the course of a week, https://ladnil.github.io/ was born. As a aspiring full-stack developer, understanding my preferences and influences from a design and development perspective is essential not only towards developing my own personal brand but also articulating that to any potential clients or employers through my projects and digital channels. As such, this portfolio website showcases and summarises my approach to development and design: the simple and basics done right.
+Tasked with designing and developing a personal portfolio website in pure HTML and CSS over the course of a week, https://linda-lai.github.io/ was born. As an aspiring full-stack developer, understanding my preferences and influences from a design and development perspective is essential not only towards developing my own personal brand but also articulating that to any potential clients or employers through my projects and digital channels. As such, this portfolio website showcases and summarises my approach to development and design: the simple and basics done right.
 
 ### Functionality
 I designed my portfolio to be as responsive and accessible as possible while learning the ropes of CSS as a beginner. Being extremely design-driven, I wanted this to be reflected in the end product and to challenge myself, but also to plan and execute a design I could realistically achieve in the timeframe.
@@ -21,7 +21,7 @@ My portfolio website was designed mobile-first but is also compatible with deskt
 ### Sitemap
 As a single page scroll, my portfolio website is broken up into sections, navigable from the menu bar or by scrolling:
 * Home: landing page featuring my logo.
-* About Me: short biography.
+* About Me: a short biography.
 * Skills: tech stack summary.
 * Folio: links to GitHub repos.
 * Contact: form to contact me via Formspree.
@@ -44,7 +44,7 @@ The skills section of my portfolio website highlights my front-end and back-end 
 
 ## Design Process & Documentation
 #### Brainstorming
-As a first-time designer and developer, the process for developing a portfolio myself was an extremely challenging yet enjoyable creative and technical challenge. Moreover, it also provided the perfect excuse to really devle into my design influences and see patterns and divergences in the kind of visuals and colours I'm drawn to. This led to creating no less than three separate Pinterest boards with at least 100+ images each, grouped larging around themes of 'mono_mod_typo', 'pop_colour_surreal' and 'neon_street_dystopia' which helped to identify colours, patterns and styles that consistently appeared. Following a content-first approach, I envisioned a design which would particularly suit typographic and vector-heavy content, rather than relying an photographic assets.
+As a first-time designer and developer, the process for developing a portfolio myself was an extremely challenging yet enjoyable creative and technical challenge. Moreover, it also provided the perfect excuse to really delve into my design influences and see patterns and divergences in the kind of visuals and colours I'm drawn to. This led to creating no less than three separate Pinterest boards with at least 100+ images each, grouped largely around themes of 'mono_mod_typo', 'pop_colour_surreal' and 'neon_street_dystopia' which helped to identify colours, patterns and styles that consistently appeared. Following a content-first approach, I envisioned a design which would particularly suit typographic and vector-heavy content, rather than relying on photographic assets.
 
 ![pinterest-mono_mod](assets/img/pinterest_moodboard-mono_mod.png)
 ![pinterest-pop_color](assets/img/pinterest_moodboard-pop_color.png)
@@ -58,7 +58,7 @@ From there, I narrowed it down to a style I felt represented the mood and aesthe
 Without an exact idea for the design in mind yet, overall I knew I wanted something which was extremely graphic, type heavy and monochrome, using contrast and pops of colour hidden throughout, going for a minimalist yet modern design. I decided to break each section by alternating between a predominately black design (with white features) with a predominately white design (with black features) for contrast and consistency.
 
 ### Logo
-My logo's aesthetic was drawn from the visual symmetry between the square shape with the squared function as a representation of my alliterated initials. I liked the subtle mathematical reference and nod to the initials in my name. I also choose this style as it could be easily rendered and integrated into my website from Figma as an svg.
+The aesthetic for my logo was drawn from the visual symmetry between the square shape with the squared function as a representation of my alliterated initials. I liked the subtle mathematical reference and nod to the initials in my name. I also choose this style as it could be easily rendered and integrated into my website from Figma as an svg.
 
 ### Colour Scheme
 I aimed to keep the colour scheme largely monochrome, with subtle pops of colour throughout. In Figma, I played around with different shades of black and white to find a sample that contrasted and complemented well together. Inspired by the colours and lines of geometric Mondrian paintings, I decided to use primary colours (red, blue and yellow), as the colours and inspiration fit well with my focus on basic shapes, lines and colours rendered in geometric and abstract forms.
@@ -68,7 +68,7 @@ I aimed to keep the colour scheme largely monochrome, with subtle pops of colour
 ### Wireframes
 After testing design layouts and comparing colours, types and assets in Figma, I mocked up some ideas for potential layouts that became the basis for my wireframes. I chose a single page design as I wanted users to alternate between predominately black and white designs, and create a smooth transition from section to section.
 
-Working in Figma and Adobe Illustrator, I created a series of simple svgs to support my portfolio and aligned them to the concepts of each section as closely to my wireframes as possible. I tried to create an non-symmetrical design that would adapt well responsively that played around with alignment, and could be more readily adapted to CSS grid.
+Working in Figma and Adobe Illustrator, I created a series of simple svgs to support my portfolio and aligned them to the concepts of each section as closely to my wireframes as possible. I tried to create a non-symmetrical design that would adapt well responsively that played around with alignment and could be more readily adapted to CSS grid.
 
 ![figma-wireframes](assets/img/figma-wireframes.png)
 
@@ -77,9 +77,9 @@ Working with high contrast colours and large type, a definite consideration and 
 
 ## Design Planning
 ### Project Plan and Timeline
-The scope for the portfolio website was just over a week. Planning and time management inevitably did pay off as I was able to satisfiably and successfully achieve my overall design, and the design and wireframing process took around two and a half days. From there, finalising the content and copy to lay the main foundation for the design and laying out the HTML structure to begin playing around with elements proved to be the biggest planning challenge and task before commencing coding.
+The scope for the portfolio website was just over a week. Planning and time management inevitably did pay off as I was able to successfully execute my overall design, and the design and wireframing process took around two and a half days. From there, finalising the content and copy to lay the main foundation for the design and laying out the HTML structure to begin playing around with elements proved to be the biggest planning challenge/task before commencing coding.
 
-Once the HTML elements had been set, Working with multiple layers of nested CSS grids on a single page, and setting out the grid for each section proved to be the most important, finicky and planned stage of the coding process. As my design relied heavily on CSS grid, I planned my columns, rows and fractions in Figma meticulously using the rule and grid layout function, adjusting and playing around as I went along in Firefox's Inspect Element. Following this approach allowed me to break down pages and tasks systematically and overall time was managed effectively and efficiently.
+Once the HTML elements had been set, Working with multiple layers of nested CSS grids on a single page, and setting out the grid for each section proved to be the most important, finicky and planned stage of the coding process. As my design relied heavily on CSS grid, I planned my columns, rows and fractions in Figma meticulously using the rule and grid layout function, adjusting and playing around as I went along in Firefox's Inspect Element. Following this approach allowed me to break down pages and tasks systematically and the overall time was managed effectively and efficiently.
 
 ![figma-grid](assets/img/figma-grid.png)
 
@@ -99,17 +99,17 @@ As it stands currently, I was able to achieve the overall layout and design I ha
 In future iterations, I would like to:
 * Introduce a horizontal slider for the projects preview in the Folio section.
 * Correct alignments and overflow settings for CSS grid elements in page sections.
-* Add minor transisitons, animations and hover elements to provide a more seamless user experience and additional pops of colour.
+* Add minor transitions, animations and hover elements to provide a more seamless user experience and additional pops of colour.
 
 ## Short Answer
 ### Describe key events in the development of the internet from the 1980s to today (max. 150 words)
-While coding and computers had been around in early forms since the 1950s, the invention of the world wide web and web browsers in the late 1980s and the increasing affordability of personal computers revolutionised the Information Age and proliferated the internet with webpages coded HTML and CSS files much like this website portfolio, driving the spread of online information, commerce, entertainment and social networking. The interplay and co-dependency of hardware and software has been integral part of the development of web standards which reflect and shape user experience and design trends over time. However, the demoncratisation of technology and knowledge in particular now provides access and opportunity to individuals and communities at a rate and scale previously unavailable before. However, the benefits and convenience of such tools and their impact on society and issues like privacy and net neutrality are now at the forefront of challenge and debate in the twenty-first century.
+While coding and computers had been around in early forms since the 1950s, the invention of the world wide web and web browsers in the late 1980s and the increasing affordability of personal computers revolutionised the Information Age and proliferated the internet with webpages coded HTML and CSS files much like this website portfolio, driving the spread of online information, commerce, entertainment and social networking. The interplay and co-dependency of hardware and software have been integral part of the development of web standards which reflect and shape user experience and design trends over time. However, the democratisation of technology and knowledge in particular now provides access and opportunity to individuals and communities at a rate and scale previously unavailable before. However, the benefits and convenience of such tools and their impact on society and issues like privacy and net neutrality are now at the forefront of challenge and debate in the twenty-first century.
 
 ### Define and describes the relationship between fundamental aspects of the internet such as: domains, web servers, DNS, and web browsers (max. 150 words)
-Fundamental aspects of how the Internet functions are based on making it as usable and readable for a wide spread of users, ranging from technically minded to luddite. Users accessing webpages coded in languages like HTML and CSS on the world wide web will use a web browser to retrieve and display information on a device via a distinct URL. While computers and other network devices use an IP address to identify each other on the web, users typically access websites via a user-friendly alphanumeric domain name (such as https://ladnil.github.io/) that is converted into an IP address a computer can understand through the Domain Name System (DNS). Rather than users having to maintain an address book of IP addresses, computer, tablet and mobile devices can connect through a domain name server that maps domain names to IP addresses in a large database, ultimately making accesibility more user-friendly and readable for the mainstream.
+Fundamental aspects of how the Internet functions are based on making it as usable and readable for a wide spread of users, ranging from technically minded to luddite. Users accessing webpages coded in languages like HTML and CSS on the world wide web will use a web browser to retrieve and display information on a device via a distinct URL. While computers and other network devices use an IP address to identify each other on the web, users typically access websites via a user-friendly alphanumeric domain name (such as https://ladnil.github.io/) that is converted into an IP address a computer can understand through the Domain Name System (DNS). Rather than users having to maintain an address book of IP addresses, computer, tablet and mobile devices can connect through a domain name server that maps domain names to IP addresses in a large database, ultimately making accessibility more user-friendly and readable for the mainstream.
 
 ### Reflect on one aspect of the development of internet technologies and how it has contributed to the world today (max. 150 words)
-It is difficult to overstate the impact the internet and technology has had on the world today: how we live, how we work  and how we are connected. As an aspiring full-stack developer, now be able to look under the hood and get stuck in the code through this project and other projects has inspired a whole new appreciation for the interplay of front-end and back-end design, going back to the basics. Particularly with using HTML and CSS grid for the project, I'm now better able to spot and understand similar website design features and web design trends, and to use inspect tools to learn why websites look good, why they look really bad, or why they look really similar. Having always had a strong interest in design, this project enabled me to further develop my design vocabulary and references, which I hope to further develop in my portfolio website or other personal projects.
+It is difficult to overstate the impact the internet and technology has had on the world today: how we live, how we work and how we are connected. As an aspiring full-stack developer, now be able to look under the hood and get stuck in the code through this project and other projects has inspired a whole new appreciation for the interplay of front-end and back-end design, going back to the basics. Particularly with using HTML and CSS grid for the project, I'm now better able to spot and understand similar website design features and web design trends, and to use inspect tools to learn why websites look good, why they look really bad, or why they look really similar. Having always had a strong interest in design, this project enabled me to further develop my design vocabulary and references, which I hope to further develop in my portfolio website or other personal projects.
 
 ## Conclusion
 Despite the difficulty presented by using CSS grid, I was able to achieve the overall design and functionality of the finished MVP I wanted.

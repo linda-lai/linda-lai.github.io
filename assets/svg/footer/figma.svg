@@ -1,34 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 595.3 549.1" style="enable-background:new 0 0 595.3 549.1;" xml:space="preserve">
-<style type="text/css">
-	.st0{clip-path:url(#SVGID_2_);}
-	.st1{fill:#121111;}
-	.st2{fill:#FFFFFF;}
-	.st3{fill:#FBFBFB;}
-</style>
-<title>svg</title>
-<g>
-	<defs>
-		<rect id="SVGID_1_" x="70.8" y="49.6" width="453.7" height="448.1"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-	</clipPath>
-	<g class="st0">
-		<path class="st1" d="M524.5,273.7c0,123.8-101.6,224.1-226.9,224.1S70.8,397.4,70.8,273.7S172.4,49.6,297.6,49.6
-			S524.5,149.9,524.5,273.7"/>
-	</g>
-</g>
-<path id="path1_fill" class="st2" d="M253,408.5c24.7,0,44.6-20,44.6-44.6v-44.6H253c-24.7,0-44.6,20-44.6,44.6
-	C208.4,388.5,228.3,408.5,253,408.5z"/>
-<path id="path2_fill" class="st3" d="M208.4,274.5c0-24.7,20-44.6,44.6-44.6h44.6v89.3H253C228.3,319.2,208.4,299.2,208.4,274.5
-	C208.4,274.5,208.4,274.5,208.4,274.5z"/>
-<path id="path2_fill-2" class="st3" d="M208.4,185.3c0-24.7,20-44.6,44.6-44.6l0,0h44.6v89.3H253
-	C228.3,229.9,208.4,209.9,208.4,185.3z"/>
-<path id="path3_fill" class="st3" d="M297.6,140.6h44.6c24.7-0.4,44.9,19.3,45.3,44s-19.3,44.9-44,45.3c-0.4,0-0.9,0-1.3,0h-44.6
-	V140.6z"/>
-<path id="path4_fill" class="st2" d="M386.9,274.5c0,24.7-20,44.6-44.6,44.6c-24.7,0-44.6-20-44.6-44.6s20-44.6,44.6-44.6l0,0
-	C366.9,229.9,386.9,249.9,386.9,274.5z"/>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 595.28 549.11">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #333;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #a9acb5;
+      }
+
+      .cls-6 {
+        fill: #949496;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" x="70.77" y="49.6" width="453.74" height="448.15"/>
+    </clipPath>
+  </defs>
+  <title>svg</title>
+  <g class="cls-2">
+    <path class="cls-3" d="M524.51,273.67c0,123.75-101.58,224.08-226.87,224.08S70.77,397.42,70.77,273.67,172.35,49.59,297.64,49.59,524.51,149.92,524.51,273.67"/>
+  </g>
+  <path id="path1_fill" data-name="path1 fill" class="cls-4" d="M253,408.47a44.65,44.65,0,0,0,44.64-44.64V319.19H253a44.64,44.64,0,1,0,0,89.28Z"/>
+  <path id="path2_fill" data-name="path2 fill" class="cls-5" d="M208.36,274.55A44.65,44.65,0,0,1,253,229.91h44.64v89.28H253A44.64,44.64,0,0,1,208.36,274.55Z"/>
+  <path id="path2_fill-2" data-name="path2 fill" class="cls-6" d="M208.36,185.28A44.64,44.64,0,0,1,253,140.64h44.64v89.27H253A44.64,44.64,0,0,1,208.36,185.28Z"/>
+  <path id="path3_fill" data-name="path3 fill" class="cls-5" d="M297.64,140.64h44.64a44.64,44.64,0,1,1,0,89.27H297.64Z"/>
+  <path id="path4_fill" data-name="path4 fill" class="cls-4" d="M386.92,274.55a44.64,44.64,0,1,1-44.64-44.64A44.64,44.64,0,0,1,386.92,274.55Z"/>
 </svg>
