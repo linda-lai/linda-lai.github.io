@@ -70,7 +70,7 @@ After testing design layouts and comparing colours, types and assets in Figma, I
 
 Working in Figma and Adobe Illustrator, I created a series of simple svgs to support my portfolio and aligned them to the concepts of each section as closely to my wireframes as possible. I tried to create a non-symmetrical design that would adapt well responsively that played around with alignment and could be more readily adapted to CSS grid.
 
-![figma-wireframes](assets/img/figma-wireframing.png)
+![figma-wireframes](assets/img/figma-wireframes.png)
 
 ### Usability Considerations
 Working with high contrast colours and large type, a definite consideration and effort on my part was to make the website very readable, both visually and in terms of using semantic HTML as much as possible to enhance accessibility. My theme and colour palette gave me ample contrast, earning a AAA rating in colour selector, and throughout development VoiceOver on my Mac was used to test how HTML was being read.
@@ -79,7 +79,7 @@ Working with high contrast colours and large type, a definite consideration and 
 ### Project Plan and Timeline
 The scope for the portfolio website was just over a week. Planning and time management inevitably did pay off as I was able to successfully execute my overall design, and the design and wireframing process took around two and a half days. From there, finalising the content and copy to lay the main foundation for the design and laying out the HTML structure to begin playing around with elements proved to be the biggest planning challenge/task before commencing coding.
 
-Once the HTML elements had been set, Working with multiple layers of nested CSS grids on a single page, and setting out the grid for each section proved to be the most important, finicky and planned stage of the coding process. As my design relied heavily on CSS grid, I planned my columns, rows and fractions in Figma meticulously using the rule and grid layout function, adjusting and playing around as I went along in Firefox's Inspect Element. Following this approach allowed me to break down pages and tasks systematically and the overall time was managed effectively and efficiently.
+Once the HTML elements had been set, working with multiple layers of nested CSS grids on a single page, and setting out the grid for each section proved to be the most important, finicky and planned stage of the coding process. As my design relied heavily on CSS grid, I planned my columns, rows and fractions in Figma meticulously using the rule and grid layout function, adjusting and playing around as I went along in Firefox's Inspect Element. Following this approach allowed me to break down pages and tasks systematically and the overall time was managed effectively and efficiently.
 
 ![figma-grid](assets/img/figma-grid.png)
 
