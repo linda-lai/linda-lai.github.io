@@ -70,7 +70,7 @@ After testing design layouts and comparing colours, types and assets in Figma, I
 
 Working in Figma and Adobe Illustrator, I created a series of simple svgs to support my portfolio and aligned them to the concepts of each section as closely to my wireframes as possible. I tried to create a non-symmetrical design that would adapt well responsively that played around with alignment and could be more readily adapted to CSS grid.
 
-![figma-wireframes](assets/img/figma-wireframes.png)
+![figma-wireframes](assets/img/figma-wireframing.png)
 
 ### Usability Considerations
 Working with high contrast colours and large type, a definite consideration and effort on my part was to make the website very readable, both visually and in terms of using semantic HTML as much as possible to enhance accessibility. My theme and colour palette gave me ample contrast, earning a AAA rating in colour selector, and throughout development VoiceOver on my Mac was used to test how HTML was being read.
