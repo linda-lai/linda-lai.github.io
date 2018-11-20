@@ -7,6 +7,13 @@
     <meta name="description" content="Welcome to the folio website for Linda Lai, a full-stack developer from Melbourne.">
     <link href="https://fonts.googleapis.com/css?family=Oxygen|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Using CDN to import Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+      <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container');
+    </script>
     <link rel="favicon" href="/favicon.ico" type="image/ico">
     <title>LINDA LAI | FOLIO</title>
 </head>
@@ -115,12 +122,22 @@
 <section id="folio" class="folio-container">
     <div class="folio">
             <h1>[ folio ]</h1>
-            <h2>Terminal App: myMDb</h2>
-            <div class="folio-body">
-                <p>Made for the modern and minimalist cinephile, myMDb is a Terminal app built in Ruby with a simple and fun use: search, suggest, save.</p>
-                <p>It relies on two tty Ruby gems and data from oMDB’s API to return on a suggestion on an interface with sporadic animations throughout.</p>
-                <a class="git-mymdb" href="https://github.com/linda-lai/terminal_app" alt="Links to GitHub projects repository">Git It to Me</a>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <h2>Terminal App: myMDb</h2>
+                        <div class="folio-body">
+                            <p>Made for the modern and minimalist cinephile, myMDb is a Terminal app built in Ruby with a simple and fun use: search, suggest, save.</p>
+                            <p>It relies on two tty Ruby gems and data from oMDB’s API to return on a suggestion on an interface with sporadic animations throughout.</p>
+                            <a class="git-mymdb" href="https://github.com/linda-lai/terminal_app" alt="Links to GitHub projects repository">Git It to Me</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="folio-first-line">
                 <div class="first-line-fill"></div>
             </div>
