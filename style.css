@@ -646,7 +646,7 @@ nav a {
 /* Placement of the Formspree contact form */
 .contact-form {
     grid-column: 2 / 4;
-    grid-row: 2 / 14;
+    grid-row: 2 / 15;
     font-size: 1em;
 }
 
