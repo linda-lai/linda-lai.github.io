@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css">  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js"></script>
 
-    <!-- To load my stylesheet after Swiper -->
+    <!-- To load my JS & CSS after Swiper -->
     <script defer src="./index.js"></script>
     <link rel="stylesheet" href="style.css">
 
@@ -19,18 +19,23 @@
     <title>LINDA LAI | FOLIO</title>
 </head>
 
-<!--******** NAVIGATION ********/ -->
+<!--**************** SITE WRAPPER ****************/ -->
 <body class="site-wrapper">
+
+<!--******** NAVIGATION ********/ -->
 <header>
-    <h2 class="logo-name">LINDA LAI</h2>
+    <h2 class="logo-name">
+        <!-- <img class="logo-image" src="/assets/svg/logo/logo.svg" alt="Square logo"  width="50" height="50"> </a> -->
+       L I N D A _ L A I
+    </h2>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#folio">Folio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">H o m e</a></li>
+        <li><a href="#about-me">A b o u t</a></li>
+        <li><a href="#skills">S k i l l s</a></li>
+        <li><a href="#folio">F o l i o</a></li>
+        <li><a href="#contact">C o n t a c t</a></li>
       </ul>
     </nav>
     <label for="nav-toggle" class="nav-toggle-label">
@@ -39,170 +44,182 @@
 </header>
 
 <!--******** HOMEPAGE ********/ -->
-        <section class="home" id=home>
-            <div class="logo-container">
-                <img class="logo-image" src="/assets/svg/logo/logo.svg" alt="Square logo"> </a>
-                <a class="homepage-button" href="#about-me"><img src="assets/svg/page_vectors/calculate.svg" alt="Calculate button"> </a>
-            </div>
-            <!-- <img class="arrow-graphic" src="/assets/svg/page_vectors/arrow.svg" alt=""> -->
-        </section>
+<section class="home" id=home>
+    <div class="logo-container">
+        <img class="logo-image" src="/assets/svg/logo/logo.svg" alt="Square logo"> </a>
+        <a class="homepage-button" href="#about-me"><img src="assets/svg/page_vectors/calculate.svg" alt="Calculate button"> </a>
+    </div>
+</section>
 
 <!--******** ABOUT ME ********/ -->
-        <section class="about-me" id="about-me">
-            <div class="about-me-headline"><h1>< about me ></h1></div>
-            <div class="about-me-background-init">def initialize <span class="blinking-cursor">|</span></div>
-            <div class="about-me-background-symbol">/</div>
-            <div class="about-me-subhead"><h2>Hello.</h2></div>
+<section class="about-me" id="about-me">
+    <div class="about-me-headline"><h1>< about me ></h1></div>
+    <div class="about-me-background-init">def initialize <span class="blinking-cursor">|</span></div>
+    <div class="about-me-background-symbol">/</div>
+    <div class="about-me-subhead"><h2>Hello.</h2></div>
 
-            <div class="about-me-body">
-                    <p>I’m Linda, a developing developer fulfilling my fill for full-stack.</p>
-                    <p>I’m a rookie coder, digital marketer, data (actually, all-round) nerd and design enthusiast that enjoys making websites look and work better for everyone that uses it.</p>
-                    <p>With a weird, winding and wonderful work background, I thrive when allowed to flex my left and right brain tendencies to deliver creative and analytical solutions that are elegantly simple, but most importantly: effective.</p>
-                    <p>A good day is when I've achieved a lot and made people happy in the process, letting the results speak for itself.</p>
-                    <p>Me in a nutshell.</p>
-            </div>
-            <!-- <div class="about-me-body-2">
-                    <p>I draw inspiration and wisdom from my experiences with the world and people around me, and aspire to work with and for people and organisations committed to getting more girls and women into STEM, areas particularly close to my heart. I firmly believe in giving back, sharing knowledge and inclusivity, and hope to inspire others to follow a similar path into tech.</p>
-                    <p>A good day is when I've achieved a lot and made people happy in the process, letting the results speak for itself.</p>
-                    <p>Me in a nutshell.</p>
-            </div> -->
-        </section>
+    <div class="about-me-body">
+            <p>I’m Linda, a developing developer fulfilling my fill for full-stack.</p>
+            <p>I’m a rookie coder, digital marketer, data (actually, all-round) nerd and design enthusiast that enjoys making websites look and work better for everyone that uses it.</p>
+            <p>With a weird, winding and wonderful work background, I thrive when allowed to flex my left and right brain tendencies to deliver creative and analytical solutions that are elegantly simple, but most importantly: effective.</p>
+            <p>A good day is when I've achieved a lot and made people happy in the process, letting the results speak for itself.</p>
+            <p>Me in a nutshell.</p>
+    </div>
+    <!-- <div class="about-me-body-2">
+            <p>I draw inspiration and wisdom from my experiences with the world and people around me, and aspire to work with and for people and organisations committed to getting more girls and women into STEM, areas particularly close to my heart. I firmly believe in giving back, sharing knowledge and inclusivity, and hope to inspire others to follow a similar path into tech.</p>
+            <p>A good day is when I've achieved a lot and made people happy in the process, letting the results speak for itself.</p>
+            <p>Me in a nutshell.</p>
+    </div> -->
+</section>
 
 <!--******** SKILLS ********/ -->
-        <section class="skills" id="skills">
-            <h1 class="skills-headline">{ :skills }</h1>
+<section class="skills" id="skills">
+    <h1 class="skills-headline">{ :skills }</h1>
 
-            <div class="skills-frontend">
-                <h2>:front_end</h2>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Bootstrap</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Redux</li>
-                    <li>jQuery</li>
-                    <li>d3.js</li>
-                    <li>Express JS</li>
-                    <li>Vue.js</li>
-                </ul>
-            </div>
+    <div class="skills-frontend">
+        <h2>:front_end</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>React</li>
+            <li>Redux</li>
+            <!-- <li>jQuery</li> -->
+            <!-- <li>d3.js</li> -->
+            <li>Vue.js</li>
+        </ul>
+    </div>
+    
+    <div class="skills-backend">
+        <h2>:back_end</h2>
+        <ul>
+            <li>Ruby</li>
+            <li>Ruby on Rails</li>
+            <li>Express.js</li>
+            <!-- <li>Django</li> -->
+            <li>node.js</li>
+            <li>SQL</li>
+            <li>MongoDB</li>
+            <li>PostgresSQL</li>
+            <!-- <li>SQLite</li> -->
+        </ul>
+    </div>
 
-            <div class="skills-backend">
-                <h2>:back_end</h2>
-                <ul>
-                    <li>Ruby on Rails</li>
-                    <li>Django</li>
-                    <li>node.js</li>
-                    <li>SQL</li>
-                    <li>Mongo DB</li>
-                    <li>PostgresSQL</li>
-                    <li>SQLite</li>
-                </ul>
-            </div>
+    <div class="skills-other">
+        <h2>:other</h2>
+        <ul>
+            <li>Git</li>
+            <li>Figma</li>
+            <li>Jira</li>
+            <li>Adobe Experience Manager</li>
+            <li>Adobe Creative Suite</li>
+        </ul>
+        </div>
 
-            <div class="skills-other">
-                <h2>:other</h2>
-                <ul>
-                    <li>GitHub</li>
-                    <li>Figma</li>
-                    <li>Jira</li>
-                    <li>Adobe Experience Manager</li>
-                </ul>
-                </div>
+    <!-- Background: Rectangles -->
+    <div class="skills-rectangle-bottom-left"></div>
+    <div class="skills-rectangle-middle-left"></div>
+    <div class="skills-rectangle-bottom-right"></div>
+    <div class="skills-rectangle-middle-center"></div>
+    <div class="skills-rectangle-top-right"></div>
 
-            <div class="skills-rectangle-bottom-left"></div>
-            <div class="skills-rectangle-middle-left"></div>
-            <div class="skills-rectangle-bottom-right"></div>
-            <div class="skills-rectangle-middle-center"></div>
-            <div class="skills-rectangle-top-right"></div>
-
-        </section>
+</section>
 
 <!--******** FOLIO ********/ -->
 <section id="folio" class="folio-container">
     <div class="folio">
-            <h1>[ folio ]</h1>
-            <!-- Slider main container -->
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Swiper slides -->
-                    <!-- Project #1 -->
-                    <div class="swiper-slide">
-                        <div class="folio-body-container">
-                            <h2>myMDb</h2>
-                            <p class="folio-body-main">Made for the modern and minimalist cinephile, myMDb is a Terminal app written in Ruby with a simple and fun use: search, suggest, save.</p>
-                            <p class="folio-body-full">Users can easily find, display and add movie titles to their watchlist or have the application suggest one based on their mood/genre using OMDb's API.</p>
-                            <a class="git-link" href="https://github.com/linda-lai/terminal_app" alt="Links to GitHub projects repository">Git It to Me</a>
-                        </div>
-                    </div>
-                    <!-- Project #2 -->
-                    <div class="swiper-slide">
-                        <div class="folio-body-container">
-                            <h2>Lendr</h2>
-                            <p class="folio-body-main">Lendr is a community-driven two-sided marketplace that lets users rent out and borrow belongings to and from other nearby, written in Ruby on Rails.</p>
-                            <p class="folio-body-full">Users can lend and borrow items by searching, filtering and paying for items set by users, and leave reviews for others to facilitate the platform's ethos of transparency and sharing.</p>
-                            <a class="git-link" href="https://github.com/linda-lai/Lendr-marketplace" alt="Links to GitHub projects repository">Git It to Me</a>
-                        </div>
+        <h1>[ folio ]</h1>
+        <!-- Swiper: Main Container -->
+        <div class="swiper-container">
+            <!-- Swiper: Additional required wrapper -->
+            <div class="swiper-wrapper">
+                
+                <!-- Swiper: Slides -->
+                <!-- Project #1 -->
+                <div class="swiper-slide">
+                    <div class="folio-body-container">
+                        <h2>myMDb</h2>
+                        <p class="folio-body-main">Made for the modern and minimalist cinephile, myMDb is a Terminal app written in Ruby with a simple and fun use: search, suggest, save.</p>
+                        <p class="folio-body-full">Users can easily find, display and add movie titles to their watchlist or have the application suggest one based on their mood/genre using OMDb's API.</p>
+                        <a class="git-link" href="https://github.com/linda-lai/terminal_app" alt="Links to GitHub projects repository">Git It to Me</a>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!-- Project #2 -->
+                <div class="swiper-slide">
+                    <div class="folio-body-container">
+                        <h2>Lendr</h2>
+                        <p class="folio-body-main">Lendr is a community-driven two-sided marketplace that lets users rent out and borrow belongings to and from other nearby, written in Ruby on Rails.</p>
+                        <p class="folio-body-full">Users can lend and borrow items by searching, filtering and paying for items set by users, and leave reviews for others to facilitate the platform's ethos of transparency and sharing.</p>
+                        <a class="git-link" href="https://github.com/linda-lai/Lendr-marketplace" alt="Links to GitHub projects repository">Git It to Me</a>
+                    </div>
+                </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
 
-            <div class="folio-first-line">
-                <div class="first-line-fill"></div>
-            </div>
-            <div class="folio-second-line">
-                <div class="second-line-fill"></div>
-            </div>
-            <div class="folio-third-line">
-                <div class="third-line-fill"></div>
-            </div>
-            <div class="folio-fourth-line">
-                <div class="fourth-line-fill"></div>
-            </div>
-            <div class="folio-fifth-line">
-                <div class="fifth-line-fill"></div>
-            </div>
-            <div class="folio-background-text">NaN</div>
+        <!-- Background: Lines -->
+        <div class="folio-first-line">
+            <div class="first-line-fill"></div>
+        </div>
+        <div class="folio-second-line">
+            <div class="second-line-fill"></div>
+        </div>
+        <div class="folio-third-line">
+            <div class="third-line-fill"></div>
+        </div>
+        <div class="folio-fourth-line">
+            <div class="fourth-line-fill"></div>
+        </div>
+        <div class="folio-fifth-line">
+            <div class="fifth-line-fill"></div>
+        </div>
+        <div class="folio-background-text">
+            NaN
+        </div>
     </div>
 </section>
 
 <!--******** CONTACT ********/ -->
 <section class="contact" id="contact">
+
+    <!-- CONTACT FORM -->
     <div class="box form_box form-position contact-form">
         <div class="form-heading">
-            <h2>@ contact </h2>
+            <h1>@ contact </h1>
         </div>
-
-        <!-- FORM STARTS -->
         <form name="contact-form" method="POST" netlify>
+            <!-- First Name -->
             <div class="inputBox">
                 <input type="text" id="first-name" name="_first-name" required="">
                 <label>First Name</label>
             </div>
 
+            <!-- Last Name -->
             <div class="inputBox">
                     <input type="text" id="last-name" name="_last-name" required="">
                     <label>Last Name</label>
                 </div>
 
+            <!-- Email -->
             <div class="inputBox">
                 <input type="email" id="email-address" name="_email-address" required="">
                 <label>Email</label>
             </div>
 
+            <!-- Message -->
             <div class="inputBox">
                 <textarea type="text" id="message" name="_message" style="height: 100px" required=""></textarea>
                 <label>Message</label>
             </div>
 
+            <!-- Submit -->
             <div class="submit-button">
                 <input type="submit" value="Get in Touch">
             </div>
 
+            <!-- Social Media Links -->
             <div class="social-links">
                 <a class="linkedin" href="https://www.linkedin.com/in/lindalai">
                     <img border="0" alt="LinkedIn Icon" src="/assets/svg/footer/linkedin.svg" width="50" height="50">
@@ -220,6 +237,7 @@
         </form>
     </div>
 
+    <!-- Background: Shapes -->
     <div class="contact-line-horizontal">
         <div class="horizontal-line-fill"></div>
     </div>
@@ -240,10 +258,8 @@
         <img src="/assets/svg/page_vectors/chinese-name.svg" alt="">
     </div> -->
 
-<!--******** FOOTER ********/ -->
-
 </section>
 
+<!--**************** SITE WRAPPER ****************/ -->
 </body>
-
 </html>
