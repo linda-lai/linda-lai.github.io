@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
 }
 
-/* Custom variable for navigation bar styling */
+/* Custom colour variables for UX/UI */
 :root {
     --primary-nav-bg: rgba(30, 28, 28, 0.95);
     --primary-black-bg: #121111;
@@ -26,7 +26,7 @@ body {
     box-sizing: border-box;
 } */
 
-/* Syling for page section headlines */
+/* Styling for page section headlines */
 h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 3em;
