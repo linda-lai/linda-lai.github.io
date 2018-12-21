@@ -193,6 +193,14 @@ nav a {
     padding-bottom: 50px;
     /* background: rebeccapurple; */
 }
+/* 
+.arrow-graphic {
+    display: flex;
+    justify-self: center;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    align-self: center;
+} */
 
 /* ---------------------------- ABOUT ME ---------------------------- */
 /* Grid Template: Creates a grid for the About Me section*/

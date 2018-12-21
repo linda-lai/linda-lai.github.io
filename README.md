@@ -1,14 +1,12 @@
 # Coding Portfolio: Linda Lai
-Designed and written in HTML & CSS.
+My first developer portfolio written in HTML & CSS.
 
-
-## Author
 |[![Linda Lai](/assets/img/contributors-linda-lai-70x70.jpg)](https://github.com/linda-lai) | 
 |-----------|
 | Linda Lai |
 
-## Portfolio Links
-* URL: https://linda-lai.github.io/
+## Links
+* URL: https://www.linda-lai.com/
 * GitHub: https://github.com/linda-lai/linda-lai.github.io
 * Figma: https://www.figma.com/file/WYyBs8vJ01FDA6ublEDyBPbO/Portfolio?node-id=0%3A1
 
