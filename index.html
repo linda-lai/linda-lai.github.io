@@ -171,49 +171,76 @@
 </section>
 
 <!--******** CONTACT ********/ -->
-        <section class="contact" id="contact">
-            <h1>@ contact</h1>
-            <div class="contact-form">
-                <form name="contact-form" method="POST" netlify>
-                <p>
-                    <label class="contact-form-first-name">first_name
-                        <input name="first-name" type="text">
-                    </label>
-                </p>
+<section class="contact" id="contact">
+    <div class="box form_box form-position contact-form">
+        <div class="form-heading">
+            <h2>@ contact </h2>
+        </div>
 
-                <p>
-                    <label class="contact-form-last-name">last_name
-                        <input name="last-name" type="text">
-                    </label>
-                </p>
-
-                <p>
-                    <label class="contact-form-email">email 
-                        <input name="email" type="email">
-                    </label>
-                </p>
-
-                <p>
-                    <label class="contact-form-message">message
-                        <p><textarea name="message" rows="5" cols="25"></textarea></p>
-                    </label>
-                </p>
-
-                <button type="submit">Get in Touch</button>
-                </form>
+        <!-- FORM STARTS -->
+        <form name="contact-form" method="POST" netlify>
+            <div class="inputBox">
+                <input type="text" id="name" name="_name" required="">
+                <label>First Name</label>
             </div>
 
-            <div class="contact-chinese-name">
-                <img src="/assets/svg/page_vectors/chinese-name.svg" alt="">
+            <div class="inputBox">
+                    <input type="text" id="name" name="_name" required="">
+                    <label>Last Name</label>
+                </div>
+
+            <div class="inputBox">
+                <input type="email" id="email" name="_replyto" required="">
+                <label>Email</label>
             </div>
+
+            <div class="inputBox">
+                <textarea type="text" id="message" name="_message" style="height: 100px" required=""></textarea>
+                <label>Message</label>
+            </div>
+
+            <div class="submit-button">
+                <input type="submit" value="Get in Touch">
+            </div>
+
+            <div class="social-links">
+                <a class="linkedin" href="https://www.linkedin.com/in/lindalai">
+                    <img border="0" alt="LinkedIn Icon" src="/assets/svg/footer/linkedin.svg" width="50" height="50">
+                </a>
+                <!-- <a class="codepen" href="https://codepen.io/lindalai/">
+                    <img border="0" alt="Codepen Icon" src="/assets/svg/footer/codepen.svg" width="50" height="50">
+                </a> -->
+                <a class="github" href="https://github.com/linda-lai">
+                    <img border="0" alt="GitHub Icon" src="/assets/svg/footer/github.svg" width="50" height="50">
+                </a>
+                <a class="twitter" href="https://twitter.com/lindalogical">
+                    <img border="0" alt="Twitter Icon" src="/assets/svg/footer/twitter.svg" width="50" height="50">
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <div class="contact-line-horizontal">
+        <div class="horizontal-line-fill"></div>
+    </div>
+
+    <div class="contact-background-symbol">
+        /
+    </div>
+
+    <div class="contact-cross-horizontal">
+        <div class="horizontal-cross-fill"></div>
+    </div>
+
+    <div class="contact-cross-vertical">
+        <div class="vertical-cross-fill"></div>
+    </div>
+
+    <!-- <div class="contact-chinese-name">
+        <img src="/assets/svg/page_vectors/chinese-name.svg" alt="">
+    </div> -->
 
 <!--******** FOOTER ********/ -->
-<footer class="footer">
-    <a class="linkedin" href="https://www.linkedin.com/in/lindalai"><img border="0" alt="LinkedIn Icon" src="/assets/svg/footer/linkedin.svg" width="50" height="50"></a>
-    <a class="codepen" href="https://codepen.io/lindalai/"><img border="0" alt="Codepen Icon" src="/assets/svg/footer/codepen.svg" width="50" height="50"></a>
-    <a class="github" href="https://github.com/linda-lai"><img border="0" alt="GitHub Icon" src="/assets/svg/footer/github.svg" width="50" height="50"></a>
-    <a class="twitter" href="https://twitter.com/lindalogical"><img border="0" alt="Twitter Icon" src="/assets/svg/footer/twitter.svg" width="50" height="50"></a>
-</footer>
 
 </section>
 
