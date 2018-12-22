@@ -1,5 +1,5 @@
 /* ---------------------------- GENERAL SITE STYLING ---------------------------- */
-/* STYLING: Applied to all page elements */
+/* GENERAL STYLING: For all page elements */
 * {
     /* FONT: Main Body <p> */
     font-family: 'Oxygen', sans-serif;
@@ -7,31 +7,32 @@
     scroll-behavior: smooth;
 }
 
-/* COLOUR: Custom global variables for UX/UI palette */
+/* GENERAL COLOUR: Custom global variables for UX/UI palette */
 :root {
     --primary-nav-bg: rgba(30, 28, 28, 0.95);
     --primary-black-bg: #121111;
-    /* backgroud: var(--primary-black-bg)*/
+    /* background: var(--primary-black-bg)*/
     --primary-white-bg: #FBFBFB;
     --primary-yellow: #FFD700;
     --primary-blue: #0000FE;
     --primary-red: #FF1810;
 }
 
-/* STYLING: Remove inbuilt padding/margins */
+/* GENERAL STYLING: Remove inbuilt page padding/margins */
 body {
     padding: 0;
     margin: 0;
 }
 
-/* FONT: Styling for <section> <h1> headlines*/
+/* GENERAL STYLING: Styling for <h1> <section> headlines */
+/* <about>, <skills> <folio>, <contact> */
 h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 3em;
     font-style: bold;
 }
 
-/* FONT: Navigation Logo  */
+/* GENERAL LOGO FONT: Navigation Bar */
 .logo-name {
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
@@ -39,7 +40,7 @@ h1 {
     color: var(--primary-white-bg);
 }
 
-/* GRID: SITE WRAPPER */
+/* GENERAL GRID: SITE WRAPPER */
 .site-wrapper {
     display: grid;
     grid-template-areas: 
@@ -51,13 +52,14 @@ h1 {
     "contact"
 }
 
-/* STYLING: Removes scrollbar from view */
+/* GENERAL STYLING: Removes scrollbar view */
 ::-webkit-scrollbar {
     width: 0px;
     /* background: transparent; */
  }
 
 /* ---------------------------- NAVIGATION ---------------------------- */
+/* NAVIGATION: Bar */
 header {
     background: var(--primary-nav-bg);
     text-align: center;
@@ -69,12 +71,12 @@ header {
     /* box-shadow: 0 1px 8px; */
   }
 
-/* Hides the checkbox  */
+/* NAVIGATION: Hides the checkbox */
 .nav-toggle {
     display: none;
 }
 
-/* Sets the burger menu to act as checkbox */
+/* NAVIGATION: Sets the burger menu to act as checkbox */
 .nav-toggle-label {
     cursor: pointer;
     position: absolute;
@@ -86,33 +88,30 @@ header {
     align-items: center;
 }
 
-/* Defines the lines for the burger menu */
+/* NAVIGATION: Defines lines/behaviours for the burger menu */
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  display: block;
-  background: var(--primary-white-bg);
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
+    display: block;
+    background: var(--primary-white-bg);
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
 }
-
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   content: '';
   position: absolute;
 }
-
 .nav-toggle-label span::before {
     bottom: 7px;
 }
-  
 .nav-toggle-label span::after {
     top: 7px;
 }
 
-/* Determines the placement, colour and behaviour of the navigation bar */
+/* NAVIGATION: Determines the placement, colour and behaviour of the <flyout> navigation bar */
 nav {
     position: absolute;
     text-align: left;
@@ -126,20 +125,20 @@ nav {
     transition: transform 400ms ease-in-out;
 }
 
-/* Formats the unordered list  */
+/* NAVIGATION: Formats the unordered list  */
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
   }
   
-/* Formats navigation text/links */
+/* NAVIGATION: Formats navigation text/links */
 nav li {
     margin-bottom: 1em;
     margin-left: 1em;   
-  }
+}
   
-/* Styling text links */
+/* NAVIGATION: Styling text links */
 nav a {
     color: var(--primary-white-bg);
     text-decoration: none;
@@ -148,11 +147,7 @@ nav a {
     opacity: 0;
     transition: opacity 150ms ease-in-out;
     font-family: 'Roboto', sans-serif;
-  }
-
-/* nav a:hover{
-      color: var(--primary-white-bg);
-  } */
+}
   
 .nav-toggle:checked ~ nav {
     transform: scale(1,1);
@@ -164,7 +159,7 @@ nav a {
 }
 
 /******** HOMEPAGE ********/
-/* Grid Template: Homepage */
+/* HOMEPAGE GRID TEMPLATE */
 .home {
     grid-area: home;
     height: 100vh;
@@ -175,7 +170,7 @@ nav a {
     /* background-color: dodgerblue; */
 }
 
-/* Grid: Aligns the logo vector to the centre of the homepage */
+/* HOMEPAGE GRID ROW/COLUMN: Aligns the logo vector to the centre of the homepage */
 .logo-container {
     grid-column: 2 / 3;
     grid-row: 3 / 5;
@@ -186,13 +181,14 @@ nav a {
     text-align: center;
 }
 
-/* Grid: Logo Image & Button  */
+/* HOMEPAGE LOGO: Logo Image & Button  */
 .logo-container img {
     width: 40vw;
     max-width: 350px;
     padding-bottom: 50px;
     /* background: rebeccapurple; */
 }
+
 /* 
 .arrow-graphic {
     display: flex;
@@ -203,7 +199,7 @@ nav a {
 } */
 
 /* ---------------------------- ABOUT ME ---------------------------- */
-/* Grid Template: Creates a grid for the About Me section*/
+/* ABOUT ME GRID TEMPLATE: Creates a grid for the About Me section*/
 .about-me {
     grid-area: about-me;
     max-height: 100vh;
@@ -214,7 +210,7 @@ nav a {
     overflow: hidden;
 }
 
-/* Grid: Placement of '< about me >' headline */
+/* ABOUT ME GRID ROW/COLUMN: Placement of '< about me >' headline */
 .about-me-headline {
     grid-row: 5 / 7;
     grid-column: 6 / 11;
@@ -222,7 +218,7 @@ nav a {
     color: var(--primary-white-bg);
 }
 
-/* Placement of 'Hello.' subheadline */
+/* ABOUT ME GRID ROW/COLUMN: Placement of 'Hello.' subheadline */
 .about-me-subhead {
     grid-row: 8 / 9;
     grid-column: 2 / 3;
@@ -230,7 +226,7 @@ nav a {
     color: var(--primary-white-bg);
 }
 
-/* Placement of body copy 1 */
+/* ABOUT ME GRID ROW/COLUMN: Placement of body copy 1 */
 .about-me-body {
     grid-column: 2 / 8;
     grid-row: 9 / 12;
@@ -238,7 +234,7 @@ nav a {
     color: var(--primary-white-bg);
 }
 
-/* Placement of body copy 2
+/* ABOUT ME GRID ROW/COLUMN: Placement of body copy 2
 .about-me-body-2{
     grid-column: 2 / 4;
     grid-row: 6 / 8;
@@ -246,7 +242,7 @@ nav a {
     color: white;
 } */
 
-/* Placement of 'def initialize' decorative background text */
+/* ABOUT ME GRID ROW/COLUMN: Placement of 'def initialize' decorative background text */
 .about-me-background-init {
     grid-column: 2 / 5;
     grid-row: 6 / 7;
@@ -255,7 +251,7 @@ nav a {
     color: var(--primary-white-bg);
 }
 
-/* Defines behaviours and formatting for blinking cursor */
+/* ABOUT ME: Defines behaviours and formatting for 'def initalize' blinking cursor */
 .blinking-cursor {
     font-weight: 100;
     font-size: 20px;
@@ -265,54 +261,49 @@ nav a {
     -ms-animation: 1s blink step-end infinite;
     -o-animation: 1s blink step-end infinite;
     animation: 1s blink step-end infinite;
-  }
-  
-  @keyframes "blink" {
+}
+@keyframes "blink" {
     from, to {
       color: transparent;
     }
     50% {
       color: var(--primary-white-bg);
     }
-  }
-  
-  @-moz-keyframes blink {
+} 
+@-moz-keyframes blink {
     from, to {
       color: transparent;
     }
     50% {
       color: var(--primary-white-bg);
     }
-  }
-  
-  @-webkit-keyframes "blink" {
+}
+@-webkit-keyframes "blink" {
     from, to {
       color: transparent;
     }
     50% {
       color: var(--primary-white-bg);
     }
-  }
-  
-  @-ms-keyframes "blink" {
+}
+@-ms-keyframes "blink" {
     from, to {
       color: transparent;
     }
     50% {
       color: var(--primary-white-bg);
     }
-  }
-  
-  @-o-keyframes "blink" {
+}
+@-o-keyframes "blink" {
     from, to {
       color: transparent;
     }
     50% {
       color: var(--primary-white-bg);
     }
-  }
+}
 
-/* Placement of '/' decorative background text */
+/* ABOUT ME GRID ROW/COLUMN: Placement of '/' decorative background text */
 .about-me-background-symbol {
     grid-column: 9 / 11;
     grid-row: 10 / 12;
@@ -321,7 +312,7 @@ nav a {
 }
 
 /* ---------------------------- SKILLS ---------------------------- */
-/* Creates a grid for the Skills section */
+/* SKILLS GRID TEMPLATE: Creates a grid for the Skills section */
 .skills {
     grid-area: skills;
     height: 100vh;
@@ -330,7 +321,7 @@ nav a {
     grid-template-rows: repeat(16, 1fr);
 }
 
-/* Placement of '{ :skills } headline' */
+/* SKILLS GRID ROW/COLUMN: Placement of '{ :skills } headline' */
 .skills-headline {
     grid-column: 1 / 3;
     grid-row: 5 / 11;
@@ -338,105 +329,106 @@ nav a {
     writing-mode: vertical-rl;
 }
 
-/* Styling for ':front_end, :back_end, :other' subheadlines */
+/* SKILLS: Styling for ':front_end, :back_end, :other' subheadlines */
 .skills h2 {
     font-size: 1em;
 }
 
-/* Syling for body/list copy */
+/* SKILLS: Removes inbuilt indentation for <li> front-end, back-end, other skills */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* SKILLS: Body paragraph styling for body/list copy */
 .skills li {
     font-size: 14px;
 }
 
-/* Placement of ':front_end' body copy */
+/* SKILLS GRID ROW/COLUMN: Placement of ':front_end' body copy */
 .skills-frontend {
     grid-column: 3 / 5;
     grid-row: 5 / 16;
 }
 
-/* Placement of ':back_end' body copy */
+/* SKILLS GRID ROW/COLUMN: Placement of ':back_end' body copy */
 .skills-backend {
     grid-column: 3 / 5;
     grid-row: 11 / 16;
 }
 
-/* Placement of ':back_end' body copy */
+/* SKILLS GRID ROW/COLUMN: Placement of ':other' body copy */
 .skills-other {
     grid-column: 6 / 9;
     grid-row: 10 / 16;
 }
 
-/* Placement of decorative background rectangles */
-/* Rectangle - Bottom Left */
+/* SKILLS GRID ROW/COLUMN: Placement of decorative background rectangles */
+/* SKILLS RECTANGLE: Bottom Left */
 .skills-rectangle-bottom-left {
     grid-column: 1 / 2;
     grid-row: 10 / 15;
     background: var(--primary-black-bg);
 }
-
 .skills-rectangle-bottom-left:hover {
     background: var(--primary-blue);
     transition: 320ms;
 }
 
-/* Rectangle - Middle Left */
+/* SKILLS RECTANGLE: Middle Left */
 .skills-rectangle-middle-left {
     grid-column: 2 / 5;
     grid-row: 3 / 4;
     background: var(--primary-black-bg);
 }
-
 .skills-rectangle-middle-left:hover {
     background: var(--primary-yellow);
     transition: 320ms;
 }
 
-/* Rectangle - Bottom Right */
+/* SKILLS RECTANGLE: Bottom Right */
 .skills-rectangle-bottom-right {
     grid-column: 3 / 8;
     grid-row: 16 / 17;
     background: var(--primary-black-bg);
 }
-
 .skills-rectangle-bottom-right:hover {
     background: var(--primary-yellow);
     transition: 320ms;
 }
 
-/* Rectangle - Middle Center */
+/* SKILLS RECTANGLE: Middle Center */
 .skills-rectangle-middle-center {
     grid-column: 6 / 7 ;
     grid-row: 6 / 9 ;
     background: var(--primary-black-bg);
     transition: 500ms;
 }
-
 .skills-rectangle-middle-center:hover {
     background: var(--primary-red);
     transition: 320ms;
 }
 
-/* Rectangle - Top Right*/
+/* RECTANGLE: Top Right*/
 .skills-rectangle-top-right {
     grid-column: 8 / 9;
     grid-row: 1 / 8;
     background: var(--primary-black-bg);
 }
-
 .skills-rectangle-top-right:hover {
     background: var(--primary-blue);
     transition: 320ms;
 }
 
 /* ---------------------------- FOLIO ---------------------------- */
-/* Creates a container for page rotation */
+/* FOLIO ROTATION WRAPPER: Creates a container for page rotation */
 .folio-container {
     grid-area: folio;
     overflow: hidden;
     background: var(--primary-black-bg);
 }
 
-/* Creates a grid for the Folio section */
+/* FOLIO GRID TEMPLATE: Creates a grid for the Folio section */
 .folio {
     height: 100vh;
     display: grid;
@@ -446,7 +438,7 @@ nav a {
     transform: rotate(-30deg);
 }
 
-/* Placement of '[ folio ]' headline */
+/* FOLIO GRID ROW/COLUMN: Placement of '[ folio ]' headline */
 .folio h1 {
     /* font-size: 2em; */
     grid-column: 4 / 7;
@@ -454,7 +446,7 @@ nav a {
     color: var(--primary-white-bg);
 }
 
-/* Assigns the Swiper Container to Grid layout */
+/* FOLIO GRID ROW/COLUMN: Assigns the Swiper Container to Grid layout */
 .swiper-container {
     grid-column: 2 / 6;
     grid-row: 8 / 13;
@@ -462,9 +454,8 @@ nav a {
 .swiper-container {
     width: 100%;
     height: 100%;
-  }
-
-  .swiper-slide {
+}
+.swiper-slide {
     font-size: 18px;
     /* Use background colour for swiper testing */
     /* background-color: dodgerblue; */
@@ -482,19 +473,16 @@ nav a {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center; */
-  }
-
+}
 .swiper-slide:nth-child(2) {
     /* background-color: purple; */
 }
-
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23f8f8f8'%2F%3E%3C%2Fsvg%3E");
   /* left: 10px;
   right: auto; */
 }
-
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23f8f8f8'%2F%3E%3C%2Fsvg%3E");
@@ -503,15 +491,16 @@ nav a {
   /* left: auto; */
 }
 
-/* Placement of application subheadline */
+/* FOLIO GRID ROW/COLUMN: Placement of application subheadline */
 .folio h2 {
     /* grid-column: 2 / 5;
     grid-row: 8 / 13; */
     font-size: 1em;
+    background: aquamarine;
     color: var(--primary-white-bg);
 }
 
-/* Placement of folio section body */
+/* FOLIO GRID ROW/COLUMN: Placement of folio section body */
 .folio-body-container {
     /* grid-column: 2 / 6;
     grid-row: 9 / 13; */
@@ -520,11 +509,12 @@ nav a {
     padding: 0 2.5em 0 2.5em;
 }
 
-/* Hides second paragraph for mobile view */
+/* FOLIO BODY: Hides second paragraph for mobile view */
 .folio-body-full {
     display: none;
 }
 
+/* FOLIO LINKS: Styling for GitHub Project links */
 .git-link {
     /* background: var(--primary-blue);
     padding: .5em; */
@@ -532,18 +522,15 @@ nav a {
     text-decoration: none;
     color: var(--primary-white-bg);
 }
-
 .git-link:link {
     text-decoration: none;
     color: var(--primary-white-bg)
 }
-
 .git-link:hover {
     background: var(--primary-yellow);
     color: var(--primary-white-bg);
     padding: 0.2em;    
 }
-
 /* To make every second link hovered over primary blue instead of yellow */
 .swiper-slide:nth-child(2) .folio-body-container .git-link:hover {
     background: var(--primary-blue);
@@ -551,7 +538,7 @@ nav a {
     padding: 0.2em;          
 }
 
-/* Placement of 'NAN' background decorative type */
+/* FOLIO GRID ROW/COLUMN: Placement of 'NAN' background decorative type */
 .folio-background-text {
     grid-column: 6 / 7;
     grid-row: 1 / 3;
@@ -559,60 +546,55 @@ nav a {
     color: var(--primary-white-bg);
 }
 
-/* Placement and fill for first horizontal line/rectangle */
+/* FOLIO LINE: Placement and fill for first horizontal line/rectangle */
 .folio-first-line {
     grid-column: 2 / 7;
     grid-row: 2 / 4;
 }
-
 .first-line-fill {
     background-color: var(--primary-white-bg);
     width: 100%;
     height: 5%;
 }
 
-/* Placement and fill for second horizontal line/rectangle */
+/* FOLIO LINE: Placement and fill for second horizontal line/rectangle */
 .folio-second-line {
     grid-column: 1 / 6;
     grid-row: 4 / 5;
 }
-
 .second-line-fill {
     background-color: var(--primary-white-bg);
     width: 100%;
     height: 30%;
 }
 
-/* Placement and fill for third horizontal line/rectangle */
+/* FOLIO LINE: Placement and fill for third horizontal line/rectangle */
 .folio-third-line {
     grid-column: 1 / 3;
     grid-row: 5 / 6;
 }
-
 .third-line-fill {
     background-color: var(--primary-white-bg);
     width: 100%;
     height: 70%;
 }
 
-/* Placement and fill for fourth horizontal line/rectangle */
+/* FOLIO LINE: Placement and fill for fourth horizontal line/rectangle */
 .folio-fourth-line {
     grid-column: 2 / 7;
     grid-row: 7 / 8;
 }
-
 .fourth-line-fill {
     background-color: var(--primary-white-bg);
     width: 100%;
     height: 70%;
 }
 
-/* Placement and fill for fifth horizontal line/rectangle */
+/* FOLIO LINE: Placement and fill for fifth horizontal line/rectangle */
 .folio-fifth-line {
     grid-column: 1 / 7;
     grid-row: 13 / 14;
 }
-
 .fifth-line-fill {
     background-color: var(--primary-white-bg);
     width: 100%;
@@ -620,7 +602,7 @@ nav a {
 }
 
 /* ---------------------------- CONTACT ---------------------------- */
-/* Creates a grid for the Contact section */
+/* CONTACT GRID TEMPLATE: Creates a grid for the Contact section */
 .contact {
     grid-area: contact;
     height: 100vh;
@@ -630,7 +612,7 @@ nav a {
     overflow: hidden;
 }
 
-/* Placement of '@contact' headline */
+/* CONTACT GRID ROW/COLUMN: Placement of '@contact' headline */
 .contact h1 {
     /* font-size: 2em; */
     grid-column: 1 / 5;
@@ -638,60 +620,45 @@ nav a {
     color: var(--primary-white-bg);
 }
 
-/* Placement of the Formspree contact form */
-.contact-form {
-    grid-column: 2 / 4;
-    grid-row: 2 / 15;
-    font-size: 1em;
-}
-
-.submit-button {
-    display: flex;
-    justify-content: center;
-}
-
+/* CONTACT BACKGROUND: '/' */
 .contact-background-symbol {
-    grid-column: 5 / 7;
-    grid-row: 1 / 3;
+    grid-column: 2 / 9;
+    grid-row: 1 / 4;
     font-size: 30em;
 }
 
-/* Contact Background: Line */
+/* CONTACT BACKGROUND: Line '---' */
 .contact-line-horizontal {
     grid-column: 1 / 7;
-    grid-row: 5 / 6 ;
+    grid-row: 2 / 3 ;
 }
-
 .horizontal-line-fill {
     background-color: var(--primary-black-bg);
     width: 100%;
     height: 5px;
 }
 
-/* Contact Background: Cross */
+/* CONTACT BACKGROUND: Cross '+' */
 .contact-cross-horizontal {
     grid-column: 6 / 9;
     grid-row: 11 / 13 ;
 }
-
 .horizontal-cross-fill {
     background-color: var(--primary-black-bg);
     width: 100%;
     height: 10px;
 }
-
 .contact-cross-vertical {
     grid-column: 8 / 9;
     grid-row: 7 / 13;
 }
-
 .vertical-cross-fill {
     background-color: var(--primary-black-bg);
     width: 10px;
     height: 100%;
 }
 
-/* Social Media Links */
+/* CONTACT: Social Media Links */
 .social-links {
     /* grid-area: footer; */
     grid-column: 2 / 4;
@@ -702,8 +669,20 @@ nav a {
     padding: 2em;
 }
 
-/* CONTACT FORM
-/* To change the background colour of the Contact form */
+/* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
+.contact-form {
+    grid-column: 2 / 4;
+    grid-row: 2 / 15;
+    font-size: 1em;
+}
+
+/* CONTACT FORM: To center submit button */
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTACT FORM: To change the background colour of the Contact form */
 .form_box {
     width: 350px;
     padding: 40px;
@@ -715,7 +694,7 @@ nav a {
     margin: 0 auto;
 }
 
-/* To change the colour of the form field titles */
+/* CONTACT FORM: To change the colour of the form field titles */
 .form_box h2 {
     margin: 0 0 30px;
     padding: 0;
@@ -725,7 +704,7 @@ nav a {
     font-family: "Roboto", sans-serif;
 }
 
-/* To change the positioning of the form field title */
+/* CONTACT FORM To change the positioning of the form field title */
 .form_box .inputBox {
     position: relative;
     -webkit-appearance: none;
@@ -779,17 +758,17 @@ nav a {
     font-size: 12px;
 }
 
-/* To remove red box outline for required input */
+/* CONTACT FORM: To remove red box outline for required input */
 input:required {
     box-shadow:none;
 }
 
-/* To remove red box outline for invalid input */
+/* CONTACT FORM: To remove red box outline for invalid input */
 input:invalid {
     box-shadow: none;
 }
 
-/* To remove red box outline for invalid input */
+/* CONTACT FORM:To remove red box outline for invalid input */
 textarea:invalid {
     box-shadow: none;
 }
@@ -819,30 +798,43 @@ textarea:invalid {
 }
 
 /* ---------------------------- MEDIA QUERIES ---------------------------- */
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+ 
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+ 
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+ 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...}  */
+
+
 /* MOBILE-FIRST: Media Query to set for mobile-first */
 @media(min-width: 320px) {
-    /* .contact-chinese-name {
-        /* display: none; */
-        /* grid-column: ;
-        grid-row: ;
-    } */
     p {
         font-size: 12px;
+        background: dodgerblue;
     }
 
-    /* Grid: Placement of '< about me >' headline */
+    /* ----- ABOUT ----- */
+    /* ABOUT GRID: Placement of '< about me >' headline */
     .about-me-headline {
-        grid-row: 1 / 7;
-        grid-column: 6 / 11; 
+        grid-row: 1 / 8;
+        grid-column: 5 / 11; 
     }
 
-    /* Placement of 'Hello.' subheadline */
+    /* ABOUT GRID: Placement of 'Hello.' subheadline */
     .about-me-subhead {
         grid-row: 6/ 9;
         grid-column: 2 / 3;
     }
 
-    /* Placement of 'def initialize' decorative background text */
+    /* ABOUT GRID: Placement of 'def initialize' decorative background text */
     .about-me-background-init {
         grid-column: 2 / 5;
         grid-row: 5 / 7;
@@ -851,29 +843,115 @@ textarea:invalid {
         color: var(--primary-white-bg);
     }
 
+    /* ABOUT GRID: Body */
     .about-me-body {
-        grid-column: 2 / 8;
+        grid-column: 2 / 10;
         grid-row: 7 / 12;
     }
 
+    /* ABOUT BODY: Font Size */
     .about-me-body p {
-        font-size: 11px;
+        /* font-size: 11px; */
     }
-    
+
+    /* ABOUT BACKGROUND: Placement of '/' decorative background text */
+    .about-me-background-symbol {
+        grid-column: 10 / 11;
+        grid-row: 10 / 12;
+        font-size: 6em;
+    }
+        
+    /* ----- SKILLS ----- */
+    /* SKILLS GRID: Placement of '{ :skills } headline' */
+    .skills-headline {
+        grid-column: 1 / 3;
+        grid-row: 4 / 11;
+        font-size: 3em;
+        writing-mode: vertical-rl;
+    }
+
+    /* SKILLS HEADLINE: Styling for ':front_end, :back_end, :other' subheadlines */
+    .skills h2 {
+        font-size: 1em;
+    }
+
+    /* SKILLS LIST: Styling for body/list copy */
+    .skills li {
+        font-size: 14px;
+    }
+
+    /* SKILLS GRID: Placement of ':front_end' body copy */
+    .skills-frontend {
+        grid-column: 3 / 5;
+        grid-row: 4 / 16;
+    }
+
+    /* SKILLS GRID: Placement of ':back_end' body copy */
+    .skills-backend {
+        grid-column: 3 / 5;
+        grid-row: 9 / 16;
+    }
+
+    /* SKILLS GRID: Placement of ':back_end' body copy */
+    .skills-other {
+        grid-column: 6 / 9;
+        grid-row: 9 / 16;
+    }
+
+    /* SKILLS: Placement of decorative background rectangles */
+    /* SKILLS RECTANGLE: Bottom Left */
+    .skills-rectangle-bottom-left {
+        grid-column: 1 / 2;
+        grid-row: 11 / 15;
+        background: var(--primary-black-bg);
+    }
+
+    /* ----- SKILLS ----- */
+    /* FOLIO: Placement of '[ folio ]' headline */
+    .folio h1 {
+        grid-column: 4 / 7;
+        grid-row: 3/ 6;
+    }
+    /* FOLIO: Assigns the Swiper Container to Grid layout */
+    .swiper-container {
+        grid-column: 2 / 6;
+        grid-row: 7 / 13;
+    }
+
+    /* FOLIO LINE: Placement for second horizontal line/rectangle */
+    .folio-second-line {
+        grid-column: 1 / 6;
+        grid-row: 3 / 5;
+    }
+
+     /* FOLIO BACKGROUND: Fill for third horizontal line/rectangle */ */
+    .third-line-fill {
+        height: 50%;
+    }
+
+    /* FOLIO BACKGROUND: Placement for third horizontal line/rectangle */
+    .folio-fourth-line {
+        grid-column: 2 / 7;
+        grid-row: 6 / 7;
+    }
+
+    /* ----- CONTACT ----- */
+    .contact-form {
+        grid-column: 1 / 9;
+        grid-row: 1 / 15;
+    }
 }
 
-
-
 /* DESKTOP: Add Media Query for Desktop */
-/* @media only screen and (min-width: 480px) */
 /* Media Query to set for desktop-first
     @media(max-width: 600px) {
-} */
+    @media only screen and (min-width: 480px) */
 @media only screen and (max-width: 600px) {
     .folio {
         transform: rotate(0deg);
     }
 }
+
 @media screen and (min-width: 600px) {
     .nav-toggle-label {
         display: none;
@@ -931,19 +1009,3 @@ textarea:invalid {
         display: block;
     }
 }
-
-/* MEDIA QUERIES GUIDE */
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {...} */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
- 
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
- 
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...} */
- 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...}  */
