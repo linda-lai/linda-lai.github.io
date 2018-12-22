@@ -834,9 +834,14 @@ textarea:invalid {
     .about-me-body p {
         font-size: 12px;
     }
-
+    
     .folio-body-main {
-        font-size: 10px;
+        font-size: 14px;
+    }
+
+    .swiper-container {
+        grid-column: 1 / 8;
+        grid-row: 8 / 13;
     }
 }
 
@@ -929,6 +934,11 @@ textarea:invalid {
     /* ----- FOLIO ----- */
     .folio {
         transform: rotate(0deg);
+    }
+
+    .swiper-container {
+        grid-column: 1 / 8;
+        grid-row: 8 / 13;
     }
 }
 
