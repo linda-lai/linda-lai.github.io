@@ -829,7 +829,40 @@ textarea:invalid {
     p {
         font-size: 12px;
     }
+
+    /* Grid: Placement of '< about me >' headline */
+    .about-me-headline {
+        grid-row: 1 / 7;
+        grid-column: 6 / 11; 
+    }
+
+    /* Placement of 'Hello.' subheadline */
+    .about-me-subhead {
+        grid-row: 6/ 9;
+        grid-column: 2 / 3;
+    }
+
+    /* Placement of 'def initialize' decorative background text */
+    .about-me-background-init {
+        grid-column: 2 / 5;
+        grid-row: 5 / 7;
+        font-size: 1em;
+        font-family: 'Roboto', sans-serif;
+        color: var(--primary-white-bg);
+    }
+
+    .about-me-body {
+        grid-column: 2 / 8;
+        grid-row: 7 / 12;
+    }
+
+    .about-me-body p {
+        font-size: 11px;
+    }
+    
 }
+
+
 
 /* DESKTOP: Add Media Query for Desktop */
 /* @media only screen and (min-width: 480px) */
