@@ -35,7 +35,7 @@ h1 {
 /* GENERAL STYLING: Body Font for <about> and <folio> section */
 p {
     font-size: 14px;
-    background: dodgerblue;
+    /* background: dodgerblue; */
 }
 
 /* GENERAL LOGO FONT: Navigation Bar */
@@ -236,7 +236,7 @@ nav a {
 .about-me-body {
     grid-column: 2 / 8;
     grid-row: 9 / 12;
-    background: red;
+    /* background: red; */
     color: var(--primary-white-bg);
 }
 
@@ -254,7 +254,7 @@ nav a {
     grid-row: 6 / 7;
     /* TODO: CONFIRMED */
     font-size: 1em;
-    background: green;
+    /* background: indianred; */
     font-family: 'Roboto', sans-serif;
     color: var(--primary-white-bg);
 }
@@ -352,7 +352,7 @@ nav a {
 .skills-list li {
     /* TODO: CONFIRMED */
     font-size: 14px;
-    background: yellow;
+    /* background: yellow; */
 }
 
 /* SKILLS GRID ROW/COLUMN: Placement of ':front_end' body copy */
@@ -506,7 +506,7 @@ nav a {
     grid-row: 8 / 13; */
     /* TODO: CONFIRMED */
     font-size: 1em;
-    background: aquamarine;
+    /* background: aquamarine; */
     color: var(--primary-white-bg);
 }
 
@@ -830,6 +830,16 @@ textarea:invalid {
 
 /* MOBILE-FIRST: Media Query to set for mobile-first */
 /* iPhone 5/SE => 320 x 568px */
+@media screen and (max-width: 320px), screen and (max-height: 568px) {
+    .about-me-body p {
+        font-size: 12px;
+    }
+
+    .folio-body-main {
+        font-size: 10px;
+    }
+}
+
 @media(min-width: 320px) {
     p {
         /* FIXME: FONT-SIZE */
@@ -905,8 +915,6 @@ textarea:invalid {
         background: var(--primary-black-bg);
     }
 
-    /* ----- SKILLS ----- */
-
     /* ----- CONTACT ----- */
     .contact-form {
         grid-column: 1 / 9;
@@ -915,18 +923,18 @@ textarea:invalid {
 }
 
 /* ---------- DESKTOP: Add Media Query for Desktop ----------*/
-/* @media only screen and (min-width: 480px) */
 
 /* max-width: 600px => Stops the rotation of folio section up until screens of 600px { */
 @media only screen and (max-width: 600px) {
+    /* ----- FOLIO ----- */
     .folio {
         transform: rotate(0deg);
     }
-    
 }
 
 /* min-width: 600px => Only show the full navigation bar until 600px, otherwise show burger menu on smaller screens */
 @media screen and (min-width: 600px) {
+    /* ----- NAVIGATION ----- */
     .nav-toggle-label {
         display: none;
     }
@@ -979,11 +987,9 @@ textarea:invalid {
         transform: scale(1,1);
     }
 
+    /* ----- FOLIO ----- */
     .folio-body-full-1 {
         display: block;
     }
 
-    .folio-body-full-2 {
-        display: block;
-    }
 }
