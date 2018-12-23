@@ -168,7 +168,8 @@ nav a {
 /* HOMEPAGE GRID TEMPLATE */
 .home {
     grid-area: home;
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -209,6 +210,7 @@ nav a {
 .about-me {
     grid-area: about-me;
     min-height: 100vh;
+    min-width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
@@ -323,7 +325,8 @@ nav a {
 /* SKILLS GRID TEMPLATE: Creates a grid for the Skills section */
 .skills {
     grid-area: skills;
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(16, 1fr);
@@ -440,7 +443,8 @@ nav a {
 
 /* FOLIO GRID TEMPLATE: Creates a grid for the Folio section */
 .folio {
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(14, 1fr);
@@ -619,7 +623,8 @@ nav a {
 /* CONTACT GRID TEMPLATE: Creates a grid for the Contact section */
 .contact {
     grid-area: contact;
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(14, 1fr);
