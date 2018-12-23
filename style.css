@@ -682,11 +682,11 @@ nav a {
 .social-links {
     /* grid-area: footer; */
     grid-column: 2 / 4;
-    grid-row: 12;
+    grid-row: 11 / 12;
     z-index: 1;
     display: flex;
     justify-content: center;
-    padding: 2em;
+    padding: 1em;
 }
 
 /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
