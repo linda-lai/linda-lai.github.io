@@ -208,7 +208,7 @@ nav a {
 /* ABOUT ME GRID TEMPLATE: Creates a grid for the About Me section*/
 .about-me {
     grid-area: about-me;
-    max-height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
@@ -839,6 +839,7 @@ textarea:invalid {
         font-size: 14px;
     }
 
+    /* FIXME: Swiper Bug */
     .swiper-container {
         grid-column: 1 / 8;
         grid-row: 8 / 13;
@@ -928,7 +929,6 @@ textarea:invalid {
 }
 
 /* ---------- DESKTOP: Add Media Query for Desktop ----------*/
-
 /* max-width: 600px => Stops the rotation of folio section up until screens of 600px { */
 @media only screen and (max-width: 600px) {
     /* ----- FOLIO ----- */
@@ -936,6 +936,7 @@ textarea:invalid {
         transform: rotate(0deg);
     }
 
+    /* FIXME: Swiper Bug */
     .swiper-container {
         grid-column: 1 / 8;
         grid-row: 8 / 13;
