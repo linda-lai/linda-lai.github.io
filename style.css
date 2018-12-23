@@ -733,10 +733,13 @@ nav a {
 .form_box .inputBox input, 
 .form_box .inputBox textarea {
     width: 100%;
+    /* Padding between text input and form field label */
     padding: 10px 0;
+    /* Size of form text input */
     font-size: 14px;
+    /* Font of form text input */
     font-family: "Oxygen", sans-serif;
-    /* To change the colour of the animated form cursor */
+    /* To change the colour of the animated form cursor, inputted text */
     color: #fff;
     margin-bottom: 30px;
     border: none;
@@ -753,6 +756,7 @@ nav a {
     -webkit-text-fill-color: #fff;
 }
 
+/* CONTACT FORM: Font/color for input label */
 .form_box .inputBox label {
     position: absolute;
     top: 0;
@@ -767,13 +771,14 @@ nav a {
     -webkit-appearance: none;
 }
 
+/* CONTACT FORM: Animation when field is hovered over */
 .form_box .inputBox input:focus ~ label,
 .form_box .inputBox input:valid ~ label,
 .form_box .inputBox textarea:focus ~ label,
 .form_box .inputBox textarea:valid ~ label {
     top: -18px;
     left: 0;
-    /* Font colour when cursor field is selected */
+    /* Font colour/size when cursor field is selected */
     color: #ffffff;
     font-size: 12px;
 }
@@ -793,6 +798,7 @@ textarea:invalid {
     box-shadow: none;
 }
 
+/* CONTACT FORM: Styling for 'Get in Touch submit <button> */
 .form_box input[type="submit"] {
     background: transparent;
     border: none;
@@ -808,7 +814,7 @@ textarea:invalid {
     border-radius: 0px;
     -webkit-appearance: none;
 }
-
+/* CONTACT FORM: Hover animation over <button> */
 .form_box input[type="submit"]:hover {
     color: #141519;
     background: #FFD700;
@@ -838,7 +844,7 @@ textarea:invalid {
 /* iPhone 5/SE => 320 x 568px */
 @media screen and (max-width: 320px), screen and (max-height: 568px) {
     .about-me-body p {
-        font-size: 12px;
+        /* font-size: 12px; */
     }
     
     .folio-body-main {
@@ -850,6 +856,21 @@ textarea:invalid {
         grid-column: 1 / 8;
         grid-row: 8 / 13;
     }
+
+    /* .contact-form {
+        width: 320px;
+        height: 568px;
+    }
+
+    .form_box {
+        width: 320px;
+        height: 568px;
+    } */
+
+    .form-heading {
+        display: none;
+    }
+
 }
 
 @media(min-width: 320px) {
