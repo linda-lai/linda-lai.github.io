@@ -843,13 +843,6 @@ textarea:invalid {
 /* MOBILE-FIRST: Media Query to set for mobile-first */
 /* iPhone 5/SE => 320 x 568px */
 @media screen and (max-width: 320px), screen and (max-height: 568px) {
-    .about-me-body p {
-        /* font-size: 12px; */
-    }
-    
-    .folio-body-main {
-        font-size: 14px;
-    }
 
     /* FIXME: Swiper Bug */
     .swiper-container {
@@ -857,19 +850,14 @@ textarea:invalid {
         grid-row: 8 / 13;
     }
 
-    /* .contact-form {
+    .contact-form {
         width: 320px;
         height: 568px;
     }
 
-    .form_box {
-        width: 320px;
-        height: 568px;
-    } */
-
-    .form-heading {
+    /* .form-heading {
         display: none;
-    }
+    } */
 
 }
 
