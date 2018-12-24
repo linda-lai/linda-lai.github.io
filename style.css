@@ -35,7 +35,7 @@
     /* FONT SIZES */
     --primary-h1-headline-size: 3em;
     --primary-h2-subheadline-size: 1em;
-    --primary-p-body-size: 14px; 
+    --primary-p-body-size: 1em; 
 }
 
 /* GENERAL STYLING: Remove inbuilt page padding/margins */
