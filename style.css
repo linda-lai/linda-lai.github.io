@@ -698,7 +698,7 @@ nav a {
 
 /* ----- FANCY CONTACT FORM ----- */
 /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
-.contact-form {
+.contact-form-wrapper {
     grid-column: 2 / 4;
     grid-row: 2 / 15;
 }
@@ -868,7 +868,7 @@ textarea:invalid {
     }
 
     /* MEDIA QUERIES - CONTACT: FORM */
-    .contact-form {
+    .contact-form-wrapper {
         width: 320px;
         height: 568px;
     }
@@ -952,7 +952,7 @@ textarea:invalid {
     }
 
     /* ----- MEDIA QUERIES - CONTACT ----- */
-    .contact-form {
+    .contact-form-wrapper {
         grid-column: 1 / 9;
         grid-row: 1 / 15;
     }
