@@ -18,18 +18,19 @@
     --primary-red: #FF1810;
 
     /* FONT: NAVIGATION BAR LOGO */
-    --primary-logo-nav-font: 'Roboto', sans-serif;
+    --primary-nav-logo-font: 'Poppins', sans-serif;
+    --primary-nav-links-font: 'Poppins', sans-serif;
     --primary-logo-nav-size: 2em;
 
     /* FONT: HEADLINE/SUBHEADLINE */
-    --primary-h1-headline-font: 'Roboto', sans-serif;
-    --primary-h2-subheadline-font: 'Roboto', sans-serif;
+    --primary-h1-headline-font: 'Karla', sans-serif;
+    --primary-h2-subheadline-font: 'Karla', sans-serif;
 
     /* FONT: Background Text Graphics: 'def initialize */
-    --primary-background-font: 'Roboto', sans-serif;
+    --primary-background-font: 'Lato', sans-serif;
 
     /* FONT: PARAGRAPHS/BODY */
-    --primary-p-body-font: 'Oxygen', sans-serif;
+    --primary-p-body-font: 'Lato', sans-serif;
 
     /* FONT SIZES */
     --primary-h1-headline-size: 3em;
@@ -64,10 +65,11 @@ p {
 
 /* GENERAL LOGO FONT: Navigation Bar */
 .logo-name {
-    font-family: var(--primary-logo-nav-font);
+    font-family: var(--primary-nav-logo-font);
     font-size: var(--primary-logo-nav-size);
     font-style: bold;
     color: var(--primary-white-background);
+    padding-left: 1em;
 }
 
 /* GENERAL GRID: SITE WRAPPER */
@@ -177,7 +179,7 @@ nav a {
     opacity: 0;
     transition: opacity 150ms ease-in-out;
     /* NAVIGATION FONT: Section Links */
-    font-family: var(--primary-logo-nav-font);
+    font-family: var(--primary-nav-links-font);
 }
   
 .nav-toggle:checked ~ nav {
@@ -245,7 +247,8 @@ nav a {
 .about-me-subhead {
     grid-row: 8 / 9;
     grid-column: 2 / 3;
-    font-size: 1em;
+    /* Override global <h2> styling */
+    font-size: 2em;
     color: var(--primary-white-background);
 }
 
@@ -754,7 +757,7 @@ nav a {
     top: -15;
     padding: 10px 0;
     /* Applies only to <email> field */
-    font-size: 14px;
+    font-size: var(--primary-p-body-size);
     /* Font and colour of form <input> labels: First Name, Last Name, Email, Message */
     font-family: var(--primary-p-body-font);
     color: var(--primary-white-background);
@@ -819,7 +822,7 @@ textarea:invalid {
     transition:background-color 0.3s ease-in-out;
     box-shadow: 0 5px 15px #141519;
     font-size: 15px;
-    color: white;
+    color: var(--primary-black-background);
     -webkit-appearance: none;
 }
 
