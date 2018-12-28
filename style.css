@@ -883,7 +883,7 @@ textarea:invalid {
 
     nav a:hover {
         background: var(--primary-blue);
-        color: white;
+        color: var(--primary-white-background);
     }
 }
 
