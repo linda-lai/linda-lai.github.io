@@ -27,10 +27,13 @@
   --primary-h2-subheadline-font: 'Karla', sans-serif;
 
   /* FONT: Background Text Graphics: 'def initialize */
-  --primary-background-font: 'Lato', sans-serif;
+  --primary-background-font: 'Quicksand', sans-serif;
+
+  /* FONT: Background Text Graphics: '/' */
+  --primary-background-font-symbol: 'Karla', sans-serif;
 
   /* FONT: PARAGRAPHS/BODY */
-  --primary-p-body-font: 'Lato', sans-serif;
+  --primary-p-body-font: 'Quicksand', sans-serif;
 
   /* FONT SIZES */
   --primary-h1-headline-size: 3em;
@@ -49,7 +52,7 @@ body {
 h1 {
   font-family: var(--primary-h1-headline-font);
   font-size: var(--primary-h1-headline-size);
-  font-style: bold;
+  // font-style: bold;
 }
 
 h2 {
@@ -334,6 +337,7 @@ nav a {
 .about-me-background-symbol {
   grid-column: 9 / 11;
   grid-row: 10 / 12;
+  font-family: var(--primary-background-font-symbol);
   /* ABOUT ME BACKGROUND: '/' */
   font-size: 6em;
   color: var(--primary-white-background);
@@ -643,6 +647,7 @@ background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3
   grid-row: 1 / 4;
   /* CONTACT BACKGROUND: '/' */
   font-size: 30em;
+  font-family: var(--primary-background-font-symbol);
 }
 
 /* CONTACT BACKGROUND: Line '---' */

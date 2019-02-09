@@ -23,9 +23,11 @@
   --primary-h1-headline-font: 'Karla', sans-serif;
   --primary-h2-subheadline-font: 'Karla', sans-serif;
   /* FONT: Background Text Graphics: 'def initialize */
-  --primary-background-font: 'Lato', sans-serif;
+  --primary-background-font: 'Quicksand', sans-serif;
+  /* FONT: Background Text Graphics: '/' */
+  --primary-background-font-symbol: 'Karla', sans-serif;
   /* FONT: PARAGRAPHS/BODY */
-  --primary-p-body-font: 'Lato', sans-serif;
+  --primary-p-body-font: 'Quicksand', sans-serif;
   /* FONT SIZES */
   --primary-h1-headline-size: 3em;
   --primary-h2-subheadline-size: 1em;
@@ -40,8 +42,7 @@ body {
 /* <about>, <skills> <folio>, <contact> */
 h1 {
   font-family: var(--primary-h1-headline-font);
-  font-size: var(--primary-h1-headline-size);
-  font-style: bold; }
+  font-size: var(--primary-h1-headline-size); }
 
 h2 {
   font-family: var(--primary-h2-subheadline-font);
@@ -279,6 +280,7 @@ nav a {
 .about-me-background-symbol {
   grid-column: 9 / 11;
   grid-row: 10 / 12;
+  font-family: var(--primary-background-font-symbol);
   /* ABOUT ME BACKGROUND: '/' */
   font-size: 6em;
   color: var(--primary-white-background); }
@@ -558,7 +560,8 @@ nav a {
   grid-column: 2 / 9;
   grid-row: 1 / 4;
   /* CONTACT BACKGROUND: '/' */
-  font-size: 30em; }
+  font-size: 30em;
+  font-family: var(--primary-background-font-symbol); }
 
 /* CONTACT BACKGROUND: Line '---' */
 .contact-line-horizontal {
