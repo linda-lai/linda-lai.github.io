@@ -477,7 +477,7 @@ nav a {
 /* FOLIO GRID ROW/COLUMN: Assigns the Swiper Container to Grid layout */
 .swiper-container {
   grid-column: 2 / 6;
-  grid-row: 7 / 13;
+  grid-row: 7 / 12;
 }
 .swiper-container {
   width: 100%;
@@ -602,7 +602,7 @@ background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3
 /* FOLIO LINE: Placement and fill for fourth horizontal line/rectangle */
 .folio-fourth-line {
   grid-column: 2 / 7;
-  grid-row: 7 / 8;
+  grid-row: 6 / 7;
 }
 .fourth-line-fill {
   background-color: var(--primary-white-background);
