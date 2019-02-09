@@ -203,14 +203,14 @@ nav a {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   /* background-color: dodgerblue; */
 }
 
 /* HOMEPAGE GRID ROW/COLUMN: Aligns the logo vector to the centre of the homepage */
 .logo-container {
   grid-column: 2 / 3;
-  grid-row: 3 / 5;
+  grid-row: 3 / 6;
   width: 40vw;
   max-width: 350px;
   justify-self: center;
@@ -221,7 +221,7 @@ nav a {
 /* HOMEPAGE LOGO: Logo Image & Button  */
 .logo-container img {
   width: 40vw;
-  max-width: 350px;
+  max-width: 250px;
   padding-bottom: 50px;
   /* background: rebeccapurple; */
 }
@@ -241,7 +241,7 @@ nav a {
 
 /* ABOUT ME GRID ROW/COLUMN: Placement of '< about me >' headline */
 .about-me-headline {
-  grid-row: 5 / 7;
+  grid-row: 4 / 8;
   grid-column: 6 / 11;
   color: var(--primary-white-background);
 }
@@ -470,14 +470,14 @@ nav a {
 /* FOLIO GRID ROW/COLUMN: Placement of '[ folio ]' headline */
 .folio h1 {
   grid-column: 4 / 7;
-  grid-row: 4 / 6;
+  grid-row: 4 / 8;
   color: var(--primary-white-background);
 }
 
 /* FOLIO GRID ROW/COLUMN: Assigns the Swiper Container to Grid layout */
 .swiper-container {
   grid-column: 2 / 6;
-  grid-row: 8 / 13;
+  grid-row: 7 / 13;
 }
 .swiper-container {
   width: 100%;
@@ -696,7 +696,7 @@ background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3
 /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
 .contact-form-wrapper {
   grid-column: 2 / 4;
-  grid-row: 2 / 15;
+  grid-row: 3 / 15;
 }
 
 /* CONTACT FORM: To change the background colour of the Contact form */
@@ -903,7 +903,7 @@ textarea:invalid {
   /* ----- ABOUT ----- */
   /* MEDIA QUERIES - ABOUT GRID: Placement of '< about me >' headline */
   .about-me-headline {
-      grid-row: 1 / 8;
+      grid-row: 4 / 8;
       grid-column: 5 / 11; 
   }
 
@@ -970,7 +970,7 @@ textarea:invalid {
   /* ----- MEDIA QUERIES - CONTACT ----- */
   .contact-form-wrapper {
       grid-column: 1 / 9;
-      grid-row: 1 / 15;
+      grid-row: 3 / 15;
   }
 }
 
