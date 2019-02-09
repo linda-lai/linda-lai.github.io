@@ -4,7 +4,8 @@
   /* FONT: Main Body <p> */
   font-family: var(--primary-p-body-font);
   list-style: none;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 /* GENERAL STYLING: Custom global variables for UX/UI palette and font sizes */
 :root {
@@ -15,43 +16,55 @@
   --primary-yellow: #FFD700;
   --primary-blue: #0000FE;
   --primary-red: #FF1810;
+
   /* FONT: NAVIGATION BAR LOGO */
   --primary-nav-logo-font: 'Poppins', sans-serif;
   --primary-nav-links-font: 'Poppins', sans-serif;
   --primary-logo-nav-size: 2em;
+
   /* FONT: HEADLINE/SUBHEADLINE */
   --primary-h1-headline-font: 'Karla', sans-serif;
   --primary-h2-subheadline-font: 'Karla', sans-serif;
+
   /* FONT: Background Text Graphics: 'def initialize */
   --primary-background-font: 'Quicksand', sans-serif;
+
   /* FONT: Background Text Graphics: '/' */
   --primary-background-font-symbol: 'Karla', sans-serif;
+
   /* FONT: PARAGRAPHS/BODY */
   --primary-p-body-font: 'Quicksand', sans-serif;
+
   /* FONT SIZES */
   --primary-h1-headline-size: 3em;
   --primary-h2-subheadline-size: 1em;
-  --primary-p-body-size: 1em; }
+  --primary-p-body-size: 1em; 
+}
 
 /* GENERAL STYLING: Remove inbuilt page padding/margins */
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 /* GENERAL STYLING: Styling for <h1> <section> headlines */
 /* <about>, <skills> <folio>, <contact> */
 h1 {
   font-family: var(--primary-h1-headline-font);
-  font-size: var(--primary-h1-headline-size); }
+  font-size: var(--primary-h1-headline-size);
+  // font-style: bold;
+}
 
 h2 {
   font-family: var(--primary-h2-subheadline-font);
-  font-size: var(--primary-h2-subheadline-size); }
+  font-size: var(--primary-h2-subheadline-size);
+}
 
 /* GENERAL STYLING: Body Font for <about> and <folio> section */
 p {
   font-size: var(--primary-p-body-size);
-  /* background: dodgerblue; */ }
+  /* background: dodgerblue; */
+}
 
 /* GENERAL LOGO FONT: Navigation Bar */
 .logo-name {
@@ -59,17 +72,26 @@ p {
   font-size: var(--primary-logo-nav-size);
   font-style: bold;
   color: var(--primary-white-background);
-  padding-left: 1em; }
+  padding-left: 1em;
+}
 
 /* GENERAL GRID: SITE WRAPPER */
 .site-wrapper {
   display: grid;
-  grid-template-areas: "navigation" "home" "about-me" "skills" "folio" "contact"; }
+  grid-template-areas: 
+  "navigation"
+  "home"
+  "about-me"
+  "skills"
+  "folio"
+  "contact"
+}
 
 /* GENERAL STYLING: Removes scrollbar view */
 ::-webkit-scrollbar {
   width: 0px;
-  /* background: transparent; */ }
+  /* background: transparent; */
+}
 
 /* ---------------------------- NAVIGATION ---------------------------- */
 /* NAVIGATION: Bar */
@@ -81,11 +103,13 @@ header {
   width: 100%;
   margin: 0;
   padding: 0;
-  /* box-shadow: 0 1px 8px; */ }
+  /* box-shadow: 0 1px 8px; */
+}
 
 /* NAVIGATION: Hides the checkbox */
 .nav-toggle {
-  display: none; }
+  display: none;
+}
 
 /* NAVIGATION: Sets the burger menu to act as checkbox */
 .nav-toggle-label {
@@ -96,7 +120,8 @@ header {
   margin-left: 1em;
   height: 100%;
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 /* NAVIGATION: Defines lines/behaviours for the burger menu */
 .nav-toggle-label span,
@@ -107,18 +132,19 @@ header {
   height: 2px;
   width: 2em;
   border-radius: 2px;
-  position: relative; }
-
+  position: relative;
+}
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  content: '';
-  position: absolute; }
-
+content: '';
+position: absolute;
+}
 .nav-toggle-label span::before {
-  bottom: 7px; }
-
+  bottom: 7px;
+}
 .nav-toggle-label span::after {
-  top: 7px; }
+  top: 7px;
+}
 
 /* NAVIGATION: Determines the placement, colour and behaviour of the <flyout> navigation bar */
 nav {
@@ -131,18 +157,21 @@ nav {
   /* display: none; */
   transform: scale(1, 0);
   transform-origin: top;
-  transition: transform 400ms ease-in-out; }
+  transition: transform 400ms ease-in-out;
+}
 
 /* NAVIGATION: Formats the unordered list  */
 nav ul {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 /* NAVIGATION: Formats navigation text/links */
 nav li {
   margin-bottom: 1em;
-  margin-left: 1em; }
+  margin-left: 1em;   
+}
 
 /* NAVIGATION: Styling text links */
 nav a {
@@ -153,14 +182,17 @@ nav a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
   /* NAVIGATION FONT: Section Links */
-  font-family: var(--primary-nav-links-font); }
+  font-family: var(--primary-nav-links-font);
+}
 
 .nav-toggle:checked ~ nav {
-  transform: scale(1, 1); }
+  transform: scale(1,1);
+}
 
 .nav-toggle:checked ~ nav a {
   opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms; }
+  transition: opacity 250ms ease-in-out 250ms;
+}
 
 /******** HOMEPAGE ********/
 /* HOMEPAGE GRID TEMPLATE */
@@ -172,7 +204,8 @@ nav a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  /* background-color: dodgerblue; */ }
+  /* background-color: dodgerblue; */
+}
 
 /* HOMEPAGE GRID ROW/COLUMN: Aligns the logo vector to the centre of the homepage */
 .logo-container {
@@ -182,14 +215,16 @@ nav a {
   max-width: 350px;
   justify-self: center;
   align-self: center;
-  text-align: center; }
+  text-align: center;
+}
 
 /* HOMEPAGE LOGO: Logo Image & Button  */
 .logo-container img {
   width: 40vw;
   max-width: 350px;
   padding-bottom: 50px;
-  /* background: rebeccapurple; */ }
+  /* background: rebeccapurple; */
+}
 
 /* ---------------------------- ABOUT ME ---------------------------- */
 /* ABOUT ME GRID TEMPLATE: Creates a grid for the About Me section*/
@@ -201,13 +236,15 @@ nav a {
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
   background: var(--primary-black-background);
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* ABOUT ME GRID ROW/COLUMN: Placement of '< about me >' headline */
 .about-me-headline {
   grid-row: 5 / 7;
   grid-column: 6 / 11;
-  color: var(--primary-white-background); }
+  color: var(--primary-white-background);
+}
 
 /* ABOUT ME GRID ROW/COLUMN: Placement of 'Hello.' subheadline */
 .about-me-subhead {
@@ -215,14 +252,16 @@ nav a {
   grid-column: 2 / 3;
   /* Override global <h2> styling */
   font-size: 2em;
-  color: var(--primary-white-background); }
+  color: var(--primary-white-background);
+}
 
 /* ABOUT ME GRID ROW/COLUMN: Placement of body copy 1 */
 .about-me-body {
   grid-column: 2 / 8;
   grid-row: 9 / 12;
   /* background: aqua; */
-  color: var(--primary-white-background); }
+  color: var(--primary-white-background);
+}
 
 /* ABOUT ME GRID ROW/COLUMN: Placement of body copy 2
 .about-me-body-2{
@@ -231,6 +270,7 @@ nav a {
   font-size: 16px;
   color: white;
 } */
+
 /* ABOUT ME GRID ROW/COLUMN: Placement of 'def initialize' decorative background text */
 .about-me-background-init {
   grid-column: 2 / 5;
@@ -238,7 +278,8 @@ nav a {
   font-size: 1em;
   /* background: indianred; */
   font-family: var(--primary-background-font);
-  color: var(--primary-white-background); }
+  color: var(--primary-white-background);
+}
 
 /* ABOUT ME: Defines behaviours and formatting for 'def initalize' blinking cursor */
 .blinking-cursor {
@@ -249,33 +290,49 @@ nav a {
   -moz-animation: 1s blink step-end infinite;
   -ms-animation: 1s blink step-end infinite;
   -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite; }
-
+  animation: 1s blink step-end infinite;
+}
 @keyframes "blink" {
   from, to {
-    color: transparent; }
+    color: transparent;
+  }
   50% {
-    color: var(--primary-white-background); } }
+    color: var(--primary-white-background);
+  }
+} 
 @-moz-keyframes blink {
   from, to {
-    color: transparent; }
+    color: transparent;
+  }
   50% {
-    color: var(--primary-white-background); } }
+    color: var(--primary-white-background);
+  }
+}
 @-webkit-keyframes "blink" {
   from, to {
-    color: transparent; }
+    color: transparent;
+  }
   50% {
-    color: var(--primary-white-background); } }
+    color: var(--primary-white-background);
+  }
+}
 @-ms-keyframes "blink" {
   from, to {
-    color: transparent; }
+    color: transparent;
+  }
   50% {
-    color: var(--primary-white-background); } }
+    color: var(--primary-white-background);
+  }
+}
 @-o-keyframes "blink" {
   from, to {
-    color: transparent; }
+    color: transparent;
+  }
   50% {
-    color: var(--primary-white-background); } }
+    color: var(--primary-white-background);
+  }
+}
+
 /* ABOUT ME GRID ROW/COLUMN: Placement of '/' decorative background text */
 .about-me-background-symbol {
   grid-column: 9 / 11;
@@ -283,7 +340,8 @@ nav a {
   font-family: var(--primary-background-font-symbol);
   /* ABOUT ME BACKGROUND: '/' */
   font-size: 6em;
-  color: var(--primary-white-background); }
+  color: var(--primary-white-background);
+}
 
 /* ---------------------------- SKILLS ---------------------------- */
 /* SKILLS GRID TEMPLATE: Creates a grid for the Skills section */
@@ -293,97 +351,110 @@ nav a {
   min-width: 100vw;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(16, 1fr); }
+  grid-template-rows: repeat(16, 1fr);
+}
 
 /* SKILLS GRID ROW/COLUMN: Placement of '{ :skills } headline' */
 .skills-headline {
   grid-column: 1 / 3;
   grid-row: 5 / 11;
-  writing-mode: vertical-rl; }
+  writing-mode: vertical-rl;
+}
 
 /* SKILLS: Removes inbuilt indentation for <li> front-end, back-end, other skills */
 .skills ul {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+}
 
 /* SKILLS: Body paragraph styling for body/list copy */
 .skills-list li {
   font-size: var(--primary-p-body-size);
-  /* background: yellow; */ }
+  /* background: yellow; */
+}
 
 /* SKILLS GRID ROW/COLUMN: Placement of ':front_end' body copy */
 .skills-frontend {
   grid-column: 3 / 5;
-  grid-row: 5 / 16; }
+  grid-row: 5 / 16;
+}
 
 /* SKILLS GRID ROW/COLUMN: Placement of ':back_end' body copy */
 .skills-backend {
   grid-column: 3 / 5;
-  grid-row: 11 / 16; }
+  grid-row: 11 / 16;
+}
 
 /* SKILLS GRID ROW/COLUMN: Placement of ':other' body copy */
 .skills-other {
   grid-column: 6 / 9;
-  grid-row: 10 / 16; }
+  grid-row: 10 / 16;
+}
 
 /* SKILLS GRID ROW/COLUMN: Placement of decorative background rectangles */
 /* SKILLS RECTANGLE: Bottom Left */
 .skills-rectangle-bottom-left {
   grid-column: 1 / 2;
   grid-row: 10 / 15;
-  background: var(--primary-black-background); }
-
+  background: var(--primary-black-background);
+}
 .skills-rectangle-bottom-left:hover {
   background: var(--primary-blue);
-  transition: 320ms; }
+  transition: 320ms;
+}
 
 /* SKILLS RECTANGLE: Middle Left */
 .skills-rectangle-middle-left {
   grid-column: 2 / 5;
   grid-row: 3 / 4;
-  background: var(--primary-black-background); }
-
+  background: var(--primary-black-background);
+}
 .skills-rectangle-middle-left:hover {
   background: var(--primary-yellow);
-  transition: 320ms; }
+  transition: 320ms;
+}
 
 /* SKILLS RECTANGLE: Bottom Right */
 .skills-rectangle-bottom-right {
   grid-column: 3 / 8;
   grid-row: 16 / 17;
-  background: var(--primary-black-background); }
-
+  background: var(--primary-black-background);
+}
 .skills-rectangle-bottom-right:hover {
   background: var(--primary-yellow);
-  transition: 320ms; }
+  transition: 320ms;
+}
 
 /* SKILLS RECTANGLE: Middle Center */
 .skills-rectangle-middle-center {
-  grid-column: 6/7;
-  grid-row: 6/9;
+  grid-column: 6 / 7 ;
+  grid-row: 6 / 9 ;
   background: var(--primary-black-background);
-  transition: 500ms; }
-
+  transition: 500ms;
+}
 .skills-rectangle-middle-center:hover {
   background: var(--primary-red);
-  transition: 320ms; }
+  transition: 320ms;
+}
 
 /* RECTANGLE: Top Right*/
 .skills-rectangle-top-right {
   grid-column: 8 / 9;
   grid-row: 1 / 8;
-  background: var(--primary-black-background); }
-
+  background: var(--primary-black-background);
+}
 .skills-rectangle-top-right:hover {
   background: var(--primary-blue);
-  transition: 320ms; }
+  transition: 320ms;
+}
 
 /* ---------------------------- FOLIO ---------------------------- */
 /* FOLIO ROTATION WRAPPER: Creates a container for page rotation */
 .folio-container {
   grid-area: folio;
   overflow: hidden;
-  background: var(--primary-black-background); }
+  background: var(--primary-black-background);
+}
 
 /* FOLIO GRID TEMPLATE: Creates a grid for the Folio section */
 .folio {
@@ -393,23 +464,25 @@ nav a {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(14, 1fr);
   background: var(--primary-black-background);
-  transform: rotate(-30deg); }
+  transform: rotate(-30deg);
+}
 
 /* FOLIO GRID ROW/COLUMN: Placement of '[ folio ]' headline */
 .folio h1 {
   grid-column: 4 / 7;
   grid-row: 4 / 6;
-  color: var(--primary-white-background); }
+  color: var(--primary-white-background);
+}
 
 /* FOLIO GRID ROW/COLUMN: Assigns the Swiper Container to Grid layout */
 .swiper-container {
   grid-column: 2 / 6;
-  grid-row: 8 / 13; }
-
+  grid-row: 8 / 13;
+}
 .swiper-container {
   width: 100%;
-  height: 100%; }
-
+  height: 100%;
+}
 .swiper-slide {
   font-size: 18px;
   /* Use background colour for swiper testing */
@@ -427,35 +500,39 @@ nav a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center; */ }
-
+  align-items: center; */
+}
 .swiper-slide:nth-child(2) {
-  /* background-color: purple; */ }
-
+  /* background-color: purple; */
+}
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23f8f8f8'%2F%3E%3C%2Fsvg%3E");
-  /* left: 10px;
-  right: auto; */ }
-
+background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23f8f8f8'%2F%3E%3C%2Fsvg%3E");
+/* left: 10px;
+right: auto; */
+}
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23f8f8f8'%2F%3E%3C%2Fsvg%3E");
-  /* margin-left: 2em; */
-  /* right: 20px; */
-  /* left: auto; */ }
+background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23f8f8f8'%2F%3E%3C%2Fsvg%3E");
+/* margin-left: 2em; */
+/* right: 20px; */
+/* left: auto; */
+}
 
 /* FOLIO GRID ROW/COLUMN: Placement of folio section body */
 .folio-body-container {
   color: var(--primary-white-background);
-  padding: 0 2.5em 0 2.5em; }
+  padding: 0 2.5em 0 2.5em;
+}
 
 /* FOLIO BODY: Hides second paragraph for mobile view */
 .folio-body-full-1 {
-  display: none; }
+  display: none;
+}
 
 .folio-body-full-2 {
-  display: none; }
+  display: none;
+}
 
 /* FOLIO LINKS: Styling for GitHub Project links */
 .git-link {
@@ -464,20 +541,21 @@ nav a {
   font-style: none;
   text-decoration: none;
   padding: 0.3em 0.5em 0.3em 0.5em;
-  color: var(--primary-white-background); }
-
+  color: var(--primary-white-background);
+}
 .git-link:link {
   text-decoration: none;
-  color: var(--primary-white-background); }
-
+  color: var(--primary-white-background)
+}
 .git-link:hover {
   background: var(--primary-yellow);
-  color: var(--primary-white-background); }
-
+  color: var(--primary-white-background);
+}
 /* To make every second link hovered over primary blue instead of yellow */
 .swiper-slide:nth-child(2) .folio-body-container .git-link:hover {
   background: var(--primary-red);
-  color: var(--primary-white-background); }
+  color: var(--primary-white-background);
+}
 
 /* FOLIO GRID ROW/COLUMN: Placement of 'NAN' background decorative type */
 .folio-background-text {
@@ -485,57 +563,63 @@ nav a {
   grid-row: 1 / 3;
   /* FOLIO BACKGROUND: 'NaN' */
   font-size: 2em;
-  color: var(--primary-white-background); }
+  color: var(--primary-white-background);
+}
 
 /* FOLIO LINE: Placement and fill for first horizontal line/rectangle */
 .folio-first-line {
   grid-column: 2 / 7;
-  grid-row: 2 / 4; }
-
+  grid-row: 2 / 4;
+}
 .first-line-fill {
   background-color: var(--primary-white-background);
   width: 100%;
-  height: 5%; }
+  height: 5%;
+}
 
 /* FOLIO LINE: Placement and fill for second horizontal line/rectangle */
 .folio-second-line {
   grid-column: 1 / 6;
-  grid-row: 4 / 5; }
-
+  grid-row: 4 / 5;
+}
 .second-line-fill {
   background-color: var(--primary-white-background);
   width: 100%;
-  height: 30%; }
+  height: 30%;
+}
 
 /* FOLIO LINE: Placement and fill for third horizontal line/rectangle */
 .folio-third-line {
   grid-column: 1 / 3;
-  grid-row: 5 / 6; }
-
+  grid-row: 5 / 6;
+}
 .third-line-fill {
   background-color: var(--primary-white-background);
   width: 100%;
-  height: 70%; }
+  height: 70%;
+}
 
 /* FOLIO LINE: Placement and fill for fourth horizontal line/rectangle */
 .folio-fourth-line {
   grid-column: 2 / 7;
-  grid-row: 7 / 8; }
-
+  grid-row: 7 / 8;
+}
 .fourth-line-fill {
   background-color: var(--primary-white-background);
   width: 100%;
-  height: 70%; }
+  height: 70%;
+}
 
 /* FOLIO LINE: Placement and fill for fifth horizontal line/rectangle */
 .folio-fifth-line {
   grid-column: 1 / 7;
-  grid-row: 13 / 14; }
-
+  grid-row: 13 / 14;
+}
 .fifth-line-fill {
   background-color: var(--primary-white-background);
   width: 100%;
-  height: 90%; }
+  height: 90%;
+}
 
 /* ---------------------------- CONTACT ---------------------------- */
 /* CONTACT GRID TEMPLATE: Creates a grid for the Contact section */
@@ -547,13 +631,15 @@ nav a {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(14, 1fr);
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* CONTACT GRID ROW/COLUMN: Placement of '@contact' headline */
 .contact h1 {
   grid-column: 1 / 5;
   grid-row: 3 / 4;
-  color: var(--primary-white-background); }
+  color: var(--primary-white-background);
+}
 
 /* CONTACT BACKGROUND: '/' */
 .contact-background-symbol {
@@ -561,36 +647,39 @@ nav a {
   grid-row: 1 / 4;
   /* CONTACT BACKGROUND: '/' */
   font-size: 30em;
-  font-family: var(--primary-background-font-symbol); }
+  font-family: var(--primary-background-font-symbol);
+}
 
 /* CONTACT BACKGROUND: Line '---' */
 .contact-line-horizontal {
   grid-column: 1 / 7;
-  grid-row: 2/3; }
-
+  grid-row: 2 / 3 ;
+}
 .horizontal-line-fill {
   background-color: var(--primary-black-background);
   width: 100%;
-  height: 5px; }
+  height: 5px;
+}
 
 /* CONTACT BACKGROUND: Cross '+' */
 .contact-cross-horizontal {
   grid-column: 6 / 9;
-  grid-row: 11/13; }
-
+  grid-row: 11 / 13 ;
+}
 .horizontal-cross-fill {
   background-color: var(--primary-black-background);
   width: 100%;
-  height: 10px; }
-
+  height: 10px;
+}
 .contact-cross-vertical {
   grid-column: 8 / 9;
-  grid-row: 7 / 13; }
-
+  grid-row: 7 / 13;
+}
 .vertical-cross-fill {
   background-color: var(--primary-black-background);
   width: 10px;
-  height: 100%; }
+  height: 100%;
+}
 
 /* CONTACT: Social Media Links */
 .social-links {
@@ -600,13 +689,15 @@ nav a {
   z-index: 1;
   display: flex;
   justify-content: center;
-  padding: 1em; }
+  padding: 1em;
+}
 
 /* ----- FANCY CONTACT FORM ----- */
 /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
 .contact-form-wrapper {
   grid-column: 2 / 4;
-  grid-row: 2 / 15; }
+  grid-row: 2 / 15;
+}
 
 /* CONTACT FORM: To change the background colour of the Contact form */
 .form_box {
@@ -615,11 +706,12 @@ nav a {
   /* CONTACT FORM BACKGROUND */
   background: var(--primary-black-background);
   /* background: dodgerblue; */
-  box-sizing: border-box;
+  box-sizing:  border-box;
   /* CONTACT FORM: Opacity */
   opacity: 0.85;
   z-index: 30;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 /* CONTACT FORM: To change the colour of the form field titles */
 .form_box h1 {
@@ -627,14 +719,16 @@ nav a {
   padding: 0;
   font-size: var(--primary-h1-headline-size);
   text-align: center;
-  font-family: var(--primary-h1-headline-font); }
+  font-family: var(--primary-h1-headline-font);
+}
 
 /* CONTACT FORM To change the positioning of the form field title */
 .form_box .inputBox {
   position: relative;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
-.form_box .inputBox input,
+.form_box .inputBox input, 
 .form_box .inputBox textarea {
   width: 100%;
   /* Padding between text input and form field label */
@@ -651,12 +745,14 @@ nav a {
   border-bottom: 1px solid var(--primary-white-background);
   outline: none;
   background: transparent;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
-.form_box .inputBox input:-webkit-autofill,
+.form_box .inputBox input:-webkit-autofill, 
 .form_box .inputBox textarea:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px #ED6400 inset;
-  -webkit-text-fill-color: var(--primary-white-background); }
+  -webkit-text-fill-color: var(--primary-white-background);
+}
 
 /* CONTACT FORM: Font/color for input label */
 .form_box .inputBox label {
@@ -672,7 +768,8 @@ nav a {
   color: var(--primary-white-background);
   pointer-events: none;
   transition: .5s;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 /* CONTACT FORM: Animation when field is hovered over */
 .form_box .inputBox input:focus ~ label,
@@ -683,24 +780,29 @@ nav a {
   left: 0;
   /* Font colour/size of field name text when field has input within it: First Name, Last Name, Email, Message */
   color: var(--primary-white-background);
-  font-size: 12px; }
+  font-size: 12px;
+}
 
 /* CONTACT FORM: To remove red box outline for required input */
 input:required {
-  box-shadow: none; }
+  box-shadow:none;
+}
 
 /* CONTACT FORM: To remove red box outline for invalid input */
 input:invalid {
-  box-shadow: none; }
+  box-shadow: none;
+}
 
 /* CONTACT FORM:To remove red box outline for invalid input */
 textarea:invalid {
-  box-shadow: none; }
+  box-shadow: none;
+}
 
 /* CONTACT FORM: To center submit button */
 .submit-button {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 /* CONTACT FORM: Styling for 'Get in Touch submit <button> */
 .form_box input[type="submit"] {
@@ -716,186 +818,237 @@ textarea:invalid {
   padding: 10px 50px;
   cursor: pointer;
   border-radius: 0px;
-  -webkit-appearance: none; }
-
+  -webkit-appearance: none;
+}
 /* CONTACT FORM: Hover animation over <button> */
 .form_box input[type="submit"]:hover {
   color: var(--primary-black-background);
   background: var(--primary-yellow);
-  transition: background-color 0.3s ease-in-out;
+  transition:background-color 0.3s ease-in-out;
   box-shadow: 0 5px 15px #141519;
   font-size: 15px;
   color: var(--primary-black-background);
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 /* ---------------------------- MEDIA QUERIES ---------------------------- */
 /* Extra small devices (phones, 600px and down) */
 /* @media only screen and (max-width: 600px) {...} */
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* @media only screen and (min-width: 600px) {...} */
+
 /* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 768px) {...} */
+
 /* Large devices (laptops/desktops, 992px and up) */
 /* @media only screen and (min-width: 992px) {...} */
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {...}  */
+
+
 /* ---------- MEDIA QUERIES - MOBILE: Add Media Query for Mobile First ----------*/
+
 /* MEDIA QUERIES: Media Query set from iPhone 5/SE => 320 x 568px */
 @media screen and (max-width: 320px), screen and (max-height: 568px) {
+
   /* MEDIA QUERIES - STYLING: ALL */
   p {
-    /* font-size: 12px; */
-    /* background: magenta; */ }
+      /* font-size: 12px; */
+      /* background: magenta; */
+  }
 
   /* MEDIA QUERIES - FOLIO: SWIPER */
   .swiper-container {
-    grid-column: 1 / 8;
-    grid-row: 8 / 13; }
+      grid-column: 1 / 8;
+      grid-row: 8 / 13;
+  }
 
   /* MEDIA QUERIES - CONTACT: FORM */
   .contact-form-wrapper {
-    width: 320px;
-    height: 568px; }
+      width: 320px;
+      height: 568px;
+  }
 
   /* MEDIA QUERIES - CONTACT: HEADLINE */
   /* .form-heading {
       display: none;
-  } */ }
+  } */
+
+}
+
 @media screen and (max-width: 320px), screen and (max-width: 600px) {
+
   /* NAVIGATION BAR: BURGER MENU <SECTION> HOVER ANIMATION */
   nav a {
-    padding: 0.3em 0.5em 0.3em 0.5em;
-    color: var(--primary-white-background); }
+      padding: 0.3em 0.5em 0.3em 0.5em;
+      color: var(--primary-white-background);
+  }
 
   nav a:hover {
-    background: var(--primary-blue);
-    color: var(--primary-white-background); } }
+      background: var(--primary-blue);
+      color: var(--primary-white-background);
+  }
+}
+
 /* MEDIA QUERIES: Media Query set from 320px width, any height */
-@media (min-width: 320px) {
+@media(min-width: 320px) {
+
   /* nav a:hover {
       background: dodgerblue;
       color: white;
   } */
+
   /* ----- ABOUT ----- */
   /* MEDIA QUERIES - ABOUT GRID: Placement of '< about me >' headline */
   .about-me-headline {
-    grid-row: 1 / 8;
-    grid-column: 5 / 11; }
+      grid-row: 1 / 8;
+      grid-column: 5 / 11; 
+  }
 
   /* MEDIA QUERIES - ABOUT GRID: Placement of 'Hello.' subheadline */
   .about-me-subhead {
-    grid-row: 6/ 9;
-    grid-column: 2 / 3; }
+      grid-row: 6/ 9;
+      grid-column: 2 / 3;
+  }
 
   /* MEDIA QUERIES - ABOUT GRID: Placement of 'def initialize' decorative background text */
   .about-me-background-init {
-    grid-row: 5 / 7; }
+      grid-row: 5 / 7;
+  }
 
   /* MEDIA QUERIES - ABOUT GRID: Body */
   .about-me-body {
-    grid-column: 2 / 10;
-    grid-row: 7 / 12; }
+      grid-column: 2 / 10;
+      grid-row: 7 / 12;
+  }
 
   /* MEDIA QUERIES - ABOUT BACKGROUND: Placement of '/' decorative background text */
   .about-me-background-symbol {
-    grid-column: 10 / 11; }
-
+      grid-column: 10 / 11;
+  }
+      
   /* ----- SKILLS ----- */
   /* MEDIA QUERIES - SKILLS GRID: Placement of '{ :skills } headline' */
   .skills-headline {
-    grid-row: 4 / 11;
-    writing-mode: vertical-rl; }
+      grid-row: 4 / 11;
+      writing-mode: vertical-rl;
+  }
 
   /* MEDIA QUERIES - SKILLS LIST: Styling for body/list copy */
   .skills li {
-    /* font-size: 14px; */ }
+      /* font-size: 14px; */
+  }
 
   /* MEDIA QUERIES - SKILLS GRID: Placement of ':front_end' body copy */
   .skills-frontend {
-    grid-column: 3 / 5;
-    grid-row: 4 / 16; }
+      grid-column: 3 / 5;
+      grid-row: 4 / 16;
+  }
 
   /* MEDIA QUERIES - SKILLS GRID: Placement of ':back_end' body copy */
   .skills-backend {
-    grid-column: 3 / 5;
-    grid-row: 9 / 16; }
+      grid-column: 3 / 5;
+      grid-row: 9 / 16;
+  }
 
   /* MEDIA QUERIES - SKILLS GRID: Placement of ':back_end' body copy */
   .skills-other {
-    grid-column: 6 / 9;
-    grid-row: 9 / 16; }
+      grid-column: 6 / 9;
+      grid-row: 9 / 16;
+  }
 
   /* MEDIA QUERIES - SKILLS: Placement of decorative background rectangles */
   /* MEDIA QUERIES - SKILLS RECTANGLE: Bottom Left */
   .skills-rectangle-bottom-left {
-    grid-column: 1 / 2;
-    grid-row: 11 / 15;
-    background: var(--primary-black-background); }
+      grid-column: 1 / 2;
+      grid-row: 11 / 15;
+      background: var(--primary-black-background);
+  }
 
   /* ----- MEDIA QUERIES - CONTACT ----- */
   .contact-form-wrapper {
-    grid-column: 1 / 9;
-    grid-row: 1 / 15; } }
+      grid-column: 1 / 9;
+      grid-row: 1 / 15;
+  }
+}
+
 /* ---------- MEDIA QUERIES - DESKTOP: Add Media Query for Desktop ----------*/
 /* max-width: 600px => Stops the rotation of folio section up until screens of 600px { */
 @media only screen and (max-width: 600px) {
+
   /* ----- MEDIA QUERIES - FOLIO: ROTATION ----- */
   .folio {
-    transform: rotate(0deg); }
+      transform: rotate(0deg);
+  }
 
   /* MEDIA QUERIES - FOLIO: Swiper */
   .swiper-container {
-    grid-column: 1 / 8;
-    grid-row: 8 / 13; } }
+      grid-column: 1 / 8;
+      grid-row: 8 / 13;
+  }
+}
+
 /* min-width: 600px => Only show the full navigation bar until 600px, otherwise show burger menu on smaller screens */
 @media screen and (min-width: 600px) {
   /* ----- MEDIA QUERIES - NAVIGATION ----- */
   .nav-toggle-label {
-    display: none; }
+      display: none;
+  }
 
   header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr; }
+      display: grid;
+      grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
 
   .logo {
-    grid-column: 2 / 3; }
-
+      grid-column: 2 / 3;
+  }
+    
   nav {
-    all: unset;
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; }
-
+      all: unset;
+      grid-column: 3 / 4;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  }
+    
   nav ul {
-    display: flex; }
-
+      display: flex;
+  }
+    
   nav li {
-    margin-left: 3em;
-    margin-bottom: 0; }
-
+      margin-left: 3em;
+      margin-bottom: 0;
+  }
+    
   nav a {
-    opacity: 1;
-    position: relative; }
-
+      opacity: 1;
+      position: relative;
+  }
+    
   nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    /* NAVIGATION COLOR: Line above hovered <section> */
-    background: var(--primary-blue);
-    position: absolute;
-    top: -.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms; }
+      content: '';
+      display: block;
+      height: 5px;
+      /* NAVIGATION COLOR: Line above hovered <section> */
+      background: var(--primary-blue);
+      position: absolute;
+      top: -.75em;
+      left: 0;
+      right: 0;
+      transform: scale(0, 1);
+      transition: transform ease-in-out 250ms;
+  }
 
   nav a:hover::before {
-    transform: scale(1, 1); }
+      transform: scale(1,1);
+  }
 
   /* ----- MEDIA QUERIES - FOLIO ----- */
   .folio-body-full-1 {
-    display: block; } }
+      display: block;
+  }
 
-/*# sourceMappingURL=style.css.map */
+}
