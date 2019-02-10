@@ -54,7 +54,7 @@ p {
   /* background: dodgerblue; */ }
 
 /* GENERAL LOGO FONT: Navigation Bar */
-.logo-name {
+.nav-logo {
   font-family: var(--primary-nav-logo-font);
   font-size: var(--primary-logo-nav-size);
   font-style: bold;
