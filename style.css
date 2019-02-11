@@ -750,7 +750,7 @@ textarea:invalid {
   /* MEDIA QUERIES - FOLIO: SWIPER */
   .swiper-container {
     grid-column: 1 / 8;
-    grid-row: 8 / 13; }
+    grid-row: 7 / 13; }
 
   /* MEDIA QUERIES - CONTACT: FORM */
   .contact-form-wrapper {
@@ -846,7 +846,7 @@ textarea:invalid {
   /* MEDIA QUERIES - FOLIO: Swiper */
   .swiper-container {
     grid-column: 1 / 8;
-    grid-row: 8 / 13; } }
+    grid-row: 7 / 13; } }
 /* min-width: 600px => Only show the full navigation bar until 600px, otherwise show burger menu on smaller screens */
 @media screen and (min-width: 600px) {
   /* ----- MEDIA QUERIES - NAVIGATION ----- */
