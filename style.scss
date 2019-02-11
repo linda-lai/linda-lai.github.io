@@ -67,7 +67,7 @@ p {
 }
 
 /* GENERAL LOGO FONT: Navigation Bar */
-.logo-name {
+.nav-logo {
   font-family: var(--primary-nav-logo-font);
   font-size: var(--primary-logo-nav-size);
   font-style: bold;
@@ -862,7 +862,7 @@ textarea:invalid {
   /* MEDIA QUERIES - FOLIO: SWIPER */
   .swiper-container {
       grid-column: 1 / 8;
-      grid-row: 8 / 13;
+      grid-row: 7 / 13;
   }
 
   /* MEDIA QUERIES - CONTACT: FORM */
@@ -986,7 +986,7 @@ textarea:invalid {
   /* MEDIA QUERIES - FOLIO: Swiper */
   .swiper-container {
       grid-column: 1 / 8;
-      grid-row: 8 / 13;
+      grid-row: 7 / 13;
   }
 }
 
