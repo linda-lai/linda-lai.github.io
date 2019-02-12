@@ -861,6 +861,12 @@ textarea:invalid {
     grid-row: 1 / 15;
   }
 
+  /* MEDIA QUERIES - CONTACT: HEADLINE */
+  // Remove contact headline to give some clearance
+  .form-heading {
+    display: none;
+  }
+
 }
 
 /* MEDIA QUERIES: Media Query set from iPhone 6📱(375 x 667px or less) */
@@ -871,12 +877,6 @@ textarea:invalid {
   .contact-form-wrapper {
     grid-column: 1 / 9;
     grid-row: 1 / 15;
-  }
-
-  /* MEDIA QUERIES - CONTACT: HEADLINE */
-  // Remove contact headline to give some clearance
-  .form-heading {
-    // display: none;
   }
 
 }

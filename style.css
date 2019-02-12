@@ -750,16 +750,18 @@ textarea:invalid {
   /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
   .contact-form-wrapper {
     grid-column: 1 / 9;
-    grid-row: 1 / 15; } }
+    grid-row: 1 / 15; }
+
+  /* MEDIA QUERIES - CONTACT: HEADLINE */
+  .form-heading {
+    display: none; } }
 /* MEDIA QUERIES: Media Query set from iPhone 6📱(375 x 667px or less) */
 @media screen and (max-width: 375px), screen and (max-height: 667px) {
   /* MEDIA QUERIES - CONTACT: FORM */
   /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
   .contact-form-wrapper {
     grid-column: 1 / 9;
-    grid-row: 1 / 15; }
-
-  /* MEDIA QUERIES - CONTACT: HEADLINE */ }
+    grid-row: 1 / 15; } }
 /* ---------- MEDIA QUERIES: Add Media Query for Navigation ----------*/
 @media screen and (max-width: 320px), screen and (max-width: 600px) {
   /* NAVIGATION BAR: BURGER MENU <SECTION> HOVER ANIMATION */
