@@ -753,7 +753,7 @@ textarea:invalid {
     grid-row: 1 / 15; }
 
   /* MEDIA QUERIES - CONTACT: HEADLINE */
-  .form-heading {
+  .social-links {
     display: none; } }
 /* MEDIA QUERIES: Media Query set from iPhone 6📱(375 x 667px or less) */
 @media screen and (max-width: 375px), screen and (max-height: 667px) {
