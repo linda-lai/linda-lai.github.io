@@ -194,7 +194,7 @@ nav a {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-/******** HOMEPAGE ********/
+/*---------------------------- HOMEPAGE ----------------------------*/
 /* HOMEPAGE GRID TEMPLATE */
 .home {
   grid-area: home;
@@ -292,7 +292,7 @@ nav a {
   -o-animation: 1s blink step-end infinite;
   animation: 1s blink step-end infinite;
 }
-@keyframes "blink" {
+@keyframes blink {
   from, to {
     color: transparent;
   }
@@ -308,7 +308,7 @@ nav a {
     color: var(--primary-white-background);
   }
 }
-@-webkit-keyframes "blink" {
+@-webkit-keyframes blink {
   from, to {
     color: transparent;
   }
@@ -316,7 +316,7 @@ nav a {
     color: var(--primary-white-background);
   }
 }
-@-ms-keyframes "blink" {
+@-ms-keyframes blink {
   from, to {
     color: transparent;
   }
@@ -324,7 +324,7 @@ nav a {
     color: var(--primary-white-background);
   }
 }
-@-o-keyframes "blink" {
+@-o-keyframes blink {
   from, to {
     color: transparent;
   }
@@ -501,9 +501,6 @@ nav a {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center; */
-}
-.swiper-slide:nth-child(2) {
-  /* background-color: purple; */
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
@@ -750,6 +747,7 @@ background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3
 
 .form_box .inputBox input:-webkit-autofill, 
 .form_box .inputBox textarea:-webkit-autofill {
+  box-shadow: 0 0 0 30px #ED6400 inset;
   -webkit-box-shadow: 0 0 0 30px #ED6400 inset;
   -webkit-text-fill-color: var(--primary-white-background);
 }
@@ -853,12 +851,6 @@ textarea:invalid {
 /* MEDIA QUERIES: Media Query set from iPhone 5/SE => 320 x 568px */
 @media screen and (max-width: 320px), screen and (max-height: 568px) {
 
-  /* MEDIA QUERIES - STYLING: ALL */
-  p {
-      /* font-size: 12px; */
-      /* background: magenta; */
-  }
-
   /* MEDIA QUERIES - FOLIO: SWIPER */
   .swiper-container {
       grid-column: 1 / 8;
@@ -872,9 +864,10 @@ textarea:invalid {
   }
 
   /* MEDIA QUERIES - CONTACT: HEADLINE */
-  /* .form-heading {
+  // Remove contact headline to give some clearance
+  .form-heading {
       display: none;
-  } */
+  }
 
 }
 
@@ -934,11 +927,6 @@ textarea:invalid {
   .skills-headline {
       grid-row: 4 / 11;
       writing-mode: vertical-rl;
-  }
-
-  /* MEDIA QUERIES - SKILLS LIST: Styling for body/list copy */
-  .skills li {
-      /* font-size: 14px; */
   }
 
   /* MEDIA QUERIES - SKILLS GRID: Placement of ':front_end' body copy */
