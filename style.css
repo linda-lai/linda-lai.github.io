@@ -603,12 +603,12 @@ nav a {
 /* ----- FANCY CONTACT FORM ----- */
 /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
 .contact-form-wrapper {
-  grid-column: 3 / 7;
-  grid-row: 3 / 15; }
+  grid-column: 2 / 8;
+  grid-row: 2 / 15; }
 
 /* CONTACT FORM: To change the background colour of the Contact form */
 .form_box {
-  width: 350px;
+  width: 100%;
   padding: 40px;
   /* CONTACT FORM BACKGROUND */
   background: var(--primary-black-background);
@@ -749,7 +749,14 @@ textarea:invalid {
   /* MEDIA QUERIES - CONTACT: FORM */
   /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
   .contact-form-wrapper {
-    grid-column: 1 / 4;
+    grid-column: 1 / 9;
+    grid-row: 1 / 15; } }
+/* MEDIA QUERIES: Media Query set from iPhone 6📱(375 x 667px or less) */
+@media screen and (max-width: 375px), screen and (max-height: 667px) {
+  /* MEDIA QUERIES - CONTACT: FORM */
+  /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
+  .contact-form-wrapper {
+    grid-column: 1 / 9;
     grid-row: 1 / 15; }
 
   /* MEDIA QUERIES - CONTACT: HEADLINE */ }
@@ -763,8 +770,6 @@ textarea:invalid {
   nav a:hover {
     background: var(--primary-blue);
     color: var(--primary-white-background); } }
-/* ---------- MEDIA QUERIES: Add Media Query for Mobiles wider than iPhone 5/SE (>327px) ----------*/
-/* MEDIA QUERIES: Media Query set from 327px width, any height */
 /* ---------- MEDIA QUERIES - ROTATION: Add Media Query for Desktop ----------*/
 /* max-width: 600px => Stops the rotation of folio section up until screens of 600px { */
 @media only screen and (max-width: 600px) {

@@ -52,7 +52,6 @@ body {
 h1 {
   font-family: var(--primary-h1-headline-font);
   font-size: var(--primary-h1-headline-size);
-  // font-style: bold;
 }
 
 h2 {
@@ -692,13 +691,13 @@ background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3
 /* ----- FANCY CONTACT FORM ----- */
 /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
 .contact-form-wrapper {
-  grid-column: 3 / 7;
-  grid-row: 3 / 15;
+  grid-column: 2 / 8;
+  grid-row: 2 / 15;
 }
 
 /* CONTACT FORM: To change the background colour of the Contact form */
 .form_box {
-  width: 350px;
+  width: 100%;
   padding: 40px;
   /* CONTACT FORM BACKGROUND */
   background: var(--primary-black-background);
@@ -858,17 +857,27 @@ textarea:invalid {
   /* MEDIA QUERIES - CONTACT: FORM */
   /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
   .contact-form-wrapper {
-    grid-column: 1 / 4;
+    grid-column: 1 / 9;
     grid-row: 1 / 15;
-    // width: 320px;
-    // height: 568px;
+  }
+
+}
+
+/* MEDIA QUERIES: Media Query set from iPhone 6📱(375 x 667px or less) */
+@media screen and (max-width: 375px), screen and (max-height: 667px) {
+
+  /* MEDIA QUERIES - CONTACT: FORM */
+  /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
+  .contact-form-wrapper {
+    grid-column: 1 / 9;
+    grid-row: 1 / 15;
   }
 
   /* MEDIA QUERIES - CONTACT: HEADLINE */
   // Remove contact headline to give some clearance
-  // .form-heading {
-  //     display: none;
-  // }
+  .form-heading {
+    // display: none;
+  }
 
 }
 
@@ -886,84 +895,6 @@ textarea:invalid {
       color: var(--primary-white-background);
   }
 }
-
-/* ---------- MEDIA QUERIES: Add Media Query for Mobiles wider than iPhone 5/SE (>327px) ----------*/
-/* MEDIA QUERIES: Media Query set from 327px width, any height */
-// @media screen and (min-width: 321px), screen and (min-height: 569px) {
-
-//   /* nav a:hover {
-//       background: dodgerblue;
-//       color: white;
-//   } */
-
-//   /* ----- ABOUT ----- */
-//   /* MEDIA QUERIES - ABOUT GRID: Placement of '< about me >' headline */
-//   .about-me-headline {
-//       grid-row: 4 / 8;
-//       grid-column: 5 / 11; 
-//   }
-
-//   /* MEDIA QUERIES - ABOUT GRID: Placement of 'Hello.' subheadline */
-//   .about-me-subhead {
-//       grid-row: 6/ 9;
-//       grid-column: 2 / 3;
-//   }
-
-//   /* MEDIA QUERIES - ABOUT GRID: Placement of 'def initialize' decorative background text */
-//   .about-me-background-init {
-//       grid-row: 5 / 7;
-//   }
-
-//   /* MEDIA QUERIES - ABOUT GRID: Body */
-//   .about-me-body {
-//       grid-column: 2 / 10;
-//       grid-row: 7 / 12;
-//   }
-
-//   /* MEDIA QUERIES - ABOUT BACKGROUND: Placement of '/' decorative background text */
-//   .about-me-background-symbol {
-//       grid-column: 10 / 11;
-//   }
-      
-//   /* ----- SKILLS ----- */
-//   /* MEDIA QUERIES - SKILLS GRID: Placement of '{ :skills } headline' */
-//   .skills-headline {
-//       grid-row: 4 / 11;
-//       writing-mode: vertical-rl;
-//   }
-
-//   /* MEDIA QUERIES - SKILLS GRID: Placement of ':front_end' body copy */
-//   .skills-frontend {
-//       grid-column: 3 / 5;
-//       grid-row: 4 / 16;
-//   }
-
-//   /* MEDIA QUERIES - SKILLS GRID: Placement of ':back_end' body copy */
-//   .skills-backend {
-//       grid-column: 3 / 5;
-//       grid-row: 9 / 16;
-//   }
-
-//   /* MEDIA QUERIES - SKILLS GRID: Placement of ':back_end' body copy */
-//   .skills-other {
-//       grid-column: 6 / 9;
-//       grid-row: 9 / 16;
-//   }
-
-//   /* MEDIA QUERIES - SKILLS: Placement of decorative background rectangles */
-//   /* MEDIA QUERIES - SKILLS RECTANGLE: Bottom Left */
-//   .skills-rectangle-bottom-left {
-//       grid-column: 1 / 2;
-//       grid-row: 11 / 15;
-//       background: var(--primary-black-background);
-//   }
-
-//   /* ----- MEDIA QUERIES - CONTACT ----- */
-//   .contact-form-wrapper {
-//       grid-column: 1 / 9;
-//       grid-row: 3 / 15;
-//   }
-// }
 
 /* ---------- MEDIA QUERIES - ROTATION: Add Media Query for Desktop ----------*/
 /* max-width: 600px => Stops the rotation of folio section up until screens of 600px { */
