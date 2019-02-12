@@ -845,11 +845,9 @@ textarea:invalid {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {...}  */
 
-
 /* ---------- MEDIA QUERIES - MOBILE: Add Media Query for Mobile First ----------*/
-
-/* MEDIA QUERIES: Media Query set from iPhone 5/SE => 320 x 568px */
-@media screen and (max-width: 320px), screen and (max-height: 568px) {
+/* MEDIA QUERIES: Media Query set from iPhone 5/SE 📱(320 x 568px or less) */
+@media screen and (max-width: 326px), screen and (max-height: 568px) {
 
   /* MEDIA QUERIES - FOLIO: SWIPER */
   .swiper-container {
@@ -871,6 +869,7 @@ textarea:invalid {
 
 }
 
+/* ---------- MEDIA QUERIES: Add Media Query for Navigation ----------*/
 @media screen and (max-width: 320px), screen and (max-width: 600px) {
 
   /* NAVIGATION BAR: BURGER MENU <SECTION> HOVER ANIMATION */
@@ -885,8 +884,9 @@ textarea:invalid {
   }
 }
 
-/* MEDIA QUERIES: Media Query set from 320px width, any height */
-@media(min-width: 320px) {
+/* ---------- MEDIA QUERIES: Add Media Query for Mobiles wider than iPhone 5/SE (>327px) ----------*/
+/* MEDIA QUERIES: Media Query set from 327px width, any height */
+@media screen and (min-width: 327px), screen and (min-height: 568px) {
 
   /* nav a:hover {
       background: dodgerblue;
@@ -962,7 +962,7 @@ textarea:invalid {
   }
 }
 
-/* ---------- MEDIA QUERIES - DESKTOP: Add Media Query for Desktop ----------*/
+/* ---------- MEDIA QUERIES - ROTATION: Add Media Query for Desktop ----------*/
 /* max-width: 600px => Stops the rotation of folio section up until screens of 600px { */
 @media only screen and (max-width: 600px) {
 
@@ -978,6 +978,7 @@ textarea:invalid {
   }
 }
 
+/* ---------- MEDIA QUERIES - NAVIGATION: Add Media Query for Desktop ----------*/
 /* min-width: 600px => Only show the full navigation bar until 600px, otherwise show burger menu on smaller screens */
 @media screen and (min-width: 600px) {
   /* ----- MEDIA QUERIES - NAVIGATION ----- */
