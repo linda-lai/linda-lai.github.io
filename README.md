@@ -56,13 +56,10 @@ As a single page scroll, my portfolio website is broken up into sections, naviga
 * Footer: Links to Twitter, GitHub, Codepen and LinkedIn.
 
 ### <a id="Screenshots"></a>Screenshots
-Desktop:
 
-![live-desktop](assets/img/live-desktop.png)
-
-Mobile:
-
-![live-mobile](assets/img/live-mobile.png)
+| Desktop   | Mobile    |
+|-----------|-----------|
+![](assets/img/live-desktop.png) | ![](assets/img/live-mobile.png)|
 
 ### <a id="Target-Audience"></a>Target Audience
 I hope my portfolio website can be used to showcase my coding abilities and design style as an aspiring full-stack developer or could be of use to any other fellow developer who may fork it for their use.
