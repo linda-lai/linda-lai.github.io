@@ -20,18 +20,18 @@
   --primary-pink: #FECFC9;
   --primary-yellow: #FED430;
   /* FONT: NAVIGATION BAR LOGO */
-  --primary-nav-logo-font: 'Poppins', sans-serif;
-  --primary-nav-links-font: 'Poppins', sans-serif;
+  --primary-nav-logo-font: 'Helvetica Neue', sans-serif;
+  --primary-nav-links-font: 'Helvetica Neue', sans-serif;
   --primary-logo-nav-size: 2em;
   /* FONT: HEADLINE/SUBHEADLINE */
-  --primary-h1-headline-font: 'Karla', sans-serif;
-  --primary-h2-subheadline-font: 'Karla', sans-serif;
+  --primary-h1-headline-font: 'Helvetica Neue', sans-serif;
+  --primary-h2-subheadline-font: 'Helvetica Neue', sans-serif;
   /* FONT: Background Text Graphics: 'def initialize */
-  --primary-background-font: 'Quicksand', sans-serif;
+  --primary-background-font: 'Helvetica Neue', sans-serif;
   /* FONT: Background Text Graphics: '/' */
-  --primary-background-font-symbol: 'Karla', sans-serif;
+  --primary-background-font-symbol: 'Helvetica Neue', sans-serif;
   /* FONT: PARAGRAPHS/BODY */
-  --primary-p-body-font: 'Quicksand', sans-serif;
+  --primary-p-body-font: 'Helvetica Neue', sans-serif;
   /* FONT SIZES */
   --primary-h1-headline-size: 3em;
   --primary-h2-subheadline-size: 1em;
@@ -61,7 +61,7 @@ p {
 .nav-logo {
   font-family: var(--primary-nav-logo-font);
   font-size: var(--primary-logo-nav-size);
-  font-style: bold;
+  letter-spacing: 3px;
   color: var(--primary-white-background);
   padding-left: 1em; }
 
@@ -223,7 +223,7 @@ nav a {
 
 /* ABOUT ME GRID ROW/COLUMN: Placement of body copy 1 */
 .about-me-body {
-  grid-column: 2 / 9;
+  grid-column: 3 / 9;
   grid-row: 6 / 12;
   /* background: aqua; */
   color: var(--primary-white-background); }
@@ -478,6 +478,11 @@ nav a {
 /* To make every second link hovered over primary blue instead of yellow */
 .swiper-slide:nth-child(2) .folio-body-container .git-link:hover {
   background: var(--primary-red);
+  color: var(--primary-white-background); }
+
+/* To make every third link hovered over primary blue instead of yellow */
+.swiper-slide:nth-child(3) .folio-body-container .git-link:hover {
+  background: var(--primary-blue);
   color: var(--primary-white-background); }
 
 /* FOLIO GRID ROW/COLUMN: Placement of 'NAN' background decorative type */
