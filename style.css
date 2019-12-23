@@ -13,9 +13,12 @@
   --primary-nav-background: rgba(30, 28, 28, 0.95);
   --primary-black-background: #121111;
   --primary-white-background: #FBFBFB;
-  --primary-yellow: #FFD700;
-  --primary-blue: #0000FE;
-  --primary-red: #FF1810;
+  --primary-green: #29D1BA;
+  --primary-blue: #1378E0;
+  --primary-red: #EB362F;
+  --primary-blue: #1378E0;
+  --primary-pink: #FECFC9;
+  --primary-yellow: #FED430;
   /* FONT: NAVIGATION BAR LOGO */
   --primary-nav-logo-font: 'Poppins', sans-serif;
   --primary-nav-links-font: 'Poppins', sans-serif;
@@ -355,7 +358,7 @@ nav a {
   background: var(--primary-black-background); }
 
 .skills-rectangle-bottom-right:hover {
-  background: var(--primary-yellow);
+  background: var(--primary-green);
   transition: 320ms; }
 
 /* SKILLS RECTANGLE: Middle Center */
@@ -376,7 +379,7 @@ nav a {
   background: var(--primary-black-background); }
 
 .skills-rectangle-top-right:hover {
-  background: var(--primary-blue);
+  background: var(--primary-pink);
   transition: 320ms; }
 
 /* ---------------------------- FOLIO ---------------------------- */
@@ -469,7 +472,7 @@ nav a {
   color: var(--primary-white-background); }
 
 .git-link:hover {
-  background: var(--primary-yellow);
+  background: var(--primary-green);
   color: var(--primary-white-background); }
 
 /* To make every second link hovered over primary blue instead of yellow */
@@ -698,7 +701,8 @@ textarea:invalid {
 /* CONTACT FORM: To center submit button */
 .submit-button {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 10px 50px; }
 
 /* CONTACT FORM: Styling for 'Get in Touch submit <button> */
 .form_box input[type="submit"] {
@@ -711,7 +715,7 @@ textarea:invalid {
   /* background: #141519; */
   background: var(--primary-white-background);
   color: var(--primary-black-background);
-  padding: 10px 50px;
+  padding: 9px 49px;
   cursor: pointer;
   border-radius: 0px;
   -webkit-appearance: none; }
@@ -719,10 +723,10 @@ textarea:invalid {
 /* CONTACT FORM: Hover animation over <button> */
 .form_box input[type="submit"]:hover {
   color: var(--primary-black-background);
-  background: var(--primary-yellow);
+  background: var(--primary-green);
   transition: background-color 0.3s ease-in-out;
   box-shadow: 0 5px 15px #141519;
-  font-size: 15px;
+  font-size: 15.6px;
   color: var(--primary-black-background);
   -webkit-appearance: none; }
 
@@ -762,7 +766,7 @@ textarea:invalid {
     color: var(--primary-white-background); }
 
   nav a:hover {
-    background: var(--primary-blue);
+    background: var(--primary-green);
     color: var(--primary-white-background); } }
 /* ---------- MEDIA QUERIES - ROTATION: Add Media Query for Desktop ----------*/
 /* max-width: 600px => Stops the rotation of folio section up until screens of 600px { */
@@ -812,7 +816,7 @@ textarea:invalid {
     display: block;
     height: 5px;
     /* NAVIGATION COLOR: Line above hovered <section> */
-    background: var(--primary-blue);
+    background: var(--primary-green);
     position: absolute;
     top: -.75em;
     left: 0;
