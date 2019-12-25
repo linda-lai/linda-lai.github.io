@@ -758,10 +758,6 @@ textarea:invalid {
   /* MOBILE - CONTACT: HEADLINE */
   .social-links {
     display: none; } }
-/* MOBILE: Media Query set from iPhone 6📱(375 x 667px or less) */
-@media screen and (max-width: 375px), screen and (max-height: 667px) {
-  /* MOBILE - CONTACT: FORM */
-  /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */ }
 /* ---------- MOBILE: NAVIGATION ----------*/
 @media screen and (max-width: 320px), screen and (max-width: 600px) {
   /* NAVIGATION BAR: BURGER MENU <SECTION> HOVER ANIMATION */
@@ -798,7 +794,7 @@ textarea:invalid {
     grid-row: 7 / 13; } }
 /* ---------- DESKTOP - NAVIGATION: Add Media Query for Desktop ----------*/
 /* min-width: 600px => Only show the full navigation bar until 600px, otherwise show burger menu on smaller screens */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1086px) {
   /* ----- DESKTOP - NAVIGATION ----- */
   .nav-toggle-label {
     display: none; }

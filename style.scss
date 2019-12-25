@@ -889,18 +889,6 @@ textarea:invalid {
 
 }
 
-/* MOBILE: Media Query set from iPhone 6📱(375 x 667px or less) */
-@media screen and (max-width: 375px), screen and (max-height: 667px) {
-
-  /* MOBILE - CONTACT: FORM */
-  /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
-  .contact-form-wrapper {
-    // grid-column: 1 / 9;
-    // grid-row: 1 / 15;
-  }
-
-}
-
 /* ---------- MOBILE: NAVIGATION ----------*/
 @media screen and (max-width: 320px), screen and (max-width: 600px) {
 
@@ -950,7 +938,7 @@ textarea:invalid {
 
 /* ---------- DESKTOP - NAVIGATION: Add Media Query for Desktop ----------*/
 /* min-width: 600px => Only show the full navigation bar until 600px, otherwise show burger menu on smaller screens */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1086px) {
   /* ----- DESKTOP - NAVIGATION ----- */
   .nav-toggle-label {
       display: none;
