@@ -763,9 +763,12 @@ textarea:invalid {
 /* -----------------------------------------------------------------*/
 /* max-width: 600px => Stops the rotation of folio section up until screens of 600px { */
 @media only screen and (max-width: 600px) {
+  .about-me-headline {
+    grid-row: 1 / 7; }
+
   .about-me-body {
     grid-column: 2 / 9;
-    grid-row: 7 / 12; }
+    grid-row: 8 / 12; }
 
   .about-me-body-extra-1 {
     display: none; }
