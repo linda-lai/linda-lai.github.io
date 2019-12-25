@@ -46,7 +46,8 @@ body {
 /* <about>, <skills> <folio>, <contact> */
 h1 {
   font-family: var(--primary-h1-headline-font);
-  font-size: var(--primary-h1-headline-size); }
+  font-size: var(--primary-h1-headline-size);
+  letter-spacing: 3px; }
 
 h2 {
   font-family: var(--primary-h2-subheadline-font);
@@ -59,10 +60,6 @@ p {
 
 /* GENERAL LOGO FONT: Navigation Bar */
 .nav-logo {
-  font-family: var(--primary-nav-logo-font);
-  font-size: var(--primary-logo-nav-size);
-  letter-spacing: 3px;
-  color: var(--primary-white-background);
   padding-left: 1em; }
 
 /* GENERAL GRID: SITE WRAPPER */
@@ -157,7 +154,8 @@ nav a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
   /* NAVIGATION FONT: Section Links */
-  font-family: var(--primary-nav-links-font); }
+  font-family: var(--primary-nav-links-font);
+  letter-spacing: 3px; }
 
 .nav-toggle:checked ~ nav {
   transform: scale(1, 1); }
@@ -239,8 +237,7 @@ nav a {
 .about-me-background-init {
   grid-column: 2 / 5;
   grid-row: 4 / 7;
-  font-size: 1em;
-  /* background: indianred; */
+  font-size: var(--primary-p-body-size);
   font-family: var(--primary-background-font);
   color: var(--primary-white-background); }
 
@@ -464,6 +461,7 @@ nav a {
   padding: .5em; */
   font-style: none;
   text-decoration: none;
+  font-weight: bold;
   padding: 0.3em 0.5em 0.3em 0.5em;
   color: var(--primary-white-background); }
 
@@ -521,7 +519,7 @@ nav a {
 .third-line-fill {
   background-color: var(--primary-white-background);
   width: 100%;
-  height: 70%; }
+  height: 50%; }
 
 /* FOLIO LINE: Placement and fill for fourth horizontal line/rectangle */
 .folio-fourth-line {
@@ -600,7 +598,6 @@ nav a {
 
 /* CONTACT: Social Media Links */
 .social-links {
-  /* grid-area: footer; */
   grid-column: 2 / 4;
   grid-row: 11 / 12;
   z-index: 1;
@@ -709,6 +706,9 @@ textarea:invalid {
   justify-content: center;
   padding: 10px 50px; }
 
+.submit-button input {
+  font-weight: 400; }
+
 /* CONTACT FORM: Styling for 'Get in Touch submit <button> */
 .form_box input[type="submit"] {
   background: transparent;
@@ -716,13 +716,11 @@ textarea:invalid {
   outline: none;
   font-size: var(--primary-p-body-size);
   font-family: var(--primary-p-body-font);
-  /* color: #ffffff; */
-  /* background: #141519; */
   background: var(--primary-white-background);
   color: var(--primary-black-background);
   padding: 9px 49px;
   cursor: pointer;
-  border-radius: 0px;
+  border-radius: 3px;
   -webkit-appearance: none; }
 
 /* CONTACT FORM: Hover animation over <button> */
@@ -731,7 +729,6 @@ textarea:invalid {
   background: var(--primary-green);
   transition: background-color 0.3s ease-in-out;
   box-shadow: 0 5px 15px #141519;
-  font-size: 15.6px;
   color: var(--primary-black-background);
   -webkit-appearance: none; }
 
@@ -746,24 +743,26 @@ textarea:invalid {
 /* @media only screen and (min-width: 992px) {...} */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {...}  */
-/* ---------- MEDIA QUERIES - MOBILE: Add Media Query for Mobile First ----------*/
+/* ----------------------------------------------------------------*/
+/* -------------------- MEDIA QUERIES - MOBILE --------------------*/
+/* ----------------------------------------------------------------*/
 /* MEDIA QUERIES: Media Query set from iPhone 5/SE 📱(320 x 568px or less) */
 @media screen and (max-width: 326px), screen and (max-height: 568px) {
-  /* MEDIA QUERIES - FOLIO: SWIPER */
+  /* MOBILE - FOLIO: SWIPER */
   .swiper-container {
     grid-column: 1 / 8;
     grid-row: 7 / 13; }
 
-  /* MEDIA QUERIES - CONTACT: FORM */
+  /* MOBILE - CONTACT: FORM */
   /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */
-  /* MEDIA QUERIES - CONTACT: HEADLINE */
+  /* MOBILE - CONTACT: HEADLINE */
   .social-links {
     display: none; } }
-/* MEDIA QUERIES: Media Query set from iPhone 6📱(375 x 667px or less) */
+/* MOBILE: Media Query set from iPhone 6📱(375 x 667px or less) */
 @media screen and (max-width: 375px), screen and (max-height: 667px) {
-  /* MEDIA QUERIES - CONTACT: FORM */
+  /* MOBILE - CONTACT: FORM */
   /* CONTACT GRID ROW/COLUMN: Placement of the Netlify contact form */ }
-/* ---------- MEDIA QUERIES: Add Media Query for Navigation ----------*/
+/* ---------- MOBILE: NAVIGATION ----------*/
 @media screen and (max-width: 320px), screen and (max-width: 600px) {
   /* NAVIGATION BAR: BURGER MENU <SECTION> HOVER ANIMATION */
   nav a {
@@ -773,29 +772,34 @@ textarea:invalid {
   nav a:hover {
     background: var(--primary-green);
     color: var(--primary-white-background); } }
-/* ---------- MEDIA QUERIES - ROTATION: Add Media Query for Desktop ----------*/
+/* -----------------------------------------------------------------*/
+/* -------------------- MEDIA QUERIES - DESKTOP --------------------*/
+/* -----------------------------------------------------------------*/
 /* max-width: 600px => Stops the rotation of folio section up until screens of 600px { */
 @media only screen and (max-width: 600px) {
   .about-me-body {
     grid-column: 2 / 9;
     grid-row: 7 / 12; }
 
-  /* ----- MEDIA QUERIES - FOLIO: ROTATION ----- */
+  /* ----- DESKTOP - FOLIO: ROTATION ----- */
   .folio {
     transform: rotate(0deg); }
 
   .folio h1 {
-    grid-column: 3/8;
-    grid-row: 3/7; }
+    grid-column: 3 / 8;
+    grid-row: 3 / 7; }
 
-  /* MEDIA QUERIES - FOLIO: Swiper */
+  .folio-third-line {
+    grid-column: 1 / 5; }
+
+  /* DESKTOP - FOLIO: Swiper */
   .swiper-container {
     grid-column: 1 / 8;
     grid-row: 7 / 13; } }
-/* ---------- MEDIA QUERIES - NAVIGATION: Add Media Query for Desktop ----------*/
+/* ---------- DESKTOP - NAVIGATION: Add Media Query for Desktop ----------*/
 /* min-width: 600px => Only show the full navigation bar until 600px, otherwise show burger menu on smaller screens */
 @media screen and (min-width: 600px) {
-  /* ----- MEDIA QUERIES - NAVIGATION ----- */
+  /* ----- DESKTOP - NAVIGATION ----- */
   .nav-toggle-label {
     display: none; }
 
@@ -840,7 +844,7 @@ textarea:invalid {
   nav a:hover::before {
     transform: scale(1, 1); }
 
-  /* ----- MEDIA QUERIES - FOLIO ----- */
+  /* ----- DESKTOP: FOLIO ----- */
   .folio-body-full-1 {
     display: block; } }
 
