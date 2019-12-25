@@ -42,7 +42,7 @@
 
   /* FONT SIZES */
   --primary-h1-headline-size: 3em;
-  --primary-h2-subheadline-size: 1em;
+  --primary-h2-subheadline-size: 1.2em;
   --primary-p-body-size: 1em; 
 }
 
@@ -182,7 +182,7 @@ nav li {
 nav a {
   color: var(--primary-white-background);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
@@ -589,7 +589,7 @@ background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3
 /* FOLIO LINE: Placement and fill for second horizontal line/rectangle */
 .folio-second-line {
   grid-column: 1 / 6;
-  grid-row: 4 / 5;
+  grid-row: 3 / 4;
 }
 .second-line-fill {
   background-color: var(--primary-white-background);
@@ -913,9 +913,19 @@ textarea:invalid {
 /* max-width: 600px => Stops the rotation of folio section up until screens of 600px { */
 @media only screen and (max-width: 600px) {
 
+  .about-me-body {
+    grid-column: 2 / 9;
+    grid-row: 7 / 12;
+  }
+
   /* ----- MEDIA QUERIES - FOLIO: ROTATION ----- */
   .folio {
       transform: rotate(0deg);
+  }
+
+  .folio h1 {
+    grid-column: 3/8;
+    grid-row: 3/7;
   }
 
   /* MEDIA QUERIES - FOLIO: Swiper */
