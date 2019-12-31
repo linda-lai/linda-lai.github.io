@@ -1,7 +1,7 @@
 # Coding Portfolio: Linda Lai
 My first developer portfolio written in HTML & CSS.
 
-|[![Linda Lai](/assets/img/contributors-linda-lai-70x70.jpg)](https://github.com/linda-lai) | 
+|[![Linda Lai](/img/contributors-linda-lai-70x70.jpg)](https://github.com/linda-lai) |
 |-----------|
 | Linda Lai |
 
@@ -59,7 +59,7 @@ As a single page scroll, my portfolio website is broken up into sections, naviga
 
 | Desktop   | Mobile    |
 |-----------|-----------|
-![](assets/img/live-desktop.png) | ![](assets/img/live-mobile.png)|
+![](img/live-desktop.png) | ![](img/live-mobile.png)|
 
 ### <a id="Target-Audience"></a>Target Audience
 I hope my portfolio website can be used to showcase my coding abilities and design style as an aspiring full-stack developer or could be of use to any other fellow developer who may fork it for their use.
@@ -71,14 +71,14 @@ The skills section of my portfolio website highlights my front-end and back-end 
 ### <a id="Brainstorming"></a>Brainstorming
 As a first-time designer and developer, the process for developing a portfolio myself was an extremely challenging yet enjoyable creative and technical challenge. Moreover, it also provided the perfect excuse to really delve into my design influences and see patterns and divergences in the kind of visuals and colours I'm drawn to. This led to creating no less than three separate Pinterest boards with at least 100+ images each, grouped largely around themes of 'mono_mod_typo', 'pop_colour_surreal' and 'neon_street_dystopia' which helped to identify colours, patterns and styles that consistently appeared. Following a content-first approach, I envisioned a design which would particularly suit typographic and vector-heavy content, rather than relying on photographic assets.
 
-![pinterest-mono_mod](assets/img/pinterest_moodboard-mono_mod.png)
-![pinterest-pop_color](assets/img/pinterest_moodboard-pop_color.png)
-![pinterest-neon_dystopia](assets/img/pinterest_moodboard-neon_dystopia.png)
+![pinterest-mono_mod](img/pinterest_moodboard-mono_mod.png)
+![pinterest-pop_color](img/pinterest_moodboard-pop_color.png)
+![pinterest-neon_dystopia](img/pinterest_moodboard-neon_dystopia.png)
 
 ### <a id="Design-Ideation"></a>Design Ideation
 From there, I narrowed it down to a style I felt represented the mood and aesthetic I wanted to project about myself to my target audience and suited the content I needed to display: minimalist but abstract, monochrome yet colourful, something that evoked shapes, type and symbols in a simple yet graphic way.
 
-![pinterest-shortlist](assets/img/pinterest_moodboard-shortlist.png)
+![pinterest-shortlist](img/pinterest_moodboard-shortlist.png)
 
 Without an exact idea for the design in mind yet, overall I knew I wanted something which was extremely graphic, type heavy and monochrome, using contrast and pops of colour hidden throughout, going for a minimalist yet modern design. I decided to break each section by alternating between a predominately black design (with white features) with a predominately white design (with black features) for contrast and consistency.
 
@@ -88,14 +88,14 @@ The aesthetic for my logo was drawn from the visual symmetry between the square 
 ### <a id="Colour-Scheme"></a>Colour Scheme
 I aimed to keep the colour scheme largely monochrome, with subtle pops of colour throughout. In Figma, I played around with different shades of black and white to find a sample that contrasted and complemented well together. Inspired by the colours and lines of geometric Mondrian paintings, I decided to use primary colours (red, blue and yellow), as the colours and inspiration fit well with my focus on basic shapes, lines and colours rendered in geometric and abstract forms.
 
-![figma-desktop](assets/img/figma-desktop.png)
+![figma-desktop](img/figma-desktop.png)
 
 ### <a id="Wireframes"></a>Wireframes
 After testing design layouts and comparing colours, types and assets in Figma, I mocked up some ideas for potential layouts that became the basis for my wireframes. I chose a single page design as I wanted users to alternate between predominately black and white designs, and create a smooth transition from section to section.
 
 Working in Figma and Adobe Illustrator, I created a series of simple svgs to support my portfolio and aligned them to the concepts of each section as closely to my wireframes as possible. I tried to create a non-symmetrical design that would adapt well responsively that played around with alignment and could be more readily adapted to CSS grid.
 
-![figma-wireframes](assets/img/figma-wireframes.png)
+![figma-wireframes](img/figma-wireframes.png)
 
 ### <a id="Usability-Considerations"></a>Usability Considerations
 Working with high contrast colours and large type, a definite consideration and effort on my part was to make the website very readable, both visually and in terms of using semantic HTML as much as possible to enhance accessibility. My theme and colour palette gave me ample contrast, earning a AAA rating in colour selector, and throughout development VoiceOver on my Mac was used to test how HTML was being read.
@@ -106,7 +106,7 @@ The scope for the portfolio website was just over a week. Planning and time mana
 
 Once the HTML elements had been set, working with multiple layers of nested CSS grids on a single page, and setting out the grid for each section proved to be the most important, finicky and planned stage of the coding process. As my design relied heavily on CSS grid, I planned my columns, rows and fractions in Figma meticulously using the rule and grid layout function, adjusting and playing around as I went along in Firefox's Inspect Element. Following this approach allowed me to break down pages and tasks systematically and the overall time was managed effectively and efficiently.
 
-![figma-grid](assets/img/figma-grid.png)
+![figma-grid](img/figma-grid.png)
 
 ### <a id="Challenges"></a>Challenges
 The trickiest part proved to be alignment and overflow acting in unexpected and puzzling ways. This was particularly challenging when trying to ensure that shapes, headlines and type didn't overlap whilst behaving responsively.
@@ -116,7 +116,7 @@ Once the main layout and alignment were established, the longest part mainly inv
 ### <a id="Trello"></a>Trello
 Throughout the design and coding process I used Trello to track project deliverables, jot down ideas for enhancements or future design and breakdown tasks. This allowed to me plan and continually consider what needed to be done to ensure that an MVP could be delivered at the least before branching out further into non-essential features.
 
-![trello-planning](assets/img/trello-planning.png)
+![trello-planning](img/trello-planning.png)
 
 ### <a id="Further-Enhancements"></a>Further Enhancements
 As it stands currently, I was able to achieve the overall layout and design I had set out to create, bar some minor alterations. In future iterations, I would like to enhance the functionality and features on the front further and refactor the backend code to make it more readable and modular.
