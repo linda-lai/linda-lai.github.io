@@ -202,8 +202,9 @@ nav a {
 /* HOMEPAGE GRID ROW/COLUMN: Aligns the logo vector to the centre of the homepage */
 .logo-container {
   grid-column: 2/3;
-  grid-row: 3/6;
+  grid-row: 2/6;
   width: 40vw;
+  padding-top: 40px;
   max-width: 350px;
   justify-self: center;
   align-self: center;
@@ -891,7 +892,7 @@ textarea:invalid {
     grid-row: 8/12;
   }
 
-  .about-me-body-extra {
+  .about-me-body-extra-1 {
     display: none;
   }
 
