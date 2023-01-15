@@ -1,361 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Welcome to the portfolio website for Linda Lai, a full-stack developer from Melbourne."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla|Source+Code+Pro|Poiret+One|Poppins|Lato|Quicksand|Lato|Oxygen|Roboto|Aleo"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description"
-    content="Welcome to the portfolio website for Linda Lai, a full-stack developer from Melbourne." />
-  <link
-    href="https://fonts.googleapis.com/css?family=Karla|Source+Code+Pro|Poiret+One|Poppins|Lato|Quicksand|Lato|Oxygen|Roboto|Aleo"
-    rel="stylesheet" />
+    <!-- SWIPER: Using CDN to import Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js"></script>
 
-  <!-- SWIPER: Using CDN to import Swiper -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/css/swiper.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.0/js/swiper.min.js"></script>
+    <!-- JAVASCRIPT: Load my JS & CSS after Swiper -->
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- JAVASCRIPT: Load my JS & CSS after Swiper -->
-  <script defer src="./index.js"></script>
-  <link rel="stylesheet" href="style.css" />
+    <!-- GOOGLE ANALYTICS: Global site tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-133426705-1"
+    >
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-133426705-1");
+    </script>
 
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- GOOGLE ANALYTICS: Global site tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133426705-1">
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "UA-133426705-1");
-  </script>
-
-  <!-- FAVICONS -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-
-  <title>LINDA LAI | FULL-STACK DEVELOPER</title>
-</head>
-
-<!--**************** SITE WRAPPER ****************/ -->
-
-<body class="site-wrapper">
-  <!--******** NAVIGATION ********/ -->
-  <header>
-    <div class="nav-icon-wrapper">
-      <a href="#home">
-        <img width="100" class="nav-icon" src="/img/logo/logo-icon-white.png" alt="Icon logo" />
-      </a>
-    </div>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-    <nav>
-      <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about-me">ABOUT</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#folio">FOLIO</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <!-- <li><a href="www.google.com">BLOG</a></li> -->
-      </ul>
-    </nav>
-    <label for="nav-toggle" class="nav-toggle-label">
-      <span></span>
-    </label>
-  </header>
-
-  <!--******** HOMEPAGE ********/ -->
-  <section class="home" id="home">
-    <div class="logo-container">
-      <a class="logo-image homepage-button" href="#about-me">
-        <img src="/img/logo/logo-white.png" alt="Square logo" />
-        <!-- <img height="400" src="/img/logo/linda_pixel_no_glasses.png" alt="Linda Lai logo" /> -->
-      </a>
-    </div>
-  </section>
-
-  <!--******** ABOUT ME ********/ -->
-  <section class="about-me" id="about-me">
-    <div class="about-me-headline">
-      <h1>
-        < ABOUT ME>
-      </h1>
-    </div>
-    <div class="about-me-background-init">
-      def initialize
-      <span class="blinking-cursor">|</span>
-    </div>
-    <div class="about-me-background-symbol">/</div>
-    <div class="about-me-subhead">
-      <h2>HELLO, HEY, HI!</h2>
-    </div>
-
-    <div class="about-me-body">
-      <p>
-        I’m Linda, a developing developer fulfilling my fill for full-stack.
-      </p>
-      <p>
-        Hi, hello, hey! I'm Linda, a developing developer, code-blooded female and all round Hermione learning (and
-        loving!) to code the software eating the world today. Perpetually curious, relentlessly enthusiastic and
-        unabashedly dorky - that's me.
-      </p>
-      <p class="about-me-body-extra">
-        A recent career changer into tech, I dipped my toes into the world of digital/development, found the water was
-        warm, and haven't look back. I love the rush that comes from translating an idea in my head into reality, and
-        that tech allows me to flex my left and right brain tendencies in creative yet technical ways.
-      </p>
-      <p class="about-me-body-extra">
-        Connection, community and communication - that's my sweet spot. I love working in an industry filled with
-        clever, creative people, and bringing them together. I fear feeling bored, stagnant or uninspired. I just want
-        to learn, share, grow and give back.
-      </p>
-      <p class="about-me-body-extra">
-        I firmly believe that tech must be inclusive, accessible and diverse, and aspire to work with people and in
-        places which share that commitment.
-      </p>
-      <p>
-        A good day is when I've achieved a lot and made people happy in the
-        process, letting the results speak for itself.
-      </p>
-      <p>Me in a nutshell.</p>
-    </div>
-  </section>
-
-  <!--******** SKILLS ********/ -->
-  <section class="skills" id="skills">
-    <h1 class="skills-headline">{ :SKILLS }</h1>
-
-    <div class="skills-frontend">
-      <h2>:FRONT_END.</h2>
-      <ul class="skills-list">
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Redux</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Sass</li>
-        <li>Bootstrap</li>
-        <li>Typescript</li>
-        <li>Storybook</li>
-      </ul>
-    </div>
-
-    <div class="skills-backend">
-      <h2>:BACK_END.</h2>
-      <ul class="skills-list">
-        <li>Golang</li>
-        <li>Ruby</li>
-        <li>Ruby on Rails</li>
-        <li>Express.js</li>
-        <li>Node.js</li>
-        <li>SQL</li>
-        <li>MongoDB</li>
-        <li>PostgresSQL</li>
-      </ul>
-    </div>
-
-    <div class="skills-other">
-      <h2>:OTHER.</h2>
-      <ul class="skills-list">
-        <li>Git/GitHub</li>
-        <li>Docker</li>
-        <li>OpenAPI Specifications</li>
-        <li>AWS</li>
-        <li>Abstract</li>
-        <li>Figma</li>
-        <li>Sketch</li>
-        <li>Jira</li>
-        <li>Adobe Experience Manager</li>
-        <li>Adobe Creative Suite</li>
-      </ul>
-    </div>
-
-    <!-- Background: Rectangles -->
-    <div class="skills-rectangle-bottom-left"></div>
-    <div class="skills-rectangle-middle-left"></div>
-    <div class="skills-rectangle-bottom-right"></div>
-    <div class="skills-rectangle-middle-center"></div>
-    <div class="skills-rectangle-top-right"></div>
-  </section>
-
-  <!--******** FOLIO ********/ -->
-  <section id="folio" class="folio-container">
-    <div class="folio">
-      <h1>[ FOLIO ]</h1>
-      <!-- Swiper: Main Container -->
-      <div class="swiper-container">
-        <!-- Swiper: Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Swiper: Slides -->
-          <!-- Project #1 -->
-          <div class="swiper-slide">
-            <div class="folio-body-container">
-              <h2>ASK IZZY PLUS.</h2>
-              <p class="folio-body-main">
-                Ask Izzy Plus is a self-service application to allow service
-                providers listed on Infoxchange's Ask Izzy platform to update
-                organisation, site and service contact details.
-              </p>
-              <p class="folio-body-full-1">
-                Ask Izzy Plus enable services providers to login/logout of a
-                user dashboard, update information, and send an alert to
-                improve current data maintenance methods.
-              </p>
-              <a class="git-link" href="https://github.com/nodebusters/ask-izzy-plus-client"
-                alt="Links to Ask Izzy Plus project repository on GitHub">
-                GIT IT
-              </a>
-            </div>
-          </div>
-          <!-- Project #2 -->
-          <div class="swiper-slide">
-            <div class="folio-body-container">
-              <h2>LENDR.</h2>
-              <p class="folio-body-main">
-                Lendr is a community-driven two-sided marketplace that lets
-                users rent out and borrow belongings to and from others
-                nearby, written in Ruby and built in Rails.
-              </p>
-              <p class="folio-body-full-1">
-                Users can lend and borrow by searching, filtering and paying
-                for items set by users, and leave reviews for others to
-                facilitate the ethos of sharing.
-              </p>
-              <a class="git-link" href="https://github.com/linda-lai/Lendr-marketplace"
-                alt="Links to Lendr project repository on GitHub">
-                GIT IT
-              </a>
-            </div>
-          </div>
-          Î
-          <!-- Project #3 -->
-          <div class="swiper-slide">
-            <div class="folio-body-container">
-              <h2>MY_MDB.</h2>
-              <p class="folio-body-main">
-                Made for the modern and minimalist cinephile, myMDb is a
-                Terminal app written in Ruby with a simple and fun use:
-                search, suggest, and save, returning movie data using OMDb's
-                API.
-              </p>
-              <p class="folio-body-full-1">
-                Users can easily find, display and add movie titles to their
-                watchlist or have the application suggest one based on their
-                mood/genre.
-              </p>
-              <a class="git-link" href="https://github.com/linda-lai/terminal_app"
-                alt="Links to myMDb project repository on GitHub">
-                GIT IT
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-
-      <!-- Background: Lines -->
-      <div class="folio-first-line">
-        <div class="first-line-fill"></div>
-      </div>
-      <div class="folio-second-line">
-        <div class="second-line-fill"></div>
-      </div>
-      <div class="folio-third-line">
-        <div class="third-line-fill"></div>
-      </div>
-      <div class="folio-fourth-line">
-        <div class="fourth-line-fill"></div>
-      </div>
-      <div class="folio-fifth-line">
-        <div class="fifth-line-fill"></div>
-      </div>
-      <div class="folio-background-text">
-        NaN
-      </div>
-    </div>
-  </section>
-
-  <!--******** CONTACT ********/ -->
-  <section class="contact" id="contact">
-    <!-- CONTACT FORM -->
-    <div class="box form_box form-position contact-form-wrapper">
-      <!-- <div class="form-heading"> -->
-      <h1 class="form-heading">CONT@CT</h1>
-      <!-- </div> -->
-      <form name="contact-form" method="POST" netlify>
-        <!-- First Name -->
-        <div class="inputBox">
-          <input type="text" id="first-name" name="_first-name" required="" />
-          <label>FIRST NAME.</label>
-        </div>
-
-        <!-- Last Name -->
-        <div class="inputBox">
-          <input type="text" id="last-name" name="_last-name" required="" />
-          <label>LAST NAME.</label>
-        </div>
-
-        <!-- Email -->
-        <div class="inputBox">
-          <input type="text" class="email-input" id="email-address" name="_email-address" required="" />
-          <!-- <input type="email" class="email-input" id="email-address" name="_email-address" required=""> -->
-          <label>EMAIL.</label>
-        </div>
-
-        <!-- Message -->
-        <div class="inputBox">
-          <textarea type="text" id="message" name="_message" style="height: 50px" required=""></textarea>
-          <label>MESSAGE.</label>
-        </div>
-
-        <!-- Submit -->
-        <div class="submit-button">
-          <input type="submit" value="SHOUT OUT" />
-        </div>
-
-        <!-- Social Media Links -->
-        <div class="social-links">
-          <a class="social linkedin" href="https://www.linkedin.com/in/lindalai">
-            <img border="0" alt="LinkedIn Icon" src="/img/icons/linkedin.svg" width="50" height="50" />
-          </a>
-          <a class="social github" href="https://github.com/linda-lai">
-            <img border="0" alt="GitHub Icon" src="/img/icons/github.svg" width="50" height="50" />
-          </a>
-          <a class="social twitter" href="https://twitter.com/lindalogical">
-            <img border="0" alt="Twitter Icon" src="/img/icons/twitter.svg" width="50" height="50" />
-          </a>
-        </div>
-      </form>
-    </div>
-
-    <!-- Background: Shapes -->
-    <div class="contact-line-horizontal">
-      <div class="horizontal-line-fill"></div>
-    </div>
-
-    <div class="contact-background-symbol">
-      /
-    </div>
-
-    <div class="contact-cross-horizontal">
-      <div class="horizontal-cross-fill"></div>
-    </div>
-
-    <div class="contact-cross-vertical">
-      <div class="vertical-cross-fill"></div>
-    </div>
-
-    <!-- <div class="contact-chinese-name">
-        <img src="/assets/svg/page_vectors/chinese-name.svg" alt="">
-    </div> -->
-  </section>
+    <title>LINDA LAI | FULL-STACK DEVELOPER</title>
+  </head>
 
   <!--**************** SITE WRAPPER ****************/ -->
-</body>
 
+  <body class="site-wrapper">
+    <!--******** NAVIGATION ********/ -->
+    <header>
+      <div class="nav-icon-wrapper">
+        <a href="#home">
+          <img
+            width="100"
+            class="nav-icon"
+            src="/img/logo/logo-icon-white.png"
+            alt="Icon logo"
+          />
+        </a>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about-me">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#folio">FOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <!-- <li><a href="www.google.com">BLOG</a></li> -->
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+
+    <!--******** HOMEPAGE ********/ -->
+    <section class="home" id="home">
+      <div class="logo-container">
+        <a class="logo-image homepage-button" href="#about-me">
+          <img src="/img/logo/logo-white.png" alt="Square logo" />
+          <!-- <img height="400" src="/img/logo/linda_pixel_no_glasses.png" alt="Linda Lai logo" /> -->
+        </a>
+      </div>
+    </section>
+
+    <!--******** ABOUT ME ********/ -->
+    <section class="about-me" id="about-me">
+      <div class="about-me-headline">
+        <h1>< ABOUT ME></h1>
+      </div>
+      <div class="about-me-background-init">
+        def initialize
+        <span class="blinking-cursor">|</span>
+      </div>
+      <div class="about-me-background-symbol">/</div>
+      <div class="about-me-subhead">
+        <h2>HELLO, HEY, HI!</h2>
+      </div>
+
+      <div class="about-me-body">
+        <p>
+          I’m Linda, a developing developer fulfilling my fill for full-stack.
+        </p>
+        <p>
+          Hi, hello, hey! I'm Linda, a developing developer, code-blooded female
+          and all round Hermione learning (and loving!) to code the software
+          eating the world today. Perpetually curious, relentlessly enthusiastic
+          and unabashedly dorky - that's me.
+        </p>
+        <p class="about-me-body-extra">
+          A recent career changer into tech, I dipped my toes into the world of
+          digital/development, found the water was warm, and haven't look back.
+          I love the rush that comes from translating an idea in my head into
+          reality, and that tech allows me to flex my left and right brain
+          tendencies in creative yet technical ways.
+        </p>
+        <p class="about-me-body-extra">
+          Connection, community and communication - that's my sweet spot. I love
+          working in an industry filled with clever, creative people, and
+          bringing them together. I fear feeling bored, stagnant or uninspired.
+          I just want to learn, share, grow and give back.
+        </p>
+        <p class="about-me-body-extra">
+          I firmly believe that tech must be inclusive, accessible and diverse,
+          and aspire to work with people and in places which share that
+          commitment.
+        </p>
+        <p>
+          A good day is when I've achieved a lot and made people happy in the
+          process, letting the results speak for itself.
+        </p>
+        <p>Me in a nutshell.</p>
+      </div>
+    </section>
+
+    <!--******** SKILLS ********/ -->
+    <section class="skills" id="skills">
+      <h1 class="skills-headline">{ :SKILLS }</h1>
+
+      <div class="skills-frontend">
+        <h2>:FRONT_END.</h2>
+        <ul class="skills-list">
+          <li>JavaScript</li>
+          <li>React.js</li>
+          <li>Redux</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Sass</li>
+          <li>Bootstrap</li>
+          <li>Typescript</li>
+          <li>Storybook</li>
+        </ul>
+      </div>
+
+      <div class="skills-backend">
+        <h2>:BACK_END.</h2>
+        <ul class="skills-list">
+          <li>Golang</li>
+          <li>Ruby</li>
+          <li>Ruby on Rails</li>
+          <li>Express.js</li>
+          <li>Node.js</li>
+          <li>SQL</li>
+          <li>MongoDB</li>
+          <li>PostgresSQL</li>
+        </ul>
+      </div>
+
+      <div class="skills-other">
+        <h2>:OTHER.</h2>
+        <ul class="skills-list">
+          <li>Git/GitHub</li>
+          <li>Docker</li>
+          <li>OpenAPI Specifications</li>
+          <li>AWS</li>
+          <li>Abstract</li>
+          <li>Figma</li>
+          <li>Sketch</li>
+          <li>Jira</li>
+          <li>Adobe Experience Manager</li>
+          <li>Adobe Creative Suite</li>
+        </ul>
+      </div>
+
+      <!-- Background: Rectangles -->
+      <div class="skills-rectangle-bottom-left"></div>
+      <div class="skills-rectangle-middle-left"></div>
+      <div class="skills-rectangle-bottom-right"></div>
+      <div class="skills-rectangle-middle-center"></div>
+      <div class="skills-rectangle-top-right"></div>
+    </section>
+
+    <!--******** FOLIO ********/ -->
+    <section id="folio" class="folio-container">
+      <div class="folio">
+        <h1>[ FOLIO ]</h1>
+        <!-- Swiper: Main Container -->
+        <div class="swiper-container">
+          <!-- Swiper: Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Swiper: Slides -->
+            <!-- Project #1 -->
+            <div class="swiper-slide">
+              <div class="folio-body-container">
+                <h2>ASK IZZY PLUS.</h2>
+                <p class="folio-body-main">
+                  Ask Izzy Plus is a self-service application to allow service
+                  providers listed on Infoxchange's Ask Izzy platform to update
+                  organisation, site and service contact details.
+                </p>
+                <p class="folio-body-full-1">
+                  Ask Izzy Plus enable services providers to login/logout of a
+                  user dashboard, update information, and send an alert to
+                  improve current data maintenance methods.
+                </p>
+                <a
+                  class="git-link"
+                  href="https://github.com/nodebusters/ask-izzy-plus-client"
+                  alt="Links to Ask Izzy Plus project repository on GitHub"
+                >
+                  GIT IT
+                </a>
+              </div>
+            </div>
+            <!-- Project #2 -->
+            <div class="swiper-slide">
+              <div class="folio-body-container">
+                <h2>LENDR.</h2>
+                <p class="folio-body-main">
+                  Lendr is a community-driven two-sided marketplace that lets
+                  users rent out and borrow belongings to and from others
+                  nearby, written in Ruby and built in Rails.
+                </p>
+                <p class="folio-body-full-1">
+                  Users can lend and borrow by searching, filtering and paying
+                  for items set by users, and leave reviews for others to
+                  facilitate the ethos of sharing.
+                </p>
+                <a
+                  class="git-link"
+                  href="https://github.com/linda-lai/Lendr-marketplace"
+                  alt="Links to Lendr project repository on GitHub"
+                >
+                  GIT IT
+                </a>
+              </div>
+            </div>
+            Î
+            <!-- Project #3 -->
+            <div class="swiper-slide">
+              <div class="folio-body-container">
+                <h2>MY_MDB.</h2>
+                <p class="folio-body-main">
+                  Made for the modern and minimalist cinephile, myMDb is a
+                  Terminal app written in Ruby with a simple and fun use:
+                  search, suggest, and save, returning movie data using OMDb's
+                  API.
+                </p>
+                <p class="folio-body-full-1">
+                  Users can easily find, display and add movie titles to their
+                  watchlist or have the application suggest one based on their
+                  mood/genre.
+                </p>
+                <a
+                  class="git-link"
+                  href="https://github.com/linda-lai/terminal_app"
+                  alt="Links to myMDb project repository on GitHub"
+                >
+                  GIT IT
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Background: Lines -->
+        <div class="folio-first-line">
+          <div class="first-line-fill"></div>
+        </div>
+        <div class="folio-second-line">
+          <div class="second-line-fill"></div>
+        </div>
+        <div class="folio-third-line">
+          <div class="third-line-fill"></div>
+        </div>
+        <div class="folio-fourth-line">
+          <div class="fourth-line-fill"></div>
+        </div>
+        <div class="folio-fifth-line">
+          <div class="fifth-line-fill"></div>
+        </div>
+        <div class="folio-background-text">NaN</div>
+      </div>
+    </section>
+
+    <!--******** CONTACT ********/ -->
+    <section class="contact" id="contact">
+      <!-- CONTACT FORM -->
+      <div class="box form_box form-position contact-form-wrapper">
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <a
+            class="social linkedin"
+            href="https://www.linkedin.com/in/lindalai"
+          >
+            <img
+              border="0"
+              alt="LinkedIn Icon"
+              src="/img/icons/linkedin.svg"
+              width="50"
+              height="50"
+            />
+          </a>
+          <a class="social github" href="https://github.com/linda-lai">
+            <img
+              border="0"
+              alt="GitHub Icon"
+              src="/img/icons/github.svg"
+              width="50"
+              height="50"
+            />
+          </a>
+          <a class="social twitter" href="https://twitter.com/lindalogical">
+            <img
+              border="0"
+              alt="Twitter Icon"
+              src="/img/icons/twitter.svg"
+              width="50"
+              height="50"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Background: Shapes -->
+      <div class="contact-line-horizontal">
+        <div class="horizontal-line-fill"></div>
+      </div>
+
+      <div class="contact-background-symbol">/</div>
+
+      <div class="contact-cross-horizontal">
+        <div class="horizontal-cross-fill"></div>
+      </div>
+
+      <div class="contact-cross-vertical">
+        <div class="vertical-cross-fill"></div>
+      </div>
+
+      <!-- <div class="contact-chinese-name">
+        <img src="/assets/svg/page_vectors/chinese-name.svg" alt="">
+    </div> -->
+    </section>
+
+    <!--**************** SITE WRAPPER ****************/ -->
+  </body>
 </html>
